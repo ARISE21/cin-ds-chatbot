@@ -24,5 +24,6 @@ export interface EmailFallback {
 
 export type OrchestrationResult = BuscarContextoResponse &
   (
-    { fallback_acionado: false } | ({ fallback_acionado: true } & EmailFallback)
+    | { fallback_acionado: false; resposta: string }
+    | ({ fallback_acionado: true } & EmailFallback)
   );

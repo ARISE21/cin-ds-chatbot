@@ -24,15 +24,22 @@ export class OrchestrationService {
     // AiService já converte falhas de transporte em exceções seguras do NestJS.
     const resultado = await this.aiService.buscarContexto(request.consulta);
     if (
-      resultado.distancia_minima >= this.threshold ||
-      resultado.contexto.trim().length === 0
+      resultado.distancia_minima < this.threshold &&
+      resultado.contexto.trim().length > 0 &&
+      resultado.fontes.length > 0
     ) {
-      return {
-        ...resultado,
-        fallback_acionado: true,
-        ...this.fallbackService.gerarEmail(request),
-      };
+      const resposta = await this.aiService.gerarResposta(
+        request.consulta.pergunta,
+        resultado.contexto,
+      );
+      if (resposta?.trim()) {
+        return { ...resultado, fallback_acionado: false, resposta };
+      }
     }
-    return { ...resultado, fallback_acionado: false };
+    return {
+      ...resultado,
+      fallback_acionado: true,
+      ...this.fallbackService.gerarEmail(request),
+    };
   }
 }

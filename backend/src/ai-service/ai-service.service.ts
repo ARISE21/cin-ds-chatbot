@@ -108,6 +108,78 @@ export class AiService {
     };
   }
 
+  async gerarResposta(
+    pergunta: string,
+    contexto: string,
+  ): Promise<string | null> {
+    if (
+      typeof pergunta !== 'string' ||
+      !pergunta.trim() ||
+      typeof contexto !== 'string'
+    ) {
+      throw new BadRequestException('Dados para geração inválidos.');
+    }
+
+    const endpoint = new URL('/api/v1/gerar', this.getEndpoint());
+    const signal = AbortSignal.timeout(this.getTimeoutMs());
+    let response: Response;
+    try {
+      response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({ pergunta, contexto }),
+        signal,
+        redirect: 'error',
+      });
+    } catch {
+      if (signal.aborted) {
+        throw new GatewayTimeoutException(
+          'Tempo limite do serviço de geração excedido.',
+        );
+      }
+      throw new ServiceUnavailableException('Serviço de geração indisponível.');
+    }
+
+    if (!response.ok) {
+      await response.body?.cancel().catch(() => undefined);
+      if (response.status === 503) {
+        throw new ServiceUnavailableException(
+          'Serviço de geração indisponível.',
+        );
+      }
+      if (response.status === 504) {
+        throw new GatewayTimeoutException(
+          'Tempo limite do serviço de geração excedido.',
+        );
+      }
+      throw new BadGatewayException('Falha na resposta do serviço de geração.');
+    }
+
+    let result: unknown;
+    try {
+      result = await response.json();
+    } catch {
+      if (signal.aborted) {
+        throw new GatewayTimeoutException(
+          'Tempo limite do serviço de geração excedido.',
+        );
+      }
+      throw new BadGatewayException('Resposta inválida do serviço de geração.');
+    }
+    if (
+      !isRecord(result) ||
+      (result.resposta !== null && typeof result.resposta !== 'string')
+    ) {
+      throw new BadGatewayException('Resposta inválida do serviço de geração.');
+    }
+    return typeof result.resposta === 'string' && result.resposta.trim()
+      ? result.resposta
+      : null;
+  }
+
   private getTimeoutMs(): number {
     const raw = process.env.AI_SERVICE_TIMEOUT_MS;
     if (raw === undefined) return 5000;
