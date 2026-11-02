@@ -23,11 +23,12 @@ const request = {
 describe('OrchestrationService', () => {
   let module: TestingModule;
   const buscarContexto = vi.fn();
+  const gerarResposta = vi.fn();
 
   async function createService() {
     module = await Test.createTestingModule({ imports: [OrchestrationModule] })
       .overrideProvider(AiService)
-      .useValue({ buscarContexto })
+      .useValue({ buscarContexto, gerarResposta })
       .compile();
     return module.get(OrchestrationService);
   }
@@ -35,19 +36,25 @@ describe('OrchestrationService', () => {
   beforeEach(() => {
     vi.stubEnv('FALLBACK_DISTANCE_THRESHOLD', undefined);
     buscarContexto.mockReset().mockResolvedValue(response);
+    gerarResposta.mockReset().mockResolvedValue('Resposta gerada.');
   });
   afterEach(async () => {
     await module?.close();
     vi.unstubAllEnvs();
   });
 
-  it('retorna contexto para futura LLM abaixo do limite e não envia dados pessoais ao ai-service', async () => {
+  it('retorna resposta gerada abaixo do limite e não envia dados pessoais ao ai-service', async () => {
     const service = await createService();
     expect(await service.processar(request)).toEqual({
       ...response,
       fallback_acionado: false,
+      resposta: 'Resposta gerada.',
     });
     expect(buscarContexto).toHaveBeenCalledExactlyOnceWith(request.consulta);
+    expect(gerarResposta).toHaveBeenCalledExactlyOnceWith(
+      request.consulta.pergunta,
+      response.contexto,
+    );
   });
 
   it.each([0.8, 0.9])(
