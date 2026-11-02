@@ -20,11 +20,23 @@ describe('AppController (HTTP com orquestração real)', () => {
   let app: INestApplication<App>;
   const fetchMock = vi.fn<typeof fetch>();
 
+  function simularBusca(resultadoBusca: unknown) {
+    fetchMock.mockImplementation(async (url) => {
+      if (!(url instanceof URL)) throw new Error('URL esperada');
+      if (url.pathname === '/api/v1/buscar')
+        return Response.json(resultadoBusca);
+      if (url.pathname === '/api/v1/gerar')
+        return Response.json({ resposta: 'Resposta gerada.' });
+      throw new Error('Endpoint inesperado');
+    });
+  }
+
   beforeEach(async () => {
     vi.stubEnv('AI_SERVICE_URL', 'http://busca.test:8000');
     vi.stubEnv('AI_SERVICE_TIMEOUT_MS', undefined);
     vi.stubEnv('FALLBACK_DISTANCE_THRESHOLD', '0.8');
-    fetchMock.mockReset().mockResolvedValue(Response.json(resultado));
+    fetchMock.mockReset();
+    simularBusca(resultado);
     vi.stubGlobal('fetch', fetchMock);
     const module = await Test.createTestingModule({
       imports: [AppModule],
@@ -48,13 +60,23 @@ describe('AppController (HTTP com orquestração real)', () => {
       .post('/api/v1/conversa')
       .send({ consulta, dados_email: { nome: 'Ana', matricula: '123' } })
       .expect(201)
-      .expect({ ...resultado, fallback_acionado: false });
-    expect(fetchMock).toHaveBeenCalledTimes(1);
+      .expect({
+        ...resultado,
+        fallback_acionado: false,
+        resposta: 'Resposta gerada.',
+      });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
     const [url, options] = fetchMock.mock.calls[0]!;
     expect(url).toBeInstanceOf(URL);
     expect((url as URL).href).toBe('http://busca.test:8000/api/v1/buscar');
     expect(options?.method).toBe('POST');
     expect(JSON.parse(options!.body as string)).toEqual(consulta);
+    const [gerarUrl, gerarInit] = fetchMock.mock.calls[1]!;
+    expect((gerarUrl as URL).pathname).toBe('/api/v1/gerar');
+    expect(JSON.parse(gerarInit!.body as string)).toEqual({
+      pergunta: consulta.pergunta,
+      contexto: resultado.contexto,
+    });
   });
 
   it.each([
@@ -63,21 +85,19 @@ describe('AppController (HTTP com orquestração real)', () => {
   ] as const)(
     'remove campos externos extras do HTTP com distância %s e fallback %s',
     async (distancia, fallback) => {
-      fetchMock.mockResolvedValue(
-        Response.json({
-          ...resultado,
-          distancia_minima: distancia,
-          debug: { detalhe: 'metadado interno' },
-          setor_sugerido: 'setor externo',
-          template_email: 'template externo',
-          fallback_acionado: !fallback,
-          fontes: resultado.fontes.map((fonte) => ({
-            ...fonte,
-            caminho_interno: '/interno/norma.pdf',
-            metadados: { detalhe: 'metadado interno' },
-          })),
-        }),
-      );
+      simularBusca({
+        ...resultado,
+        distancia_minima: distancia,
+        debug: { detalhe: 'metadado interno' },
+        setor_sugerido: 'setor externo',
+        template_email: 'template externo',
+        fallback_acionado: !fallback,
+        fontes: resultado.fontes.map((fonte) => ({
+          ...fonte,
+          caminho_interno: '/interno/norma.pdf',
+          metadados: { detalhe: 'metadado interno' },
+        })),
+      });
 
       const response = await request(app.getHttpServer())
         .post('/api/v1/conversa')
@@ -93,7 +113,7 @@ describe('AppController (HTTP com orquestração real)', () => {
               setor_sugerido: 'SecGrad',
               template_email: expect.stringContaining('Ana, matrícula 123'),
             }
-          : {}),
+          : { resposta: 'Resposta gerada.' }),
       });
       expect(response.text).not.toContain('metadado interno');
       expect(response.text).not.toContain('/interno/norma.pdf');
@@ -123,7 +143,7 @@ describe('AppController (HTTP com orquestração real)', () => {
     'gera fallback para distância %s e contexto %j',
     async (distancia, contexto) => {
       const busca = { ...resultado, contexto, distancia_minima: distancia };
-      fetchMock.mockResolvedValue(Response.json(busca));
+      simularBusca(busca);
       const response = await request(app.getHttpServer())
         .post('/api/v1/conversa')
         .send({

@@ -518,3 +518,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## Contrato de geração da Sprint 3
+
+A conversa agora chama busca e geração. Consulte [INTEGRACAO_GERAR.md](INTEGRACAO_GERAR.md) para o contrato e [REGRESSAO_GERAR.md](REGRESSAO_GERAR.md) para a migração dos testes e comandos. `npm test` executa a regressão corrente; `npm run test:v2:historica` reproduz a V2 acadêmica original em cópia temporária da baseline, sem alterar seus arquivos.
