@@ -1,0 +1,26 @@
+test_aliases_gerais (test_busca_v2.BuscaV2.test_aliases_gerais) ... ok
+test_contrato_distancia_nao_finita_na_origem (test_busca_v2.BuscaV2.test_contrato_distancia_nao_finita_na_origem) ... ok
+test_contrato_pagina_invalida_na_origem (test_busca_v2.BuscaV2.test_contrato_pagina_invalida_na_origem) ... ok
+test_cursos_perfis_reconhecidos (test_busca_v2.BuscaV2.test_cursos_perfis_reconhecidos) ... ok
+test_distancia_tipo_invalido (test_busca_v2.BuscaV2.test_distancia_tipo_invalido) ... ok
+test_documento_geral_na_lista (test_busca_v2.BuscaV2.test_documento_geral_na_lista) ... ok
+test_enriquecimento_metadados (test_busca_v2.BuscaV2.test_enriquecimento_metadados) ... ok
+test_filtros_desconhecidos (test_busca_v2.BuscaV2.test_filtros_desconhecidos) ... ok
+test_fontes_e_paginas_validas (test_busca_v2.BuscaV2.test_fontes_e_paginas_validas) ... ok
+test_http_origem_invalida (test_busca_v2.BuscaV2.test_http_origem_invalida) ... ok
+test_integridade_das_listas (test_busca_v2.BuscaV2.test_integridade_das_listas) ... ok
+test_limites_exatos_api (test_busca_v2.BuscaV2.test_limites_exatos_api) ... ok
+test_pergunta_invalida (test_busca_v2.BuscaV2.test_pergunta_invalida) ... ok
+test_pergunta_nao_vazia (test_busca_v2.BuscaV2.test_pergunta_nao_vazia) ... ok
+test_restricao_unica (test_busca_v2.BuscaV2.test_restricao_unica) ... ok
+test_rotulo_exato_interface (test_busca_v2.BuscaV2.test_rotulo_exato_interface) ... ok
+test_sem_restricoes (test_busca_v2.BuscaV2.test_sem_restricoes) ... ok
+test_sem_resultados (test_busca_v2.BuscaV2.test_sem_resultados) ... ok
+test_top_k_invalido (test_busca_v2.BuscaV2.test_top_k_invalido) ... ok
+test_top_k_valores_validos (test_busca_v2.BuscaV2.test_top_k_valores_validos) ... ok
+test_varias_fontes (test_busca_v2.BuscaV2.test_varias_fontes) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.106s
+
+OK

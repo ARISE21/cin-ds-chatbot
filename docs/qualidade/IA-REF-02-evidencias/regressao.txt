@@ -1,0 +1,23 @@
+test_contexto_vazio_retora_null (test_generation.GenerationTest.test_contexto_vazio_retora_null) ... ok
+test_desabilitado_por_padrao (test_generation.GenerationTest.test_desabilitado_por_padrao) ... ok
+test_mock_explicitamente_identificado (test_generation.GenerationTest.test_mock_explicitamente_identificado) ... ok
+test_modo_desconhecido_nao_gera_resposta (test_generation.GenerationTest.test_modo_desconhecido_nao_gera_resposta) ... ok
+test_pergunta_vazia_rejeitada (test_generation.GenerationTest.test_pergunta_vazia_rejeitada) ... ok
+test_entradas_invalidas (test_generation_api.GenerationApiTest.test_entradas_invalidas) ... ok
+test_mock_contrato_http (test_generation_api.GenerationApiTest.test_mock_contrato_http) ... ok
+test_sem_contexto (test_generation_api.GenerationApiTest.test_sem_contexto) ... ok
+test_servico_desabilitado (test_generation_api.GenerationApiTest.test_servico_desabilitado) ... ok
+test_top_k_nao_aceita_coercao (test_generation_api.GenerationApiTest.test_top_k_nao_aceita_coercao) ... ok
+test_remove_chunks_obsoletos (test_index_utils.IndexUtilsTest.test_remove_chunks_obsoletos) ... ok
+test_consulta_geral_nao_cria_filtro (test_metadata_utils.MetadataUtilsTest.test_consulta_geral_nao_cria_filtro) ... ok
+test_enriquece_documento_de_varios_cursos (test_metadata_utils.MetadataUtilsTest.test_enriquece_documento_de_varios_cursos) ... ok
+test_normaliza_rotulos_da_interface (test_metadata_utils.MetadataUtilsTest.test_normaliza_rotulos_da_interface) ... ok
+test_rejeita_curso_desconhecido (test_metadata_utils.MetadataUtilsTest.test_rejeita_curso_desconhecido) ... ok
+test_busca_sem_resultados (test_retriever.RetrieverTest.test_busca_sem_resultados) ... ok
+test_formata_resultado_e_aplica_filtro (test_retriever.RetrieverTest.test_formata_resultado_e_aplica_filtro) ... ok
+test_rejeita_entrada_invalida (test_retriever.RetrieverTest.test_rejeita_entrada_invalida) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.036s
+
+OK
