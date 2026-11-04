@@ -121,17 +121,17 @@ As colunas V1 e V2 devem ser preenchidas somente depois de cada suíte ser gerad
 
 | Requisito / critério | Variável | Partição ou limite | Caso esperado | Coberto V1? | Coberto V2? |
 |---|---|---|---|---|---|
-| US-01 / CA-01.1 | curso + perfil | específicos válidos | CT-01.01 | A medir | A medir |
-| US-01 / CA-01.5 | curso + perfil | gerais | CT-01.02 | A medir | A medir |
-| US-01 / CA-01.1 | aliases de curso/perfil | nome completo da interface | CT-01.03 | A medir | A medir |
-| US-01 / CA-01.3 | quantidade de resultados | limite 0 | CT-01.04 | A medir | A medir |
-| US-01 / CA-01.4 | pergunta | comprimento útil 0 | CT-01.05 | A medir | A medir |
-| US-01 / CA-01.4 | pergunta | apenas espaços | CT-01.06 | A medir | A medir |
-| US-01 / CA-01.4 | curso | partição desconhecida | CT-01.07 | A medir | A medir |
-| US-01 / CA-01.4 | perfil | partição desconhecida | CT-01.08 | A medir | A medir |
-| US-01 / CA-01.4 | `top_k` | limite 0 inválido | CT-01.09 | A medir | A medir |
-| US-01 / CA-01.1 | `top_k` | limite 1 válido | CT-01.10 | A medir | A medir |
-| US-01 / CA-01.4 | `top_k` | decimal inválido | CT-01.11 | A medir | A medir |
+| US-01 / CA-01.1 | curso + perfil | específicos válidos | CT-01.01 | Sim: cursos_perfis_reconhecidos | Sim: herdado |
+| US-01 / CA-01.5 | curso + perfil | gerais | CT-01.02 | Sim: sem_restricoes | Sim: herdado |
+| US-01 / CA-01.1 | aliases de curso/perfil | nome completo da interface | CT-01.03 | Parcial: rótulo exato ausente | Sim: rotulo_exato_interface |
+| US-01 / CA-01.3 | quantidade de resultados | limite 0 | CT-01.04 | Sim: sem_resultados | Sim: herdado |
+| US-01 / CA-01.4 | pergunta | comprimento útil 0 | CT-01.05 | Sim: pergunta_invalida | Sim: herdado |
+| US-01 / CA-01.4 | pergunta | apenas espaços | CT-01.06 | Sim: pergunta_invalida | Sim: herdado |
+| US-01 / CA-01.4 | curso | partição desconhecida | CT-01.07 | Sim: filtros_desconhecidos | Sim: herdado |
+| US-01 / CA-01.4 | perfil | partição desconhecida | CT-01.08 | Sim: filtros_desconhecidos | Sim: herdado |
+| US-01 / CA-01.4 | `top_k` | limite 0 inválido | CT-01.09 | Sim: top_k_invalido | Sim: herdado |
+| US-01 / CA-01.1 | `top_k` | limite 1 válido | CT-01.10 | Sim: top_k_valores_validos | Sim: herdado |
+| US-01 / CA-01.4 | `top_k` | decimal inválido | CT-01.11 | Sim: top_k_invalido | Sim: herdado |
 | US-02 / CA-02.1 | distância | imediatamente abaixo de 0.8 | CT-02.01 | A medir | A medir |
 | US-02 / CA-02.2 | distância | exatamente 0.8 | CT-02.02 | A medir | A medir |
 | US-02 / CA-02.2 | distância | imediatamente acima de 0.8 | CT-02.03 | A medir | A medir |
@@ -158,6 +158,8 @@ As colunas V1 e V2 devem ser preenchidas somente depois de cada suíte ser gerad
 - [ ] A conversa usada para gerar a V1 não recebe esta matriz.
 
 ## 8. Observações e decisões
+
+Atualização da US-01: ver us01-fechamento.md para inventário de 22 partições e 8 valores-limite e comparação controlada. As colunas preenchidas contam teste existente/exercitado, não aprovação universal do critério. Nomes abreviam métodos test_ das classes BuscaV1/BuscaV2. US-02/03 aguardam consolidação das evidências do backend; não foram marcadas como ausentes sem inspeção da entrega de Victor.
 
 - O limiar `0.8` é provisório e deve ser calibrado com o benchmark do corpus real.
 - Distância vetorial não é probabilidade; valores menores representam maior proximidade no contrato atual.

@@ -1,5 +1,7 @@
 # Análise incremental da US-01
 
+Atualização: o fechamento controlado está em us01-fechamento.md. Este documento preserva a medição histórica anterior; suas pendências de comparação/contagem foram resolvidas no novo registro, sem sobrescrever os resultados originais.
+
 ## Escopo e evidências
 
 Módulos medidos: src.retriever e src.metadata_utils. Testes via unittest; coverage.py 7.17.0 com branches. A API é exercitada, mas main.py inclui ingestão e geração fora da US-01 e não entra no denominador. Os relatórios HTML e JSON estão em relatorios/v1/ e relatorios/v2/. A coleção é falsa: esta medição não demonstra integração real com Chroma nem qualidade semântica do corpus.

@@ -1,0 +1,126 @@
+test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) ... 
+  test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=nan) ... ERROR
+  test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=inf) ... ERROR
+  test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=-inf) ... ERROR
+test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) ... 
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=0) ... ERROR
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=-1) ... ERROR
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina='1') ... ERROR
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=1.5) ... ERROR
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=True) ... ERROR
+  test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=None) ... ERROR
+test_cursos_perfis_reconhecidos (test_busca_v1.BuscaV1.test_cursos_perfis_reconhecidos) ... ok
+test_filtros_desconhecidos (test_busca_v1.BuscaV1.test_filtros_desconhecidos) ... ok
+test_fontes_e_paginas_validas (test_busca_v1.BuscaV1.test_fontes_e_paginas_validas) ... ok
+test_pergunta_invalida (test_busca_v1.BuscaV1.test_pergunta_invalida) ... ok
+test_pergunta_nao_vazia (test_busca_v1.BuscaV1.test_pergunta_nao_vazia) ... ok
+test_restricao_unica (test_busca_v1.BuscaV1.test_restricao_unica) ... ok
+test_sem_restricoes (test_busca_v1.BuscaV1.test_sem_restricoes) ... ok
+test_sem_resultados (test_busca_v1.BuscaV1.test_sem_resultados) ... ok
+test_top_k_invalido (test_busca_v1.BuscaV1.test_top_k_invalido) ... ok
+test_top_k_valores_validos (test_busca_v1.BuscaV1.test_top_k_valores_validos) ... ok
+test_varias_fontes (test_busca_v1.BuscaV1.test_varias_fontes) ... ok
+
+======================================================================
+ERROR: test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=nan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 184, in test_contrato_distancia_nao_finita_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(distancia=distancia))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 96, in buscar_contexto
+    raise InvalidSearchResult("Distância inválida na origem.")
+src.retriever.InvalidSearchResult: Distância inválida na origem.
+
+======================================================================
+ERROR: test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=inf)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 184, in test_contrato_distancia_nao_finita_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(distancia=distancia))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 96, in buscar_contexto
+    raise InvalidSearchResult("Distância inválida na origem.")
+src.retriever.InvalidSearchResult: Distância inválida na origem.
+
+======================================================================
+ERROR: test_contrato_distancia_nao_finita_na_origem (test_busca_v1.BuscaV1.test_contrato_distancia_nao_finita_na_origem) (distancia=-inf)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 184, in test_contrato_distancia_nao_finita_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(distancia=distancia))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 96, in buscar_contexto
+    raise InvalidSearchResult("Distância inválida na origem.")
+src.retriever.InvalidSearchResult: Distância inválida na origem.
+
+======================================================================
+ERROR: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(pagina=pagina))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 124, in buscar_contexto
+    raise InvalidSearchResult("Página inválida na origem.")
+src.retriever.InvalidSearchResult: Página inválida na origem.
+
+======================================================================
+ERROR: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=-1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(pagina=pagina))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 124, in buscar_contexto
+    raise InvalidSearchResult("Página inválida na origem.")
+src.retriever.InvalidSearchResult: Página inválida na origem.
+
+======================================================================
+ERROR: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina='1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(pagina=pagina))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 124, in buscar_contexto
+    raise InvalidSearchResult("Página inválida na origem.")
+src.retriever.InvalidSearchResult: Página inválida na origem.
+
+======================================================================
+ERROR: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=1.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(pagina=pagina))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 124, in buscar_contexto
+    raise InvalidSearchResult("Página inválida na origem.")
+src.retriever.InvalidSearchResult: Página inválida na origem.
+
+======================================================================
+ERROR: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(pagina=pagina))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 124, in buscar_contexto
+    raise InvalidSearchResult("Página inválida na origem.")
+src.retriever.InvalidSearchResult: Página inválida na origem.
+
+======================================================================
+ERROR: test_contrato_pagina_invalida_na_origem (test_busca_v1.BuscaV1.test_contrato_pagina_invalida_na_origem) (pagina=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\tests\v1-llm\test_busca_v1.py", line 178, in test_contrato_pagina_invalida_na_origem
+    self.assert_contrato(buscar_contexto('matrícula', collection=ColecaoFake(resultado(pagina=pagina))))
+                         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael\OneDrive\RafaelASUS\ProjetoDS\codigo\cin-ds-chatbot\ai-service\src\retriever.py", line 124, in buscar_contexto
+    raise InvalidSearchResult("Página inválida na origem.")
+src.retriever.InvalidSearchResult: Página inválida na origem.
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.177s
+
+FAILED (errors=9)

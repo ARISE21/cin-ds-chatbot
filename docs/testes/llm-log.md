@@ -1,5 +1,11 @@
 # Sprint 3 — Registro de uso de LLM
 
+## Fechamento local da US-01 e IA-REF-02
+
+Solicitação de Rafael: "Ok, chat. Quero que você faça essa minha parte de agora que você disse que já é possível fazer (passos 1 a 5, né?) Leve o tempo que achar necessário. Lembre-se de sempre ir seguindo as orientações e as exigências que fui te mandando por aqui, como prints, etc. Faça todas essas alterações localmente. Depois, me diga o que você fez para eu subir no repositório remoto."
+
+Codex, em 04/11/2026, analisou os módulos da US-01 e a V2 existente, acrescentou quatro métodos para lacunas observadas (listas inconsistentes, tipos de distância, 422 exato e documento Geral na lista), sem modificar a V1. Mediu V1/V2 na mesma produção, identificada por hashes, e congelou a V2 antes de extrair a validação vetorial em IA-REF-02. Métricas, comparação de oráculos, inventários e justificativa estão em us01-fechamento.md e ../qualidade/IA-REF-02-relatorio.md. Nome do modelo exato não registrado nesta interação; não inventar versão. Esta interação é melhoria V2 e análise/refatoração, não nova geração V1. Não foram enviadas mensagens ao grupo ou alterados backend, interface ou catálogo.
+
 ## Medição e melhoria após a V1
 
 Foi preservada a geração independente em commit 0a75b77; o prompt integral e saída original estão em v1-ia-geracao.md. Em seguida, neste chat, Rafael solicitou: "Ok, então continue esse trabalho para mim, por favor, e vai me dizendo o que você ta fazendo. Acha que você ainda vai fazer alguma alteração no código do projeto relativo à minha parte? Quero saber quando eu posso mandar as alterações pro repositório no GitHub...".
