@@ -7,6 +7,15 @@ class InvalidSearchResult(RuntimeError):
     """A coleção retornou dados que não podem fundamentar uma resposta."""
 
 
+def _validar_resultado_vetorial(documentos, metadados, distancias):
+    """Confere integridade antes de associar trechos às fontes."""
+    if not (len(documentos) == len(metadados) == len(distancias)):
+        raise InvalidSearchResult("Resultado documental inconsistente.")
+    for distancia in distancias:
+        if type(distancia) not in (int, float) or not math.isfinite(distancia):
+            raise InvalidSearchResult("Distância inválida na origem.")
+
+
 def obter_collection():
     """
     Abre a coleção do ChromaDB somente quando ela for necessária.
@@ -89,11 +98,7 @@ def buscar_contexto(
         else []
     )
 
-    if not (len(documentos) == len(metadados) == len(distancias)):
-        raise InvalidSearchResult("Resultado documental inconsistente.")
-    for distancia in distancias:
-        if type(distancia) not in (int, float) or not math.isfinite(distancia):
-            raise InvalidSearchResult("Distância inválida na origem.")
+    _validar_resultado_vetorial(documentos, metadados, distancias)
 
     contexto_formatado = []
     fontes = []

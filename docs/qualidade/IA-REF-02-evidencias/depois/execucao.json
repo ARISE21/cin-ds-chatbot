@@ -1,0 +1,49 @@
+{
+  "utc": "2026-11-04T09:49:28.344012+00:00",
+  "python": "3.14.5",
+  "git_head": "55a852ca08ea701ad3b51d5dd4fd16bde9e04f3d",
+  "suite": "v2",
+  "test_exit": 0,
+  "commands": [
+    [
+      "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\venv\\Scripts\\python.exe",
+      "-m",
+      "coverage",
+      "run",
+      "--branch",
+      "--source=src.retriever,src.metadata_utils",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/v2",
+      "-v"
+    ],
+    [
+      "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\venv\\Scripts\\python.exe",
+      "-m",
+      "coverage",
+      "json",
+      "-o",
+      "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\docs\\qualidade\\IA-REF-02-evidencias\\depois\\coverage.json"
+    ],
+    [
+      "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\venv\\Scripts\\python.exe",
+      "-m",
+      "coverage",
+      "html",
+      "-d",
+      "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\docs\\qualidade\\IA-REF-02-evidencias\\depois\\html"
+    ]
+  ],
+  "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\ai-service",
+  "production_sha256": {
+    "ai-service\\src\\retriever.py": "c72deb7f33c2b0433d9d8d501249771b7d3e3bbbb154bd8541981d01d6240754",
+    "ai-service\\src\\metadata_utils.py": "ec02e6733b979e2fd310caf4982ab79af2704d71c92f51baff403d91566e4d81",
+    "ai-service\\main.py": "def7dd115680a9f6a18e0ecc365583cd718791e73fd4a80b8da89634b90f7907"
+  },
+  "tests_sha256": {
+    "ai-service\\tests\\v2\\test_busca_v2.py": "24487e1bae92b3e22e4a1a639dfc8b94ca59b8fad2ab1e0ef1b51756786a31a9",
+    "ai-service\\tests\\v1-llm\\test_busca_v1.py": "0ad591420dfbde9f14924a6560828ba3771e1a548b59c830c8d46ba12f3970c1"
+  }
+}
