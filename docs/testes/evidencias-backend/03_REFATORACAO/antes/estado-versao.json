@@ -1,0 +1,11 @@
+{
+  "HEAD": "9d328dc463f3e47588811a37eafece6f13f3f891",
+  "source_sha256": "550ff2e4f5b41aeebce1c85b5b78e6d572bdef0cf07d78b4a7cc422c6c8848f1",
+  "suite": {
+    "fallback-email.spec.ts": "b16274aa8c4b8697a909e25ffbb4a7f355373bec03b7c9449d017c661d7b544b",
+    "orchestration.spec.ts": "43677bdcbe7bf22cc2570ea5e7c521ed50245795b00640d6ce86fc904b04a8db",
+    "conversa-http.spec.ts": "70055b70f8aa819384d1c3e1ab9551b28cd92e30bfb1666a6a15faab49f30088",
+    "fallback-config.spec.ts": "c4ce00823594c53e4ebff4f125e8810ea354122dbe4eb8301e03fc0d86b55338"
+  },
+  "config_sha256": "f2a89dbbbb5319a3c9fa808ee6fc54bb49ec11c837cdd8843e1c25f38256f174"
+}

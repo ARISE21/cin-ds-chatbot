@@ -1,0 +1,15 @@
+{
+  "copied_files_rechecked": 138,
+  "manifest_hashes_verified": 137,
+  "local_html_resources_checked": 387,
+  "matrix_rows": 26,
+  "pdf_body_pages": 5,
+  "v1_ia_git_blob_unchanged": true,
+  "v1_ia_worktree_only_line_endings": true,
+  "v1_ia_git_sha256": "3b5928291c50f13a642d09ea1eb4e7ed77437bea887aa9188db6948942c191df",
+  "v1_ia_local_sha256": "06251286c228c1d4402828ad7ae0a910df9f9ca3d43c0f8b59a1c08d30c1ca4d",
+  "backend_tests_rerun": false,
+  "backend_v1_results": 65,
+  "backend_v2_results": 105,
+  "status": "verified"
+}

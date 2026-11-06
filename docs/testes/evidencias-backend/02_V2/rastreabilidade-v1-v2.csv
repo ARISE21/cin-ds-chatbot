@@ -1,0 +1,16 @@
+caso,criterio,V1,V2,teste_V2,oraculo
+CT-02.01,CA-02.1,Sim por partição / literal ausente,Sim,CT-02.01: usa o limite literal 0.7999 e preserva as fontes,distância 0.7999; HTTP 201; igualdade de resposta; sem gerarEmail
+CT-02.02,CA-02.2,Sim,Sim,CT-02.02: usa o limite literal 0.8 e preserva as fontes,"true, setor, estrutura do template e fontes"
+CT-02.03,CA-02.2,Sim por partição / literal ausente,Sim,CT-02.03: usa o limite literal 0.8001 e preserva as fontes,"distância 0.8001; true, setor, template"
+CT-02.04,CA-02.3,Sim por partição / literal ausente,Sim,CT-02.04: contexto %j com distância literal 0.1 entrega rascunho,"vazio e brancos; 0.1; flag, setor, texto pessoal, template"
+CT-02.05,CA-02.4,Parcial,Sim,CT-02.05: falha de transporte retorna 503 seguro sem fallback,fetch rejeita Error com detalhe interno; HTTP 503 e corpo literal seguro; gerador não chamado
+CT-02.06,CA-02.4,Não,Sim,CT-02.06: timeout real durante %s retorna 504 seguro,fetch e leitura JSON aguardam abort real de 15 ms; 504 e sem rascunho
+CT-02.07,CA-02.4,Não,Sim,CT-02.07: JSON textual malformado retorna 502 seguro; contrato com %s; distância não finita %s,JSON textual inválido; contexto/fontes ausentes; distância string; página 0; NaN e ±Infinity no objeto decodificado; 502 seguro
+CT-03.01,CA-03.1,Sim,Sim,CT-03.01: assunto estágio entrega setor SecGrad no HTTP,setor e corpo; demais palavras CA-03.1 requerimento/segunda chamada também exercitadas
+CT-03.02,CA-03.1,Sim,Sim,CT-03.02: assunto dispensa entrega setor SecGrad no HTTP,"setor, assunto, estrutura de e-mail"
+CT-03.03,CA-03.2,Sim,Sim,CT-03.03: assunto pedagógico entrega setor NEAP no HTTP,"setor, assunto, estrutura de e-mail"
+CT-03.04,CA-03.3,Sim,Sim,CT-03.04: assunto pós-graduação entrega setor Secretaria de Pós-Graduação no HTTP,"setor, assunto, estrutura de e-mail"
+CT-03.05,CA-03.4,Sim,Sim,CT-03.05: assunto declaração entrega setor SecGrad no HTTP,padrão; nenhum termo específico
+CT-03.06,CA-03.5,Parcial,Sim,CT-03.06: fallback sem dados opcionais entrega os cinco marcadores no HTTP,igualdade integral de resposta e template; sem undefined/null; defaults da consulta externa
+CT-03.07,CA-03.6,Sim,Sim,CT-03.07: preserva textos no rascunho e envia somente consulta à busca,todos textos; requisição externa exata sem pessoais; campos extras internos removidos do retorno
+CT-03.08,CA-03.6,Parcial,Sim,CA-03.6: tipos inválidos em nome retornam HTTP 400 seguro,nome=123 explicitamente no laço; também quatro campos × cinco tipos; sem fetch nem rascunho; mensagem literal

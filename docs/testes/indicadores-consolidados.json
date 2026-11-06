@@ -1,0 +1,98 @@
+{
+  "criteria": {
+    "total": 15,
+    "v1_with_direct_assertion": 13,
+    "v1_partial": 2,
+    "v2_with_direct_assertion": 15
+  },
+  "cases_literal": {
+    "total": 26,
+    "v1_complete": 17,
+    "v1_partial": 7,
+    "v1_absent": 2,
+    "v2_complete": 26
+  },
+  "ia_controlled": {
+    "v1": {
+      "methods": 13,
+      "passed_methods": 11,
+      "problem_methods": 2,
+      "subtest_errors": 9,
+      "lines": [
+        72,
+        95
+      ],
+      "branches": [
+        32,
+        42
+      ]
+    },
+    "v2": {
+      "methods": 21,
+      "passed_methods": 21,
+      "lines": [
+        91,
+        95
+      ],
+      "branches": [
+        41,
+        42
+      ]
+    }
+  },
+  "backend_original_scope": {
+    "v1": {
+      "tests": 65,
+      "passed": 65,
+      "lines": [
+        45,
+        45
+      ],
+      "branches": [
+        53,
+        53
+      ]
+    },
+    "v2": {
+      "tests": 105,
+      "passed": 105,
+      "lines": [
+        45,
+        45
+      ],
+      "branches": [
+        53,
+        53
+      ]
+    }
+  },
+  "backend_expanded_v2": {
+    "lines": [
+      85,
+      90
+    ],
+    "branches": [
+      108,
+      113
+    ]
+  },
+  "warning": "Critério com asserção não equivale a requisito satisfeito. Não calcular média de stacks/escopos nem misturar métodos unittest e instâncias Vitest.",
+  "partitions_inventory": {
+    "ia_total": 22,
+    "backend_total": 22,
+    "v1_ia_exercised": 22,
+    "v1_backend_full": 16,
+    "v1_backend_partial": 1,
+    "v1_backend_absent": 5,
+    "v2_ia": 22,
+    "v2_backend": 22
+  },
+  "boundaries_literal": {
+    "ia_total": 8,
+    "backend_total": 9,
+    "v1_ia": 8,
+    "v1_backend": 3,
+    "v2_ia": 8,
+    "v2_backend": 9
+  }
+}

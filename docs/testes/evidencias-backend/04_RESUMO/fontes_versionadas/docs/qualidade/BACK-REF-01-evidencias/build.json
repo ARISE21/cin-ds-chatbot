@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "cwd": "/home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z/backend",
+  "environment_overrides": {},
+  "start_utc": "2026-11-02T00:36:45.442184+00:00",
+  "end_utc": "2026-11-02T00:36:51.367523+00:00",
+  "exit_code": 0,
+  "stdout": "\n> backend@0.0.1 build\n> nest build\n\n",
+  "stderr": ""
+}

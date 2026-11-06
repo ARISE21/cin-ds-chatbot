@@ -1,0 +1,217 @@
+{
+  "v1_testes": 65,
+  "v2_testes": 105,
+  "v2_arquivos": 4,
+  "v2_http_testes": 40,
+  "escopo_original": {
+    "lines": {
+      "V1": {
+        "covered": 45,
+        "total": 45
+      },
+      "V2": {
+        "covered": 45,
+        "total": 45
+      },
+      "delta_pontos_percentuais": 0.0
+    },
+    "branches": {
+      "V1": {
+        "covered": 53,
+        "total": 53
+      },
+      "V2": {
+        "covered": 53,
+        "total": 53
+      },
+      "delta_pontos_percentuais": 0.0
+    },
+    "statements": {
+      "V1": {
+        "covered": 47,
+        "total": 47
+      },
+      "V2": {
+        "covered": 47,
+        "total": 47
+      },
+      "delta_pontos_percentuais": 0.0
+    },
+    "functions": {
+      "V1": {
+        "covered": 7,
+        "total": 7
+      },
+      "V2": {
+        "covered": 7,
+        "total": 7
+      },
+      "delta_pontos_percentuais": 0.0
+    }
+  },
+  "escopo_ampliado_v2": {
+    "lines": {
+      "total": 90,
+      "covered": 85,
+      "skipped": 0,
+      "pct": 94.44
+    },
+    "statements": {
+      "total": 94,
+      "covered": 87,
+      "skipped": 0,
+      "pct": 92.55
+    },
+    "functions": {
+      "total": 18,
+      "covered": 16,
+      "skipped": 0,
+      "pct": 88.88
+    },
+    "branches": {
+      "total": 113,
+      "covered": 108,
+      "skipped": 0,
+      "pct": 95.57
+    },
+    "branchesTrue": {
+      "total": 0,
+      "covered": 0,
+      "skipped": 0,
+      "pct": 100
+    }
+  },
+  "por_arquivo": {
+    "src/app.controller.ts": {
+      "lines": {
+        "total": 5,
+        "covered": 4,
+        "skipped": 0,
+        "pct": 80
+      },
+      "functions": {
+        "total": 3,
+        "covered": 2,
+        "skipped": 0,
+        "pct": 66.66
+      },
+      "statements": {
+        "total": 5,
+        "covered": 4,
+        "skipped": 0,
+        "pct": 80
+      },
+      "branches": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    "src/ai-service/ai-service.service.ts": {
+      "lines": {
+        "total": 40,
+        "covered": 36,
+        "skipped": 0,
+        "pct": 90
+      },
+      "functions": {
+        "total": 8,
+        "covered": 7,
+        "skipped": 0,
+        "pct": 87.5
+      },
+      "statements": {
+        "total": 42,
+        "covered": 36,
+        "skipped": 0,
+        "pct": 85.71
+      },
+      "branches": {
+        "total": 60,
+        "covered": 55,
+        "skipped": 0,
+        "pct": 91.66
+      }
+    },
+    "src/orchestration/fallback.config.ts": {
+      "lines": {
+        "total": 9,
+        "covered": 9,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 1,
+        "covered": 1,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 10,
+        "covered": 10,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 7,
+        "covered": 7,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    "src/orchestration/fallback.service.ts": {
+      "lines": {
+        "total": 25,
+        "covered": 25,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 4,
+        "covered": 4,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 26,
+        "covered": 26,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 40,
+        "covered": 40,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    "src/orchestration/orchestration.service.ts": {
+      "lines": {
+        "total": 11,
+        "covered": 11,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 2,
+        "covered": 2,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 11,
+        "covered": 11,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 6,
+        "covered": 6,
+        "skipped": 0,
+        "pct": 100
+      }
+    }
+  },
+  "dependencias_diretas_iguais_a_v1": true
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--check"
+  ],
+  "cwd": "/home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z/backend",
+  "environment_overrides": {},
+  "start_utc": "2026-11-02T00:36:51.367819+00:00",
+  "end_utc": "2026-11-02T00:36:51.474967+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}
