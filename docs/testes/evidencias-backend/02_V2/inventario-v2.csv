@@ -1,0 +1,106 @@
+arquivo,teste,status,duracao_ms
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.01: usa o limite literal 0.7999 e preserva as fontes,passed,114.14368600000012
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.02: usa o limite literal 0.8 e preserva as fontes,passed,18.02783999999997
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.03: usa o limite literal 0.8001 e preserva as fontes,passed,13.104873999999882
+conversa-http.spec.ts,"US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.04: contexto """" com distância literal 0.1 entrega rascunho",passed,11.586509999999862
+conversa-http.spec.ts,"US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.04: contexto "" "" com distância literal 0.1 entrega rascunho",passed,16.113105000000132
+conversa-http.spec.ts,"US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.04: contexto ""\n\t"" com distância literal 0.1 entrega rascunho",passed,11.81200100000001
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.05: falha de transporte retorna 503 seguro sem fallback,passed,14.43428599999993
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.06: timeout real durante fetch retorna 504 seguro,passed,29.46320700000001
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.06: timeout real durante leitura do JSON retorna 504 seguro,passed,26.586945999999898
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.07: JSON textual malformado retorna 502 seguro,passed,11.322002999999995
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.07: contrato com campo contexto ausente retorna 502 seguro,passed,12.79728
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.07: contrato com distância textual retorna 502 seguro,passed,9.076027999999951
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.07: contrato com fontes ausentes retorna 502 seguro,passed,8.929294999999911
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.07: contrato com página zero retorna 502 seguro,passed,12.814355999999862
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.07: distância não finita NaN no objeto decodificado retorna 502,passed,9.794308000000001
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.07: distância não finita Infinity no objeto decodificado retorna 502,passed,11.120865999999978
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-02.07: distância não finita -Infinity no objeto decodificado retorna 502,passed,9.449018000000024
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-02.4: HTTP upstream inválido não expõe corpo interno,passed,11.67384600000014
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-03.01: assunto estágio entrega setor SecGrad no HTTP,passed,9.09022600000003
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.1: assunto requerimento entrega setor SecGrad no HTTP,passed,8.816614999999956
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-03.02: assunto dispensa entrega setor SecGrad no HTTP,passed,10.230337999999847
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.1: assunto segunda chamada entrega setor SecGrad no HTTP,passed,7.932440999999926
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-03.03: assunto pedagógico entrega setor NEAP no HTTP,passed,18.113041000000067
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-03.04: assunto pós-graduação entrega setor Secretaria de Pós-Graduação no HTTP,passed,9.365921999999955
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-03.05: assunto declaração entrega setor SecGrad no HTTP,passed,7.180605999999898
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-03.06: fallback sem dados opcionais entrega os cinco marcadores no HTTP,passed,8.458318999999847
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CT-03.07: preserva textos no rascunho e envia somente consulta à busca,passed,8.83805899999993
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.6: tipos inválidos em nome retornam HTTP 400 seguro,passed,34.47927900000013
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.6: tipos inválidos em matricula retornam HTTP 400 seguro,passed,34.32668899999999
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.6: tipos inválidos em assunto retornam HTTP 400 seguro,passed,29.967672999999877
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.6: tipos inválidos em resumo retornam HTTP 400 seguro,passed,34.609432999999854
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.6: estrutura de dados_email null retorna HTTP 400,passed,8.105186000000003
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.6: estrutura de dados_email undefined retorna HTTP 400,passed,7.046381999999994
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado limite útil 1: pergunta e contexto de um caractere preservam resposta sem fallback,passed,6.357390000000123
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado limite útil 1: campos textuais mínimos aparecem no rascunho,passed,7.415499000000182
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.5: ausência individual de nome usa marcador e preserva os demais textos,passed,10.249897000000146
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.5: ausência individual de matricula usa marcador e preserva os demais textos,passed,9.155054000000064
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.5: ausência individual de curso usa marcador e preserva os demais textos,passed,9.172726000000011
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.5: ausência individual de perfil usa marcador e preserva os demais textos,passed,6.77564899999993
+conversa-http.spec.ts,US-02 e US-03 — contrato HTTP com AiService real e transporte simulado CA-03.5: ausência individual de resumo usa marcador e preserva os demais textos,passed,6.973313000000189
+fallback-config.spec.ts,US-02 — configuração do limite de distância usa o limite provisório 0.8 quando a variável está ausente,passed,4.622607000000016
+fallback-config.spec.ts,US-02 — configuração do limite de distância aceita limite decimal finito não negativo 0,passed,0.9759820000000445
+fallback-config.spec.ts,US-02 — configuração do limite de distância aceita limite decimal finito não negativo 0.8,passed,0.6950439999999958
+fallback-config.spec.ts,US-02 — configuração do limite de distância aceita limite decimal finito não negativo  1.5 ,passed,0.4298959999999852
+fallback-config.spec.ts,US-02 — configuração do limite de distância aceita limite decimal finito não negativo .5,passed,0.6015980000000241
+fallback-config.spec.ts,US-02 — configuração do limite de distância aceita limite decimal finito não negativo 1.,passed,0.37875399999995807
+fallback-config.spec.ts,US-02 — configuração do limite de distância aceita limite decimal finito não negativo 2e-1,passed,0.31797900000003665
+fallback-config.spec.ts,US-02 — configuração do limite de distância aceita limite decimal finito não negativo 2E+1,passed,0.3109280000000467
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida """"",passed,2.8567429999999945
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida "" """,passed,0.5778630000000362
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""-1""",passed,0.39543700000001536
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""-0""",passed,0.3587930000000483
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""NaN""",passed,0.35939000000001897
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""Infinity""",passed,0.43496099999998705
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""1e309""",passed,0.42532799999997906
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""0x10""",passed,0.5160940000000096
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""abc""",passed,1.7615930000000048
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""1,2""",passed,0.6194720000000302
+fallback-config.spec.ts,"US-02 — configuração do limite de distância rejeita configuração inválida ""+1""",passed,0.5009999999999764
+fallback-email.spec.ts,US-03 — rascunho de e-mail compõe o rascunho completo e remove espaços externos dos campos,passed,4.523913999999991
+fallback-email.spec.ts,US-03 — rascunho de e-mail usa marcadores de preenchimento e a pergunta como assunto quando os dados são omitidos,passed,0.42566199999998844
+fallback-email.spec.ts,US-03 — rascunho de e-mail trata campos em branco como ausentes,passed,0.9242049999999153
+fallback-email.spec.ts,US-03 — rascunho de e-mail usa o assunto informado para sugerir setor e preserva a pergunta no corpo,passed,0.566457000000014
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para ESTÁGIO respeitando a prioridade implementada,passed,0.23363300000005438
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para estagio respeitando a prioridade implementada,passed,0.12024199999996199
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para requerimento respeitando a prioridade implementada,passed,0.10207100000002356
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para dispensa respeitando a prioridade implementada,passed,0.16333499999996093
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para segunda chamada respeitando a prioridade implementada,passed,0.13404400000001715
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para apoio pedagógico respeitando a prioridade implementada,passed,0.134441000000038
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para apoio pedagogico respeitando a prioridade implementada,passed,0.18915000000004056
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para pós-graduação respeitando a prioridade implementada,passed,0.11706400000002759
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para pos-graduacao respeitando a prioridade implementada,passed,0.1350360000000137
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para pós graduação respeitando a prioridade implementada,passed,0.6550250000000233
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para assunto sem palavra-chave respeitando a prioridade implementada,passed,0.39696700000001783
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para estágio e apoio pedagógico respeitando a prioridade implementada,passed,0.2522999999999911
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para requerimento de pós-graduação respeitando a prioridade implementada,passed,0.12054000000000542
+fallback-email.spec.ts,US-03 — rascunho de e-mail sugere setor para apoio pedagógico na pós-graduação respeitando a prioridade implementada,passed,0.1317589999999882
+fallback-email.spec.ts,US-03 — rascunho de e-mail aceita dados opcionais válidos (undefined),passed,1.681897000000049
+fallback-email.spec.ts,US-03 — rascunho de e-mail aceita dados opcionais válidos ({}),passed,0.6116349999999784
+fallback-email.spec.ts,"US-03 — rascunho de e-mail aceita dados opcionais válidos ({""nome"":"""",""matricula"":""123"",""assunto"":""Pedido"",""resumo"":""Resumo""})",passed,0.43986099999995076
+fallback-email.spec.ts,US-03 — rascunho de e-mail rejeita estrutura inválida de dados (null),passed,1.2241639999999734
+fallback-email.spec.ts,US-03 — rascunho de e-mail rejeita estrutura inválida de dados (undefined),passed,0.35437100000001465
+fallback-email.spec.ts,"US-03 — rascunho de e-mail rejeita estrutura inválida de dados (""Ana"")",passed,0.33868299999994633
+fallback-email.spec.ts,US-03 — rascunho de e-mail rejeita estrutura inválida de dados (10),passed,0.42238499999996293
+fallback-email.spec.ts,US-03 — rascunho de e-mail rejeita estrutura inválida de dados (true),passed,0.3709519999999884
+fallback-email.spec.ts,US-03 — rascunho de e-mail rejeita valor não textual no campo nome,passed,1.2927740000000085
+fallback-email.spec.ts,US-03 — rascunho de e-mail rejeita valor não textual no campo matricula,passed,0.398853000000031
+fallback-email.spec.ts,US-03 — rascunho de e-mail rejeita valor não textual no campo assunto,passed,0.30234199999995326
+fallback-email.spec.ts,US-03 — rascunho de e-mail rejeita valor não textual no campo resumo,passed,0.4840449999999237
+orchestration.spec.ts,US-02 — decisão de fallback mantém a resposta com evidência suficiente e não gera e-mail,passed,9.887833
+orchestration.spec.ts,US-02 — decisão de fallback aciona fallback para distância 0.8 no limite ou acima,passed,8.832763
+orchestration.spec.ts,US-02 — decisão de fallback aciona fallback para distância 0.8001 no limite ou acima,passed,1.1772979999999507
+orchestration.spec.ts,US-02 — decisão de fallback aciona fallback para distância 1.2 no limite ou acima,passed,0.9904310000000578
+orchestration.spec.ts,US-02 — decisão de fallback aceita uma distância imediatamente abaixo do limite,passed,0.6334790000000794
+orchestration.spec.ts,"US-02 — decisão de fallback aciona fallback para contexto vazio ou branco ("""")",passed,1.4921510000000353
+orchestration.spec.ts,"US-02 — decisão de fallback aciona fallback para contexto vazio ou branco (""   "")",passed,1.206786999999963
+orchestration.spec.ts,"US-02 — decisão de fallback aciona fallback para contexto vazio ou branco (""\n\t "")",passed,1.176802000000066
+orchestration.spec.ts,US-02 — decisão de fallback respeita o limite injetado e preserva os dados retornados pela busca,passed,0.7849979999999732
+orchestration.spec.ts,"US-02 — decisão de fallback envia somente a consulta à busca, sem os dados pessoais do e-mail",passed,2.148765000000026
+orchestration.spec.ts,US-02 — decisão de fallback rejeita requisição sem consulta antes da busca (undefined),passed,3.789058999999952
+orchestration.spec.ts,US-02 — decisão de fallback rejeita requisição sem consulta antes da busca (null),passed,0.620967999999948
+orchestration.spec.ts,US-02 — decisão de fallback rejeita requisição sem consulta antes da busca ({}),passed,0.613521999999989
+orchestration.spec.ts,US-02 — decisão de fallback valida dados pessoais mesmo quando a busca poderia responder,passed,0.5819460000000163
+orchestration.spec.ts,US-02 — decisão de fallback propaga indisponibilidade da busca sem produzir rascunho,passed,0.9226149999999507
+orchestration.spec.ts,US-02 — decisão de fallback integra fallback e rascunho com os dados informados pelo estudante,passed,0.6420180000000073

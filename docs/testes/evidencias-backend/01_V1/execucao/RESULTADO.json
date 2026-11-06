@@ -1,0 +1,10 @@
+{
+  "evidencias": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z",
+  "vitest_exit_code": 0,
+  "base": "9d328dc463f3e47588811a37eafece6f13f3f891",
+  "files": [
+    "fallback-config.spec.ts",
+    "fallback-email.spec.ts",
+    "orchestration.spec.ts"
+  ]
+}

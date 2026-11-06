@@ -1,0 +1,63 @@
+{
+  "identificador": "20261102T000635Z-ddf53b69",
+  "data_utc": "2026-11-02T00:06:35.690916+00:00",
+  "modelo_informado": "GPT-6 (conforme instrução do ambiente: agente Codex baseado em GPT-6)",
+  "versao_exata_modelo": null,
+  "versao_exata_modelo_observacao": "Identificador de implantação, snapshot e versão do runtime não informados.",
+  "sha_base": null,
+  "sha_base_observacao": "Não fornecido nos arquivos autorizados; Git não consultado por restrição de leitura.",
+  "prompt_escopo": "Mensagem integral do usuário que solicita a geração, sem instruções internas do sistema e ferramentas.",
+  "entrada_producao": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao",
+  "arquivos_entrada": [
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/package.json",
+      "sha256": "ab5d8a7c5b9a6b59b9676facccab80acf874c5ad6cf3a66852e5bcd4c5925876"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/ai-service/ai-service.module.ts",
+      "sha256": "9bde99830af6bd7e525cebce7331f8711d67daf1ffd24de6bcda07c618422a7b"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/ai-service/ai-service.service.ts",
+      "sha256": "5f12cc61f03bbcb9aafcf372c18a8ccb0dbbc1212e8ae61babe059d4028f86d7"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/ai-service/ai-service.types.ts",
+      "sha256": "b018ded749a816b28679b8765503f1b8c5bd71c99700be427b809c465a73f963"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/app.controller.ts",
+      "sha256": "bfc88366eda889dee683c31f3b4e90febf4e3dfe1269aa945ffc247e9989e863"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/app.module.ts",
+      "sha256": "eab41049c7108470130bb68d2c59f17ad90fce9aedd55e201cfeff36507c4ead"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/orchestration/fallback.config.ts",
+      "sha256": "5cff255c17725eed30490b6c686c9eea9149fa95873d53ccd6369af595870eec"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/orchestration/fallback.service.ts",
+      "sha256": "550ff2e4f5b41aeebce1c85b5b78e6d572bdef0cf07d78b4a7cc422c6c8848f1"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/orchestration/orchestration.module.ts",
+      "sha256": "3b0ae49bee89dd4b8aca9400f400f916094a5a66c8cac2cb314b9c3a650f1d04"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/orchestration/orchestration.service.ts",
+      "sha256": "8fc0e9bec8b660194f1cbf57ae9c2ffe36f0679ba5180e46734fbdba267937c0"
+    },
+    {
+      "path": "/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao/backend/src/orchestration/orchestration.types.ts",
+      "sha256": "bcbec0069e17a1ff8842d199433b802e153b169552feacdc7755f994c8856c0f"
+    }
+  ],
+  "geracoes": 1,
+  "testes_executados": false,
+  "testes_corrigidos_formatados_refatorados": false,
+  "git_consultado": false,
+  "pasta_fora_do_workspace_git": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69",
+  "verificacao_git": "Local externo ao workspace informado; sem inspeção de metadados Git externos."
+}
