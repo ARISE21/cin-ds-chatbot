@@ -159,5 +159,75 @@
     ],
     "perfil_curricular": "todos",
     "vigencia": true
+  },
+  {
+    "arquivo": "ppc_cc_anterior.pdf",
+    "titulo": "Projeto Pedagógico do Curso de Ciência da Computação (Perfil Anterior)",
+    "tipo_documento": "ppc",
+    "curso_alvo": [
+      "Ciência da Computação"
+    ],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "ppc_cc_novo_2024.pdf",
+    "titulo": "Projeto Pedagógico do Curso de Ciência da Computação (Perfil Novo 2024)",
+    "tipo_documento": "ppc",
+    "curso_alvo": [
+      "Ciência da Computação"
+    ],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "ppc_ec_anterior.pdf",
+    "titulo": "Projeto Pedagógico do Curso de Engenharia da Computação (Perfil Anterior)",
+    "tipo_documento": "ppc",
+    "curso_alvo": [
+      "Engenharia da Computação"
+    ],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "ppc_ec_novo_2024.pdf",
+    "titulo": "Projeto Pedagógico do Curso de Engenharia da Computação (Perfil Novo 2024)",
+    "tipo_documento": "ppc",
+    "curso_alvo": [
+      "Engenharia da Computação"
+    ],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "ppc_si_anterior.pdf",
+    "titulo": "Projeto Pedagógico do Curso de Sistemas de Informação (Perfil Anterior)",
+    "tipo_documento": "ppc",
+    "curso_alvo": [
+      "Sistemas de Informação"
+    ],
+    "perfil_curricular": "anterior",
+    "vigencia": true
+  },
+  {
+    "arquivo": "ppc_si_novo_2024.pdf",
+    "titulo": "Projeto Pedagógico do Curso de Sistemas de Informação (Perfil Novo 2024)",
+    "tipo_documento": "ppc",
+    "curso_alvo": [
+      "Sistemas de Informação"
+    ],
+    "perfil_curricular": "novo",
+    "vigencia": true
+  },
+  {
+    "arquivo": "ppc_ia_novo_2024.pdf",
+    "titulo": "Projeto Pedagógico do Curso de Inteligência Artificial (Perfil Novo 2024)",
+    "tipo_documento": "ppc",
+    "curso_alvo": [
+      "Inteligência Artificial"
+    ],
+    "perfil_curricular": "novo",
+    "vigencia": true
   }
 ]
