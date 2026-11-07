@@ -1,5 +1,6 @@
 """Reconstrói o corpo do relatório; apêndices integrais acompanham no repositório."""
 from pathlib import Path
+import argparse
 from xml.sax.saxutils import escape
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
@@ -36,7 +37,7 @@ def table(rows, widths):
 
 
 title('Análise crítica de testes')
-p('Chatbot SecGrad | Sprint 3 | CInCoders | 06/11/2026', 'SmallLocal')
+p('Chatbot SecGrad | Sprint 3 | CInCoders | Revisão de 07/11/2026', 'SmallLocal')
 h('1 Contexto e resultado principal')
 p('A análise compara testes produzidos com apoio de LLM e suas melhorias para três histórias: US-01, busca documental filtrada com fontes; US-02, fallback quando não há evidência suficiente; US-03, rascunho de e-mail para encaminhamento. A V2 exerce os 26 casos aprovados. Cobertura estrutural alta, porém, não certifica a qualidade semântica do corpus, a integração completa ou a força dos oráculos.')
 p('A IA usa Python, FastAPI, unittest e coverage.py 7.17.0 com branches. A US-01 foi medida sobre a produção e421ff9, com hashes idênticos entre V1 e V2. A refatoração posterior IA-REF-02 tem evidências separadas. O backend usa NestJS/TypeScript, Vitest e coverage-v8 4.1.11, Node 24.21.0. As US-02/03 foram medidas na baseline histórica 9d328dc, anterior à integração com /gerar. Regressões atuais não substituem essas suítes acadêmicas.')
@@ -106,7 +107,8 @@ table([
 h('7 Conclusão e alcance')
 p('A equipe usaria LLM para propor testes e explorar classes de entrada, preservando requisitos externos como oráculo e revisando casos contra eles. A evidência mostra por que quantidade e cobertura não bastam: 65 testes e 100% de branches no backend deixavam obrigações HTTP incompletas. O ganho da V2 está na ligação entre requisito, entrada, resultado e fronteira realmente exercitada.')
 p('A IA teve aumento controlado de branches de 76,19% para 97,62%; o backend permaneceu no teto de 100% no escopo original. O atendimento literal da meta de aumento do backend requer a ressalva de teto e eventual alinhamento com o monitor, sem degradar V1, trocar denominadores ou inventar um delta.')
-p('As suítes históricas foram preservadas; não se confundem os 105 testes acadêmicos com regressões posteriores adaptadas a /gerar. Não se conclui que o sistema completo está validado: corpus ampliado, UI, geração real, autenticação e implantação precisam de evidência própria. A terceira refatoração, a curadoria/PPCs e o pacote final não são demonstrados por este relatório.')
+p('As suítes históricas foram preservadas; não se confundem os 105 testes acadêmicos com regressões posteriores adaptadas a /gerar. A revisão de 07/11 audita separadamente o corpus real: 21 documentos, 6.799 trechos e sete pares curso/perfil, sem divergência contra a extração. Há cinco páginas dos PPCs sem texto extraível; correspondência de trechos não significa completude documental. Resultados em validacao-ppcs/auditoria-final.json.')
+p('O teste HTTP real com geração mock retornou 201, mas o cliente UI priorizou contexto e ocultou o aviso de simulação. Uma pergunta sobre carburador não acionou fallback (distância 0,454, limiar 0,8). Em um recorte de 100 testes atuais do backend, 94 passaram e seis falharam na configuração de URL; são regressões posteriores, não falhas da V2 histórica. Esses achados reforçam o limite dos testes controlados. Não se atribui validação completa, LLM real nem calibração a essas medições. A terceira refatoração e o pacote final permanecem pendentes.')
 h('Apêndices e evidências entregues com o PDF')
 p('A: matriz-rastreabilidade.md; B: llm-log.md e suas referências integrais; memória de cálculo: inventario-consolidado.md e indicadores-consolidados.json. Índice e instruções: CONSOLIDACAO-SPRINT3.md. Todos ficam na mesma pasta docs/testes e devem acompanhar este PDF.', 'SmallLocal')
 p('HTML IA: relatorios/us01-controlado/v1/html/index.html e v2/html/index.html. HTML backend: evidencias-backend/01_V1/execucao/coverage/index.html e 02_V2/execucao/coverage/index.html. Comparação backend: 02_V2/comparacao-v1-v2.json; inventários CSV e análise original preservados no mesmo pacote. Importação: evidencias-backend/IMPORTACAO.json.', 'SmallLocal')
@@ -120,4 +122,9 @@ def footer(canvas, doc):
 
 
 if __name__ == '__main__':
-    SimpleDocTemplate(str(HERE / 'analise-critica-sprint3.pdf'), pagesize=A4, rightMargin=59, leftMargin=59, topMargin=48, bottomMargin=48, title='Análise crítica de testes - Chatbot SecGrad', author='Equipe CInCoders').build(story, onFirstPage=footer, onLaterPages=footer)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--saida', type=Path, default=HERE / 'analise-critica-sprint3-revisao-20261107.pdf')
+    args = parser.parse_args()
+    if args.saida.exists():
+        parser.error('Escolha uma saída nova para preservar os relatórios anteriores.')
+    SimpleDocTemplate(str(args.saida), pagesize=A4, rightMargin=59, leftMargin=59, topMargin=48, bottomMargin=48, title='Análise crítica de testes - revisão 07/11/2026', author='Equipe CInCoders').build(story, onFirstPage=footer, onLaterPages=footer)

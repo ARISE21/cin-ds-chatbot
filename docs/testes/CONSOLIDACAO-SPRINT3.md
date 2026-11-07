@@ -1,5 +1,16 @@
 # Consolidação da análise crítica da Sprint 3
 
+PDF mais recente: [análise crítica revisada em 07/11](analise-critica-sprint3-revisao-20261107.pdf),
+com cinco páginas. A versão de 06/11 abaixo é histórica e permanece preservada.
+Rafael também assume o PDF de refatorações; consulte o
+[guia dos dois relatórios](../qualidade/ENTREGA-RELATORIOS.md). O PDF de refatorações
+é parcial até receber a terceira refatoração com evidências.
+
+Atualização de 07/11/2026: os PPCs foram publicados e reingeridos. Consulte
+[Validação dos PPCs e revisão da integração](validacao-ppcs/README.md) para resultados
+atuais e pendências. O PDF de análise crítica e as evidências históricas abaixo
+permanecem preservados; não usar suas listas antigas de pendências como estado atual.
+
 Esta entrega reúne US-01, US-02 e US-03 para o PDF analise-critica-sprint3.pdf. A cópia original do pacote de Victor está em evidencias-backend, com IMPORTACAO.json e hashes verificados. Nenhuma implementação de backend, interface, catálogo ou suíte histórica foi alterada nesta consolidação. Não há reexecução de testes nesta etapa; números vêm dos registros preservados, não de uma afirmação de execução atual.
 
 ## Ordem de leitura e apêndices do relatório

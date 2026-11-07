@@ -97,6 +97,7 @@ def indexar_documento(
     )
 
     documentos_para_inserir = []
+    paginas_sem_texto = []
 
     if extensao == ".txt":
         try:
@@ -180,6 +181,7 @@ def indexar_documento(
             )
 
             if not texto_pagina.strip():
+                paginas_sem_texto.append(numero_pagina)
                 continue
 
             chunks = text_splitter.split_text(
@@ -222,6 +224,13 @@ def indexar_documento(
             "motivo": "Extensão inválida",
         }
 
+    if paginas_sem_texto:
+        print(
+            f"[AVISO] '{nome_arquivo}': páginas sem texto extraível: "
+            f"{', '.join(map(str, paginas_sem_texto))}. "
+            "Conferir visualmente; imagens com conteúdo podem exigir OCR."
+        )
+
     if not documentos_para_inserir:
         print(
             f"[AVISO] Nenhum texto extraído de "
@@ -231,6 +240,7 @@ def indexar_documento(
         return {
             "sucesso": False,
             "motivo": "Nenhum texto extraído",
+            "paginas_sem_texto": paginas_sem_texto,
         }
 
     ids = [
@@ -267,6 +277,7 @@ def indexar_documento(
     return {
         "sucesso": True,
         "total_chunks": len(ids),
+        "paginas_sem_texto": paginas_sem_texto,
         "chunks_obsoletos_removidos": len(
             ids_removidos
         ),

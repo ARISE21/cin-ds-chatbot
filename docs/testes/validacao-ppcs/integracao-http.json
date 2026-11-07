@@ -1,0 +1,103 @@
+{
+  "tipo": "HTTP real com geração mock; não é benchmark nem LLM real",
+  "casos": [
+    {
+      "nome": "geracao_mock",
+      "status_http": 200,
+      "segundos": 0.011,
+      "retorno": {
+        "resposta": "[SIMULAÇÃO DE INTEGRAÇÃO — NÃO É RESPOSTA ACADÊMICA]"
+      }
+    },
+    {
+      "nome": "geracao_sem_contexto",
+      "status_http": 200,
+      "segundos": 0.017,
+      "retorno": {
+        "resposta": null
+      }
+    },
+    {
+      "nome": "conversa_base_real",
+      "status_http": 201,
+      "segundos": 1.048,
+      "retorno": {
+        "contexto": "[Documento: ppc_cc_novo_2024.pdf | Pág. 43 | Curso: Ciência da Computação]\n8 Perfil Profissional do Egresso\nDe\nacordo\ncom\nas\nDiretrizes\nCurriculares\nNacionais\npara\nos\ncursos\nde\ngraduação\nna\nárea\nde\nComputação,\nResolução\nnº\n05/2016,\ndo\nConselho\nNacional\nde\nEducação\ne\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura,\nde\nabril\nde\n2010,\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\ndeve\npossuir\numa\nsólida\nformação\nem\nCiência\nda\nComputação\ne\nMatemática,\nconhecer\nas\nestruturas\ne\nprocessos\ndos\nsistemas\nde\ncomputação\ncom\numa\nvisão\ninterdisciplinar\ne\nglobal\ndos\nsistemas,\ndominar\nos\nconceitos\nteóricos\nda\nCiência\nda\nComputação\ne\nseus\nimpactos\nnas\naplicações\npráticas,\ne\nter\ncapacidade\npara\ncriar\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 70 | Curso: Ciência da Computação]\n12.4 Avaliação e acompanhamento da concretização do projeto pedagógico\nA\navaliação\ndo\ndesenvolvimento\ndo\nProjeto\nPedagógico\ndar-se-á\nem\nrelação\nao\ncumprimento\nde\nseus\nobjetivos,\nperfil\ndo\negresso\ne\nhabilidades\ne\ncompetências.\nA\navaliação\nserá\nrealizada\ntambém\ncom\nrelação\nà\nnecessidade\nde\nflexibilização\ncurricular\nou\nde\nmodificação\nda\nestrutura\ncurricular,\ndas\natividades\ncomplementares\ne\ndo\ncorpo\ndocente\ne\ndiscente.\nO\ncurso\nde\nCiência\nda\nComputação\npossui\num\nNúcleo\nDocente\nEstruturante\n(NDE)\nconstituído\npor\ndocentes\nde\nreconhecida\nexperiência\ne\ndestaque\nacadêmico,\nresponsáveis\npelo\nacompanhamento\ndo\nProjeto\nPedagógico\ndo\nCurso\n(PPC),\nem\nconsonância\ncom\na\nResolução\nnº\n01,\nde\n17\nde\njunho\nde\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 44 | Curso: Ciência da Computação]\n9 Campo de Atuação Profissional\nDe\nacordo\ncom\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura\nde\nabril\nde\n2010\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\n\"atua\nem\nindústrias\nde\ncomputadores;\nempresas\nde\nprogramas\nde\ncomputadores;\nsetores\nde\nTecnologia\nda\nInformação\nde\ninstituições\npúblicas\ne\nprivadas;\nem\nempresas\ne\nlaboratórios\nde\npesquisa\ncientífica\ne\ntecnológica.\nTambém\npode\natuar\nde\nforma\nautônoma,\nem\nempresa\nprópria\nou\nprestando\nconsultoria\".\nNesses\ndiferentes\ncampos\nde\natuação,\no\nbacharel\nem\nCiência\nda\nComputação\npode\ntrabalhar\nnos\nseguintes\npapéis:\nprogramador,\ngerente\nde\ndesenvolvimento,\ngerente\nde",
+        "distancia_minima": 0.18833637237548828,
+        "fontes": [
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 43,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 70,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 44,
+            "curso": "Ciência da Computação"
+          }
+        ],
+        "fallback_acionado": false,
+        "resposta": "[SIMULAÇÃO DE INTEGRAÇÃO — NÃO É RESPOSTA ACADÊMICA]"
+      }
+    },
+    {
+      "nome": "pergunta_fora_de_escopo",
+      "status_http": 201,
+      "segundos": 0.969,
+      "retorno": {
+        "contexto": "[Documento: ppc_cc_novo_2024.pdf | Pág. 150 | Curso: Ciência da Computação]\nParágrafo\nÚnico.\nEm\ncaso\nde\nexcedente\ndessa\ncarga\nhorária,\nesse\nexcedente\npode\nser\nconvertido\npara\ncarga\nhorária\nde\nAtividades\nComplementares\ndo\ndiscente.\nCAPÍTULO\nIII\nDOS\nCRITÉRIOS\nArt.\n4º\n-\nPara\ncursar\nas\ndisciplinas\nde\nformação\navançada,\né\npreciso\nsatisfazer\nos\ncritérios\nde\npreenchimento\nde\nvagas\nestabelecidos\npelo\ncolegiado\ndo\ncurso\nda\ndisciplina\nofertada,\ne\no\ndiscente\ndeverá\nter\nintegralizado,\npelo\nmenos,\n60%\nda\ncarga\nhorária\ntotal\ndo\ncurso\nde\nCiência\nda\nComputação.\nCAPÍTULO\nIV\nDISPOSIÇÕES\nGERAIS\nArt.\n5°\n-\nNão\nse\ntorna\nnecessária\na\nconfirmação\nou\nautorização\ndo\ncolegiado\ndo\ncurso\nde\nCiência\nda\nComputação\npara\na\nmatrícula\ndo\naluno\nnas\ndisciplinas\nde\nformação\navançada\ndesde\nque\nse\ncumpram\n\n---\n\n[Documento: estagio_geral.txt | Pág. 1 | Curso: Ciência da Computação | Engenharia da Computação | Sistemas de Informação | Inteligência Artificial]\nObs: Para o cálculo da carga horária cumprida pelo aluno, será considerada a carga horária de disciplinas obrigatórias cursadas e a carga horária de disciplinas dispensadas por equivalência com disciplinas obrigatórias de perfil do curso).\n\n---\n\n[Documento: estagio_geral.txt | Pág. 1 | Curso: Ciência da Computação | Engenharia da Computação | Sistemas de Informação | Inteligência Artificial]\nObs: Para o cálculo da carga horária cumprida pelo aluno, será considerada a carga horária de disciplinas obrigatórias cursadas e a carga horária de disciplinas dispensadas por equivalência com disciplinas obrigatórias de perfil do curso).",
+        "distancia_minima": 0.45356231927871704,
+        "fontes": [
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 150,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "estagio_geral.txt",
+            "pagina": 1,
+            "curso": "Ciência da Computação | Engenharia da Computação | Sistemas de Informação | Inteligência Artificial"
+          },
+          {
+            "arquivo": "estagio_geral.txt",
+            "pagina": 1,
+            "curso": "Ciência da Computação | Engenharia da Computação | Sistemas de Informação | Inteligência Artificial"
+          }
+        ],
+        "fallback_acionado": false,
+        "resposta": "[SIMULAÇÃO DE INTEGRAÇÃO — NÃO É RESPOSTA ACADÊMICA]"
+      }
+    },
+    {
+      "nome": "geracao_desabilitada",
+      "status_http": 503,
+      "retorno": {
+        "detail": "Serviço de geração indisponível."
+      }
+    }
+  ],
+  "cliente_ui": {
+    "sucesso": true,
+    "mostra_marcador_mock": false,
+    "resposta": "[Documento: ppc_cc_novo_2024.pdf | Pág. 43 | Curso: Ciência da Computação]\n8 Perfil Profissional do Egresso\nDe\nacordo\ncom\nas\nDiretrizes\nCurriculares\nNacionais\npara\nos\ncursos\nde\ngraduação\nna\nárea\nde\nComputação,\nResolução\nnº\n05/2016,\ndo\nConselho\nNacional\nde\nEducação\ne\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura,\nde\nabril\nde\n2010,\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\ndeve\npossuir\numa\nsólida\nformação\nem\nCiência\nda\nComputação\ne\nMatemática,\nconhecer\nas\nestruturas\ne\nprocessos\ndos\nsistemas\nde\ncomputação\ncom\numa\nvisão\ninterdisciplinar\ne\nglobal\ndos\nsistemas,\ndominar\nos\nconceitos\nteóricos\nda\nCiência\nda\nComputação\ne\nseus\nimpactos\nnas\naplicações\npráticas,\ne\nter\ncapacidade\npara\ncriar\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 70 | Curso: Ciência da Computação]\n12.4 Avaliação e acompanhamento da concretização do projeto pedagógico\nA\navaliação\ndo\ndesenvolvimento\ndo\nProjeto\nPedagógico\ndar-se-á\nem\nrelação\nao\ncumprimento\nde\nseus\nobjetivos,\nperfil\ndo\negresso\ne\nhabilidades\ne\ncompetências.\nA\navaliação\nserá\nrealizada\ntambém\ncom\nrelação\nà\nnecessidade\nde\nflexibilização\ncurricular\nou\nde\nmodificação\nda\nestrutura\ncurricular,\ndas\natividades\ncomplementares\ne\ndo\ncorpo\ndocente\ne\ndiscente.\nO\ncurso\nde\nCiência\nda\nComputação\npossui\num\nNúcleo\nDocente\nEstruturante\n(NDE)\nconstituído\npor\ndocentes\nde\nreconhecida\nexperiência\ne\ndestaque\nacadêmico,\nresponsáveis\npelo\nacompanhamento\ndo\nProjeto\nPedagógico\ndo\nCurso\n(PPC),\nem\nconsonância\ncom\na\nResolução\nnº\n01,\nde\n17\nde\njunho\nde\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 44 | Curso: Ciência da Computação]\n9 Campo de Atuação Profissional\nDe\nacordo\ncom\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura\nde\nabril\nde\n2010\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\n\"atua\nem\nindústrias\nde\ncomputadores;\nempresas\nde\nprogramas\nde\ncomputadores;\nsetores\nde\nTecnologia\nda\nInformação\nde\ninstituições\npúblicas\ne\nprivadas;\nem\nempresas\ne\nlaboratórios\nde\npesquisa\ncientífica\ne\ntecnológica.\nTambém\npode\natuar\nde\nforma\nautônoma,\nem\nempresa\nprópria\nou\nprestando\nconsultoria\".\nNesses\ndiferentes\ncampos\nde\natuação,\no\nbacharel\nem\nCiência\nda\nComputação\npode\ntrabalhar\nnos\nseguintes\npapéis:\nprogramador,\ngerente\nde\ndesenvolvimento,\ngerente\nde",
+    "fontes": [
+      {
+        "documento": "ppc_cc_novo_2024.pdf (pág. 43)",
+        "trecho": "Página 43 do documento ppc_cc_novo_2024.pdf"
+      },
+      {
+        "documento": "ppc_cc_novo_2024.pdf (pág. 70)",
+        "trecho": "Página 70 do documento ppc_cc_novo_2024.pdf"
+      },
+      {
+        "documento": "ppc_cc_novo_2024.pdf (pág. 44)",
+        "trecho": "Página 44 do documento ppc_cc_novo_2024.pdf"
+      }
+    ]
+  }
+}

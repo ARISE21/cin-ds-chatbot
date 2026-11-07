@@ -1,0 +1,36 @@
+{
+  "base_git": "484cd24a471efa7b5f2ec7983ad45cf57c5a0bf7",
+  "paginas": {
+    "docs/qualidade/relatorio-refatoracoes-sprint3-parcial.pdf": 3,
+    "docs/testes/analise-critica-sprint3-revisao-20261107.pdf": 5
+  },
+  "anotacoes_de_link": {
+    "docs/qualidade/relatorio-refatoracoes-sprint3-parcial.pdf": 3,
+    "docs/testes/analise-critica-sprint3-revisao-20261107.pdf": 0
+  },
+  "revisao_visual": "Todas as oito páginas renderizadas e inspecionadas nesta rodada.",
+  "suites_historicas_iguais_antes_depois": true,
+  "pdf_anterior_preservado": true,
+  "refatoracoes_comprovadas": 2,
+  "minimo_exigido": 3,
+  "refatoracoes_pdf_final": false,
+  "sha256": {
+    "docs/qualidade/relatorio-refatoracoes-sprint3-parcial.pdf": "a1d27021dcc5b8addc2c2f68621e079f535caf857109a7eea48ed4aeb479b85a",
+    "docs/testes/analise-critica-sprint3-revisao-20261107.pdf": "cf6f20ef8aa3e2ff0883c6e36884b4818f35d916b13750a7658513abb1d4f9b2",
+    "docs/qualidade/BACK-REF-01-relatorio.md": "12b897d9c31978553c1ef48ccca93832c289ae13c821491058e3056d1cacd551",
+    "docs/qualidade/IA-REF-02-relatorio.md": "bcce4bd84a1e67f2e852bab7f8fec8c05011f25d898cda1b2d3c2c59defe3513",
+    "docs/qualidade/BACK-REF-01-evidencias/antes/estado-versao.json": "b9852ddd3d3fa14f7fade0ff662a81c127033858df4261d29bc114c23659541c",
+    "docs/qualidade/BACK-REF-01-evidencias/depois/estado-versao.json": "de5ccd666450344a4c9a6a456fbafb2c608f245263986b6a7b1cfb3de0f32abe",
+    "docs/testes/relatorios/us01-controlado/v2/execucao.json": "f5fb746cdc4e9a7e6636bc041c5a43ca7cf52204bd0b5bab8a34199982664b5e",
+    "docs/qualidade/IA-REF-02-evidencias/depois/execucao.json": "569465ec892f7bfe705a516b48dc9fc4bd1dc901f67e42ce35d87ac05101d364",
+    "docs/testes/validacao-ppcs/auditoria-final.json": "e1b51a6019a4cddf993b84950ca3d9530bb136e2bcbbeb3f499fa146e0bc45ae",
+    "docs/testes/validacao-ppcs/backend-verificacao-sem-restricao.json": "0a1c7484c5f7540d8bfc731db29f53836c7de2b24be48fd0bcb0b26b92e1024d",
+    "docs/testes/validacao-ppcs/integracao-http.json": "a15215e911c87e18877a4d9150625c6e7f2efa3e34a7e425d6b21ebc55eb57c5",
+    "docs/testes/indicadores-consolidados.json": "d7e02ac584f5bef419d1097e182e82602043af13d23c7affd9f226680327eacc",
+    "docs/testes/matriz-rastreabilidade.md": "822fcac6131b2e643f50efad91e5ba363366715ee3f785372562bf55256daa2f",
+    "docs/testes/llm-log.md": "946e9a98b894b30973313ea8bd6a8c88ce20c42ba3a993f1371f0aa0bdc0f93c",
+    "docs/qualidade/gerar_relatorio_refatoracoes.py": "8d29d2b4156b3091a25137a5076207862e2fc5ecdb6a0b1a5d81b0e829bbd0ca",
+    "docs/testes/gerar_relatorio_critico.py": "228d6acd828d070964de02b9cb76cf158d62eed97cb7fd69c899e83273f86874",
+    "docs/testes/analise-critica-sprint3.pdf": "f15544a96377cb45b98360560b3c24db26c8d2787ca6b63bf1bf1aeaf101e89a"
+  }
+}
