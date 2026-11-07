@@ -1,0 +1,72 @@
+
+Iniciando ingestão de 21 documentos.
+
+[PROCESSANDO] norma_estagio_cc_anterior_2016-2.pdf
+[OK] 25 trechos indexados de 'norma_estagio_cc_anterior_2016-2.pdf'.
+
+[PROCESSANDO] norma_estagio_cc_novo_2024.pdf
+[OK] 15 trechos indexados de 'norma_estagio_cc_novo_2024.pdf'.
+
+[PROCESSANDO] norma_estagio_ec_anterior_2023.pdf
+[OK] 20 trechos indexados de 'norma_estagio_ec_anterior_2023.pdf'.
+
+[PROCESSANDO] norma_estagio_ec_novo_2024.pdf
+[OK] 21 trechos indexados de 'norma_estagio_ec_novo_2024.pdf'.
+
+[PROCESSANDO] norma_estagio_si_anterior_2022.pdf
+[OK] 23 trechos indexados de 'norma_estagio_si_anterior_2022.pdf'.
+
+[PROCESSANDO] norma_estagio_si_novo_2024.pdf
+[OK] 24 trechos indexados de 'norma_estagio_si_novo_2024.pdf'.
+
+[PROCESSANDO] norma_estagio_ia_novo_2024.pdf
+[OK] 16 trechos indexados de 'norma_estagio_ia_novo_2024.pdf'.
+
+[PROCESSANDO] regras_requerimentos.txt
+[OK] 1 trechos indexados de 'regras_requerimentos.txt'.
+
+[PROCESSANDO] regulamento_tg.txt
+[OK] 41 trechos indexados de 'regulamento_tg.txt'.
+
+[PROCESSANDO] diretrizes_extensao.txt
+[OK] 35 trechos indexados de 'diretrizes_extensao.txt'.
+
+[PROCESSANDO] migracao_perfis.txt
+[OK] 3 trechos indexados de 'migracao_perfis.txt'.
+
+[PROCESSANDO] estagio_geral.txt
+[OK] 49 trechos indexados de 'estagio_geral.txt'.
+
+[PROCESSANDO] extensao_cin_faq.txt
+[OK] 40 trechos indexados de 'extensao_cin_faq.txt'.
+
+[PROCESSANDO] pesquisa_faq.txt
+[OK] 125 trechos indexados de 'pesquisa_faq.txt'.
+
+[PROCESSANDO] ppc_cc_anterior.pdf
+[OK] 233 trechos indexados de 'ppc_cc_anterior.pdf'.
+
+[PROCESSANDO] ppc_cc_novo_2024.pdf
+[OK] 1244 trechos indexados de 'ppc_cc_novo_2024.pdf'.
+
+[PROCESSANDO] ppc_ec_anterior.pdf
+[AVISO] 'ppc_ec_anterior.pdf': páginas sem texto extraível: 22. Conferir visualmente; imagens com conteúdo podem exigir OCR.
+[OK] 234 trechos indexados de 'ppc_ec_anterior.pdf'.
+
+[PROCESSANDO] ppc_ec_novo_2024.pdf
+[OK] 1824 trechos indexados de 'ppc_ec_novo_2024.pdf'.
+
+[PROCESSANDO] ppc_si_anterior.pdf
+[AVISO] 'ppc_si_anterior.pdf': páginas sem texto extraível: 202. Conferir visualmente; imagens com conteúdo podem exigir OCR.
+[OK] 827 trechos indexados de 'ppc_si_anterior.pdf'.
+
+[PROCESSANDO] ppc_si_novo_2024.pdf
+[AVISO] 'ppc_si_novo_2024.pdf': páginas sem texto extraível: 149, 158, 159. Conferir visualmente; imagens com conteúdo podem exigir OCR.
+[OK] 982 trechos indexados de 'ppc_si_novo_2024.pdf'.
+
+[PROCESSANDO] ppc_ia_novo_2024.pdf
+[OK] 1017 trechos indexados de 'ppc_ia_novo_2024.pdf'.
+
+=============================================
+Ingestão finalizada: 21/21 documentos processados.
+=============================================

@@ -1,0 +1,435 @@
+{
+  "utc": "2026-11-07T18:40:23.582616+00:00",
+  "git_head": "484cd24a471efa7b5f2ec7983ad45cf57c5a0bf7",
+  "versoes": {
+    "chromadb": "1.5.9",
+    "pypdf": "6.18.1",
+    "fonttools": "4.68.0"
+  },
+  "colecao": "secgrad_normas",
+  "metrica": {
+    "hnsw:space": "cosine"
+  },
+  "total_documentos": 21,
+  "total_trechos": 6799,
+  "total_esperado": 6799,
+  "documentos": [
+    {
+      "arquivo": "norma_estagio_cc_anterior_2016-2.pdf",
+      "tipo": "norma_estagio",
+      "sha256": "7bdcc9248906574793895f300933a63fbccd47b51e041d1f50d132e24c46e56c",
+      "paginas": 5,
+      "caracteres": 13272,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 25,
+      "trechos_indexados": 25
+    },
+    {
+      "arquivo": "norma_estagio_cc_novo_2024.pdf",
+      "tipo": "norma_estagio",
+      "sha256": "b9ab4963236a8bceea37f3217a2c29ab5fe9abd2e742117688b06b4a67dc3948",
+      "paginas": 4,
+      "caracteres": 7200,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 15,
+      "trechos_indexados": 15
+    },
+    {
+      "arquivo": "norma_estagio_ec_anterior_2023.pdf",
+      "tipo": "norma_estagio",
+      "sha256": "dc1822e62d9ce24d1221fd7dca74ae0cacba12ff962370e795ca21e9ae829bc2",
+      "paginas": 5,
+      "caracteres": 10291,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 20,
+      "trechos_indexados": 20
+    },
+    {
+      "arquivo": "norma_estagio_ec_novo_2024.pdf",
+      "tipo": "norma_estagio",
+      "sha256": "23aceacf6946fe3fb4be83473fe4ff095041ac1a75ecb4fc4340dc9c792b2670",
+      "paginas": 4,
+      "caracteres": 10400,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 21,
+      "trechos_indexados": 21
+    },
+    {
+      "arquivo": "norma_estagio_si_anterior_2022.pdf",
+      "tipo": "norma_estagio",
+      "sha256": "e4e014057ea2bba89caef6505feb5133e96a3607548b36b95a0d008e2cfb4b03",
+      "paginas": 5,
+      "caracteres": 11516,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 23,
+      "trechos_indexados": 23
+    },
+    {
+      "arquivo": "norma_estagio_si_novo_2024.pdf",
+      "tipo": "norma_estagio",
+      "sha256": "4eb7a98a666463f1cc55f17151f32617fbac092d0412c3ee6fe3595df78a5930",
+      "paginas": 4,
+      "caracteres": 12638,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 24,
+      "trechos_indexados": 24
+    },
+    {
+      "arquivo": "norma_estagio_ia_novo_2024.pdf",
+      "tipo": "norma_estagio",
+      "sha256": "1a471789e5e9f48fa575f2cce16f01ad10c4630fd78a8dce9feca1d6baca5039",
+      "paginas": 3,
+      "caracteres": 7731,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 16,
+      "trechos_indexados": 16
+    },
+    {
+      "arquivo": "regras_requerimentos.txt",
+      "tipo": "regra_site",
+      "sha256": "04e9d78ffc20e53528471b35c6bdafb6fb9046a6648adbbd14d3f1e3c7385bb6",
+      "paginas": 1,
+      "caracteres": 583,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 1,
+      "trechos_indexados": 1
+    },
+    {
+      "arquivo": "regulamento_tg.txt",
+      "tipo": "trabalho_graduacao",
+      "sha256": "b10781e1c1e8266cb38bb0906d4d6b058b0e92bd7fae86bf7e97fb876c8ccf2b",
+      "paginas": 1,
+      "caracteres": 19730,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 41,
+      "trechos_indexados": 41
+    },
+    {
+      "arquivo": "diretrizes_extensao.txt",
+      "tipo": "extensao",
+      "sha256": "cadd159ac059b467d95cf3eace0ba5c9cb763708389762a189dea0ac75544b2d",
+      "paginas": 1,
+      "caracteres": 19301,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 35,
+      "trechos_indexados": 35
+    },
+    {
+      "arquivo": "migracao_perfis.txt",
+      "tipo": "regra_site",
+      "sha256": "2720407c7ffea8048db8697409e977d09fa94694d24af09546ad262c9b8d2768",
+      "paginas": 1,
+      "caracteres": 1488,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 3,
+      "trechos_indexados": 3
+    },
+    {
+      "arquivo": "estagio_geral.txt",
+      "tipo": "norma_estagio",
+      "sha256": "35b8499c76c25800ccaaac4d35f060453ca7451d13ce0add8b14981dd7786c48",
+      "paginas": 1,
+      "caracteres": 23800,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 49,
+      "trechos_indexados": 49
+    },
+    {
+      "arquivo": "extensao_cin_faq.txt",
+      "tipo": "extensao",
+      "sha256": "9fa0f37440e2bce1e139457d9bc5f9a7505a4ada7a4173d8cfe9f3071f060109",
+      "paginas": 1,
+      "caracteres": 19645,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 40,
+      "trechos_indexados": 40
+    },
+    {
+      "arquivo": "pesquisa_faq.txt",
+      "tipo": "pesquisa",
+      "sha256": "4cd06e41496c345cd6fbc81a15e6aa5c74c425c9c1fac7b5ad74cfb7d5fed920",
+      "paginas": 1,
+      "caracteres": 64289,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 125,
+      "trechos_indexados": 125
+    },
+    {
+      "arquivo": "ppc_cc_anterior.pdf",
+      "tipo": "ppc",
+      "sha256": "7774e7c5b032466df0b443392c41d21744aa8d5aca4aaa09f7ff2690a8f38516",
+      "paginas": 50,
+      "caracteres": 120765,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 233,
+      "trechos_indexados": 233
+    },
+    {
+      "arquivo": "ppc_cc_novo_2024.pdf",
+      "tipo": "ppc",
+      "sha256": "0165bd8831adcd5557f0d8bcd7b08dedb33efd89b122d1c2b5e2e03b7ea75ec7",
+      "paginas": 291,
+      "caracteres": 632593,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 1244,
+      "trechos_indexados": 1244
+    },
+    {
+      "arquivo": "ppc_ec_anterior.pdf",
+      "tipo": "ppc",
+      "sha256": "15219e482dd000281ef5b25b4baba46e113fa52a5076482165091e97fadce69e",
+      "paginas": 59,
+      "caracteres": 120143,
+      "paginas_sem_texto": [
+        22
+      ],
+      "trechos_esperados": 234,
+      "trechos_indexados": 234
+    },
+    {
+      "arquivo": "ppc_ec_novo_2024.pdf",
+      "tipo": "ppc",
+      "sha256": "17fe8a729b31adfe986e62a7c75db0d6c22ffb4d9a86bd0f02db23acbb287860",
+      "paginas": 454,
+      "caracteres": 926559,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 1824,
+      "trechos_indexados": 1824
+    },
+    {
+      "arquivo": "ppc_si_anterior.pdf",
+      "tipo": "ppc",
+      "sha256": "13c21cbb00ef132611ffba903cd2dbcd1fcfe3700a7831e5861598187e894a55",
+      "paginas": 202,
+      "caracteres": 424438,
+      "paginas_sem_texto": [
+        202
+      ],
+      "trechos_esperados": 827,
+      "trechos_indexados": 827
+    },
+    {
+      "arquivo": "ppc_si_novo_2024.pdf",
+      "tipo": "ppc",
+      "sha256": "e0e4d45cc8497c0486065b855a76c98dc26ec2ccc48f2accffb3563aa694fac6",
+      "paginas": 245,
+      "caracteres": 499079,
+      "paginas_sem_texto": [
+        149,
+        158,
+        159
+      ],
+      "trechos_esperados": 982,
+      "trechos_indexados": 982
+    },
+    {
+      "arquivo": "ppc_ia_novo_2024.pdf",
+      "tipo": "ppc",
+      "sha256": "f0b80bbfc0894614d396c818f946e0206a40dbf9e5281fbddf6cc3f3b1bef838",
+      "paginas": 240,
+      "caracteres": 521263,
+      "paginas_sem_texto": [],
+      "trechos_esperados": 1017,
+      "trechos_indexados": 1017
+    }
+  ],
+  "consultas": [
+    {
+      "curso": "cc",
+      "perfil": "novo",
+      "pergunta": "Qual o perfil profissional do egresso de Ciência da Computação segundo o projeto pedagógico?",
+      "ppcs_elegiveis": [
+        "ppc_cc_novo_2024.pdf"
+      ],
+      "fontes": [
+        {
+          "arquivo": "ppc_cc_novo_2024.pdf",
+          "pagina": 43,
+          "curso": "Ciência da Computação"
+        },
+        {
+          "arquivo": "ppc_cc_novo_2024.pdf",
+          "pagina": 70,
+          "curso": "Ciência da Computação"
+        },
+        {
+          "arquivo": "ppc_cc_novo_2024.pdf",
+          "pagina": 44,
+          "curso": "Ciência da Computação"
+        }
+      ],
+      "distancia_minima": 0.18833637237548828,
+      "contexto": "[Documento: ppc_cc_novo_2024.pdf | Pág. 43 | Curso: Ciência da Computação]\n8 Perfil Profissional do Egresso\nDe\nacordo\ncom\nas\nDiretrizes\nCurriculares\nNacionais\npara\nos\ncursos\nde\ngraduação\nna\nárea\nde\nComputação,\nResolução\nnº\n05/2016,\ndo\nConselho\nNacional\nde\nEducação\ne\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura,\nde\nabril\nde\n2010,\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\ndeve\npossuir\numa\nsólida\nformação\nem\nCiência\nda\nComputação\ne\nMatemática,\nconhecer\nas\nestruturas\ne\nprocessos\ndos\nsistemas\nde\ncomputação\ncom\numa\nvisão\ninterdisciplinar\ne\nglobal\ndos\nsistemas,\ndominar\nos\nconceitos\nteóricos\nda\nCiência\nda\nComputação\ne\nseus\nimpactos\nnas\naplicações\npráticas,\ne\nter\ncapacidade\npara\ncriar\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 70 | Curso: Ciência da Computação]\n12.4 Avaliação e acompanhamento da concretização do projeto pedagógico\nA\navaliação\ndo\ndesenvolvimento\ndo\nProjeto\nPedagógico\ndar-se-á\nem\nrelação\nao\ncumprimento\nde\nseus\nobjetivos,\nperfil\ndo\negresso\ne\nhabilidades\ne\ncompetências.\nA\navaliação\nserá\nrealizada\ntambém\ncom\nrelação\nà\nnecessidade\nde\nflexibilização\ncurricular\nou\nde\nmodificação\nda\nestrutura\ncurricular,\ndas\natividades\ncomplementares\ne\ndo\ncorpo\ndocente\ne\ndiscente.\nO\ncurso\nde\nCiência\nda\nComputação\npossui\num\nNúcleo\nDocente\nEstruturante\n(NDE)\nconstituído\npor\ndocentes\nde\nreconhecida\nexperiência\ne\ndestaque\nacadêmico,\nresponsáveis\npelo\nacompanhamento\ndo\nProjeto\nPedagógico\ndo\nCurso\n(PPC),\nem\nconsonância\ncom\na\nResolução\nnº\n01,\nde\n17\nde\njunho\nde\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 44 | Curso: Ciência da Computação]\n9 Campo de Atuação Profissional\nDe\nacordo\ncom\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura\nde\nabril\nde\n2010\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\n\"atua\nem\nindústrias\nde\ncomputadores;\nempresas\nde\nprogramas\nde\ncomputadores;\nsetores\nde\nTecnologia\nda\nInformação\nde\ninstituições\npúblicas\ne\nprivadas;\nem\nempresas\ne\nlaboratórios\nde\npesquisa\ncientífica\ne\ntecnológica.\nTambém\npode\natuar\nde\nforma\nautônoma,\nem\nempresa\nprópria\nou\nprestando\nconsultoria\".\nNesses\ndiferentes\ncampos\nde\natuação,\no\nbacharel\nem\nCiência\nda\nComputação\npode\ntrabalhar\nnos\nseguintes\npapéis:\nprogramador,\ngerente\nde\ndesenvolvimento,\ngerente\nde"
+    },
+    {
+      "curso": "cc",
+      "perfil": "anterior",
+      "pergunta": "Qual o perfil profissional do egresso de Ciência da Computação segundo o projeto pedagógico?",
+      "ppcs_elegiveis": [
+        "ppc_cc_anterior.pdf"
+      ],
+      "fontes": [
+        {
+          "arquivo": "ppc_cc_anterior.pdf",
+          "pagina": 32,
+          "curso": "Ciência da Computação"
+        },
+        {
+          "arquivo": "ppc_cc_anterior.pdf",
+          "pagina": 7,
+          "curso": "Ciência da Computação"
+        },
+        {
+          "arquivo": "ppc_cc_anterior.pdf",
+          "pagina": 32,
+          "curso": "Ciência da Computação"
+        }
+      ],
+      "distancia_minima": 0.22745579481124878,
+      "contexto": "[Documento: ppc_cc_anterior.pdf | Pág. 32 | Curso: Ciência da Computação]\nespecializada e um de formação livre diferenciadas por cada aluno, otimiza os recursos \nacadêmicos, pela viabilização de formar profissionais com uma grande variedade de perfis no \nquadro de um único curso.  A parte de formação básica da reformulação proposta integra os \nconteúdos comuns indispensáveis para três grandes classes de futuros profissionais:  cientistas da \ncomputação, engenheiros da computação e desenvolvedores de sistemas de informação.  \n \nNos próximos anos, prevemos um cisão dessa unidade pela oferta de três cursos distintos:  \n um curso de engenharia da computação  enfatizando os fundamentos ci entíficos e as \ntecnologias meios de hardware,\n\n---\n\n[Documento: ppc_cc_anterior.pdf | Pág. 7 | Curso: Ciência da Computação]\npodem adequar o conteúdo programático, à abordagem pedagógica e à seqüência de pré -\nrequisitos para as necessidades específicas dos alunos de computação de acordo com as \ndiretrizes do PNG e PP.  \n \n2.  Caracterização do perfil do profissional a ser formado \n \nEm termos do perfil do profissional a ser formado, a reformulação proposta segue as diretrizes 6 e \n13 e 14 do PNG e PP mencionadas na seção precedente. A organização do currículo em três \nnúcleos, um  de formação básica comum a todos os alunos, mais um de formação informática \nespecializada e um de formação livre diferenciadas por cada aluno, otimiza os recursos\n\n---\n\n[Documento: ppc_cc_anterior.pdf | Pág. 32 | Curso: Ciência da Computação]\npodem adequar o conteúdo programático, à abordagem pedagógica e à seqüência de pré -\nrequisitos para as necessidades  específicas dos alunos de computação de acordo com as \ndiretrizes do PNG e PP.  \n \n2.  Caracterização do perfil do profissional a ser formado \n \nEm termos do perfil do profissional a ser formado, a reformulação proposta segue as diretrizes 6 e \n13 e 14 do PNG e  PP mencionadas na seção precedente. A organização do currículo em três \nnúcleos, um de formação básica comum a todos os alunos, mais um de formação informática \nespecializada e um de formação livre diferenciadas por cada aluno, otimiza os recursos"
+    },
+    {
+      "curso": "ec",
+      "perfil": "novo",
+      "pergunta": "Qual o perfil profissional do egresso de Engenharia da Computação segundo o projeto pedagógico?",
+      "ppcs_elegiveis": [
+        "ppc_ec_novo_2024.pdf"
+      ],
+      "fontes": [
+        {
+          "arquivo": "ppc_ec_novo_2024.pdf",
+          "pagina": 27,
+          "curso": "Engenharia da Computação"
+        },
+        {
+          "arquivo": "ppc_ec_novo_2024.pdf",
+          "pagina": 55,
+          "curso": "Engenharia da Computação"
+        },
+        {
+          "arquivo": "ppc_ec_novo_2024.pdf",
+          "pagina": 28,
+          "curso": "Engenharia da Computação"
+        }
+      ],
+      "distancia_minima": 0.211051344871521,
+      "contexto": "[Documento: ppc_ec_novo_2024.pdf | Pág. 27 | Curso: Engenharia da Computação]\n26 \nA rápida mudança promovida pelos computadores e sua inclusão nas mais variadas \náreas de aplicação tornou estável a oferta de vagas para o profissional da Engenharia \nda Computação, e a perspectiva é de que se mantenha assim nos próximos anos. Na \nmaioria dos casos, o primeiro emprego surge através do estágio em uma grande \nempresa. O engenheiro da computação pode atuar tanto em companhias do setor de \ntecnologia, como nas empresas dos mais diversos segmentos. \nO curso de Engenharia da Computação da UFPE teve sua primeira turma ingressando \nna Universidade em 2002. O curso foi fruto da junção de esforços do então\n\n---\n\n[Documento: ppc_ec_novo_2024.pdf | Pág. 55 | Curso: Engenharia da Computação]\n54 \n8. Campo de Atuação Profissional \n \nDe acordo com os Referenciais Curriculares Nacionais dos cursos de Bacharelado e \nLicenciatura de abril de 2010 da Secretaria de Educação Superior do Ministério da \nEducação, o Engenheiro de Computação atua em empresas do setor de tecnologia da \ninformação; em indústria de computadores, periféricos e sistemas embarcados; em \nempresas de telecomunicação, de planejamento e desenvolvimento de equipamentos e \nsistemas computacionais; em empresas de automação de processos industriais e \ncomputacionais; em empresas e l aboratórios de pesquisa científica e tecnológica. \nTambém pode atuar de forma autônoma, em empresa própria ou prestando consultoria.\n\n---\n\n[Documento: ppc_ec_novo_2024.pdf | Pág. 28 | Curso: Engenharia da Computação]\n27 \n4. Justificativa para a reformulação do PPC \n \nConsiderando a história e a natureza do curso de Engenharia da Computação , no \nmundo, no Brasil e na UFPE, pode-se entender a evolução do curso e sua diferenciação \nmarcante de outros cursos que tratam de computação. Um curso de Engenharia da \nComputação se caracteriza por sua fundamentação adequada, por uma gama \nespecífica de conhecimentos para criar habilidades necessárias ao exercício da \nprofissão. São essenciais na formação do aluno incorporar habilidade para projetar e \nmodificar sistemas computaciona is, c onhecer boas práticas profissionais, considerar"
+    },
+    {
+      "curso": "ec",
+      "perfil": "anterior",
+      "pergunta": "Qual o perfil profissional do egresso de Engenharia da Computação segundo o projeto pedagógico?",
+      "ppcs_elegiveis": [
+        "ppc_ec_anterior.pdf"
+      ],
+      "fontes": [
+        {
+          "arquivo": "ppc_ec_anterior.pdf",
+          "pagina": 36,
+          "curso": "Engenharia da Computação"
+        },
+        {
+          "arquivo": "norma_estagio_ec_anterior_2023.pdf",
+          "pagina": 1,
+          "curso": "Engenharia da Computação"
+        },
+        {
+          "arquivo": "ppc_ec_anterior.pdf",
+          "pagina": 59,
+          "curso": "Engenharia da Computação"
+        }
+      ],
+      "distancia_minima": 0.18314528465270996,
+      "contexto": "[Documento: ppc_ec_anterior.pdf | Pág. 36 | Curso: Engenharia da Computação]\nformados desse currículo proposto receberão o título único e indiferenciado de \"Engenheiro de \nComputação\", independentemente do perfil ou dos perfis que eles seguirão, Aliás, nada\n\n---\n\n[Documento: norma_estagio_ec_anterior_2023.pdf | Pág. 1 | Curso: Engenharia da Computação]\nUNIVERSIDADE FEDERAL DE PERNAMBUCO \nCENTRO DE INFORMÁTICA \nCURSO DE ENGENHARIA DA COMPUTAÇÃO \n \nEmenta: Dispõe a respeito do  \nEstágio Obrigatório e Não   \nObrigatório no âmbito do Curso de \nGraduação em Engenharia da \nComputação. \n \nEm 8 de agosto de 2023, O COLEGIADO DO CURSO DE GRADUAÇÃO EM \nENGENHARIA DA COMPUTAÇÃO DA UNIVERSIDADE FEDERAL DE \nPERNAMBUCO, no uso de suas atribuições, \n \nCONSIDERANDO \n- que o estágio é um elemento que completa a formação acadêmica do estudante \nno processo de ensino e aprendizagem, constituindo-se instrumento fundamental \nde integração, aquisição de experiência, aperfeiçoamento técnico -cultural, \ncientífico e de relacionamento humano;\n\n---\n\n[Documento: ppc_ec_anterior.pdf | Pág. 59 | Curso: Engenharia da Computação]\n5 900,00 \n1 \n2 400,00 \nTotal \n1 (UFPE 2000): Proposta de Projeto Pedagogico, UFPE, Pro-Reitoria para \n2 Assuntos Academicos, Recife, Outrubro 2000. \n3 (ForGrad 2000]: O currículo como expressao do projeto pedagodico, um \n4 processo flexível. Forum de Pro-Reitores de Graduacao das Universidades \n5 Brasileiras, Niteroi, Maio 2000. \n6 [CEElnf 1998): Diretrizes curriculares de cursos da area de computacao e \n7 informatica. Departamento de politica do ensino superior, coordenacao \n8 das comissoes de especialistas em ensino, Comissao de Especialistas de \n9 Ensino em Computacao e lnformatica, 1998. \n1 O [ACM/IEEE 2000): Computing Curricula 2001. Joint IEEE Computer"
+    },
+    {
+      "curso": "si",
+      "perfil": "novo",
+      "pergunta": "Qual o perfil profissional do egresso de Sistemas de Informação segundo o projeto pedagógico?",
+      "ppcs_elegiveis": [
+        "ppc_si_novo_2024.pdf"
+      ],
+      "fontes": [
+        {
+          "arquivo": "ppc_si_novo_2024.pdf",
+          "pagina": 42,
+          "curso": "Sistemas de Informação"
+        },
+        {
+          "arquivo": "ppc_si_novo_2024.pdf",
+          "pagina": 91,
+          "curso": "Sistemas de Informação"
+        },
+        {
+          "arquivo": "ppc_si_novo_2024.pdf",
+          "pagina": 1,
+          "curso": "Sistemas de Informação"
+        }
+      ],
+      "distancia_minima": 0.20257467031478882,
+      "contexto": "[Documento: ppc_si_novo_2024.pdf | Pág. 42 | Curso: Sistemas de Informação]\npreviamente, a pesquisa e a extensão devem ser consideradas igualmente \nimprescindíveis, não podendo ser negligenciadas por uma universidade que pretende \nformar cidadãos conscientes que são transforma dores da realidade na qual estão \ninseridos. \nA pesquisa, entendida como busca e desenvolvimento de novos conhecimentos em \nSistemas de Informação e áreas correlatas, deve ser incentivada durante toda a vida \nacadêmica do discente, a fim de garantir que possa contribuir com o avanço dos \nSistemas de Informação e, por conseguinte, da sociedade. Dessa forma, para \nintegralizar o currículo, é necessário que o aluno desenvolva e apresente um Trabalho\n\n---\n\n[Documento: ppc_si_novo_2024.pdf | Pág. 91 | Curso: Sistemas de Informação]\nSistemas de Informação podem ser encontrados no Anexo V deste documento. \n14.2 Ações Curriculares de Extensão \n \nA Extensão Universitária é um processo interdisciplinar, educativo, cultural, científico e \npolítico que integra a formação acadêmica, profissional e cidadã do discente e promove\n\n---\n\n[Documento: ppc_si_novo_2024.pdf | Pág. 1 | Curso: Sistemas de Informação]\nProjeto Pedagógico \nCurso de Graduação em Sistemas de Informação \n \n \n \nCentro de Informática \nUniversidade Federal de Pernambuco \n \n \n \n \n2023"
+    },
+    {
+      "curso": "si",
+      "perfil": "anterior",
+      "pergunta": "Qual o perfil profissional do egresso de Sistemas de Informação segundo o projeto pedagógico?",
+      "ppcs_elegiveis": [
+        "ppc_si_anterior.pdf"
+      ],
+      "fontes": [
+        {
+          "arquivo": "ppc_si_anterior.pdf",
+          "pagina": 16,
+          "curso": "Sistemas de Informação"
+        },
+        {
+          "arquivo": "ppc_si_anterior.pdf",
+          "pagina": 14,
+          "curso": "Sistemas de Informação"
+        },
+        {
+          "arquivo": "ppc_si_anterior.pdf",
+          "pagina": 16,
+          "curso": "Sistemas de Informação"
+        }
+      ],
+      "distancia_minima": 0.2224000096321106,
+      "contexto": "[Documento: ppc_si_anterior.pdf | Pág. 16 | Curso: Sistemas de Informação]\nsuas\t\r  atividades\t\r  profissionais.\t\r  \n\t\r  \nCampo de Atuação Profissional \nDesta\t\r  forma,\t\r  seguindo\t\r  a\t\r  recomendação\t\r  da\t\r  Sociedade\t\r  Brasileira\t\r  de\t\r  Computação\t\r  [CR99],\t\r  \no\t\r  egresso\t\r  deste\t\r  curso\t\r  poderá\t\r  (não\t\r  exclusivamente):\t\r  \na) Atuar\t\r   no\t\r   projeto\t\r   e\t\r   desenvolvimento\t\r   de\t\r  sistemas\t\r   de\t\r   informação.\t\r   Neste\t\r  \nsentido,\t\r   poderá\t\r  desempenhar\t\r   os\t\r   papéis\t\r   de\t\r   analista\t\r   de\t\r   sistemas,\t\r  \nprogramador\t\r   de\t\r   sistemas,\t\r   gerente\t\r   de\t\r   desenvolvimento\t\r   de\t\r   sistemas\t\r   de\t\r  \ninformação,\t\r   gerente\t\r   de\t\r   projetos\t\r   de\t\r   sistemas\t\r   de\t\r   informação,\n\n---\n\n[Documento: ppc_si_anterior.pdf | Pág. 14 | Curso: Sistemas de Informação]\n• Gestão\t\r  de\t\r  Segurança\t\r  da\t\r  Informação.\t\r  \n\t\r  \nObjetivos do Curso \nObjetivo Geral \nFormar\t\r  profissionais\t\r  competentes\t\r   para\t\r   atuar\t\r   na\t\r   área\t\r   de\t\r   Sistemas\t\r   de\t\r   Informação,\t\r  \npromovendo\t\r   uma\t\r   formação\t\r   sólida\t\r   em\t\r   Administração\t\r   e\t\r   Computação,\t\r   além\t\r   de\t\r   uma\t\r  \nampla\t\r   formação\t\r   em\t\r   áreas\t\r   relacionadas\t\r   a\t\r   Sistemas\t\r   de\t\r   Informação\t\r   com\t\r   ênfase\t\r   no\t\r  \ndesenvolvimento\t\r  e/ou\t\r  customização\t\r  desses\t\r  sistemas,\t\r  na\t\r  gestão\t\r  das\t\r  organizações\t\r  e\t\r  em\t\r  \nestudos\t\r   humanísticos.\t\r   O\t\r   curso\t\r   não\t\r   possui\t\r   um\t\r   enfoque\t\r   exclusivamente\t\r   técnico,\t\r   ele\n\n---\n\n[Documento: ppc_si_anterior.pdf | Pág. 16 | Curso: Sistemas de Informação]\nde\t\r  informação\t\r  deve\t\r  ser\t\r  capaz\t\r  de\t\r  avaliar,\t\r  planejar,\t\r  implementar\t\r  e\t\r  gerenciar\t\r  sistemas\t\r  de\t\r  \ninformação\t\r   aplicados\t\r   nas\t\r   organizações.\t\r   Neste\t\r   contexto,\t\r   é\t\r   fundamental\t\r   que\t\r   o\t\r   egresso\t\r  \ntenha\t\r   um\t\r   profundo\t\r   conhecimento\t\r   tecnológico\t\r   alinhado\t\r   com\t\r   um\t\r   entendimento\t\r   em\t\r  \náreas\t\r  relacionadas\t\r  à\t\r  sua\t\r  atuação\t\r  profissional\t\r  tais\t\r  como\t\r  Marketing,\t\r  Ciências\t\r  Contábeis,\t\r  \nSociologia,\t\r  entre\t\r  outras.\t\r  \t\r  \nA\t\r   atuação\t\r   do\t\r   profissional\t\r   em\t\r   Sistemas\t\r   de\t\r   Informação\t\r   requer\t\r   que\t\r   ele\t\r   desenvolva"
+    },
+    {
+      "curso": "ia",
+      "perfil": "novo",
+      "pergunta": "Qual o perfil profissional do egresso de Inteligência Artificial segundo o projeto pedagógico?",
+      "ppcs_elegiveis": [
+        "ppc_ia_novo_2024.pdf"
+      ],
+      "fontes": [
+        {
+          "arquivo": "ppc_ia_novo_2024.pdf",
+          "pagina": 4,
+          "curso": "Inteligência Artificial"
+        },
+        {
+          "arquivo": "ppc_ia_novo_2024.pdf",
+          "pagina": 116,
+          "curso": "Inteligência Artificial"
+        },
+        {
+          "arquivo": "ppc_ia_novo_2024.pdf",
+          "pagina": 23,
+          "curso": "Inteligência Artificial"
+        }
+      ],
+      "distancia_minima": 0.24445843696594238,
+      "contexto": "[Documento: ppc_ia_novo_2024.pdf | Pág. 4 | Curso: Inteligência Artificial]\nconhecimentos, ética e práticas; \n● A rápida evolução da Inteligência Artificial demanda profissionais atualizados \ncom as diversas tecnologias que estão relacionadas com a área; \n● O Curso de Inteligência Artificial deve considerar mudanças na tecnologia, \nnovos desenvolvimentos em pedagogia, e a importância da aprendizagem ao \nlongo da vida; \n● O time elaborador do projeto pedagógico do curso de Inteligência Artificial deve \nidentificar as habilidades e conhecimentos fundamentais que todos os \nbacharéis em Inteligência Artificial devem possuir; \n● O Curso de Inteligência Artificial deve permitir uma formação flexível, bem\n\n---\n\n[Documento: ppc_ia_novo_2024.pdf | Pág. 116 | Curso: Inteligência Artificial]\n2. Pela submissão do Programa ou do Projeto ao Colegiado da Graduação em Inteligência \nArtificial para aprovação por seus pares;   \n3. Pela avaliação e pela validação dos estudantes inscritos na ACEx.   \nParágrafo Único: O servidor Técnico Administrativo em Educação poderá propor e coordenar ações de \nextensão desde que não haja prejuízo das demais atribuições funcionais e cuja natureza e nível de \ncomplexidade sejam compatíveis com sua formação acadêmica, exceto no âmbito dos componentes \ncurriculares que possuam natureza extensionista. \n \n115\n\n---\n\n[Documento: ppc_ia_novo_2024.pdf | Pág. 23 | Curso: Inteligência Artificial]\nidealizados que podem constituir modelos básicos de subsídio teórico para outras \nciências, e orientar o desenvolvimento de aplicações práticas em diversas áreas da \nEngenharia. \n6.1 O que é Inteligência Artificial? \nO conceito de Inteligência Artificial remonta a ideias filosóficas antigas sobre a criação \nde \"máquinas pensantes\", mas o campo começou a se consolidar como uma disciplina \ncientífica na década de 1950. O termo \"Inteligência Artificial\" foi cunhado em 1956, \ndurante a conferência de Dartmouth (“Dartmouth Summer Research Project on \nArtificial Intelligence”), considerada o marco inicial da área. Nessa época, os"
+    }
+  ],
+  "ids_extras": [],
+  "erros": [],
+  "status": "validado_com_ressalvas_de_extracao",
+  "limites": [
+    "Não executa LLM, UI, NestJS ou benchmark de respostas.",
+    "Correspondência textual com a extração não prova completude do PDF.",
+    "Página citada é posição física no PDF, contando capa e anexos."
+  ]
+}

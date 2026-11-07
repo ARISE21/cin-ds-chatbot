@@ -1,6 +1,6 @@
 # 🎓 Chatbot SecGrad — Assistente de Orientação Acadêmica
 
-> **Estado atual:** Integração de ponta a ponta (Streamlit UI ➔ NestJS Orchestrator ➔ FastAPI AI-Service) totalmente operacional. O protótipo consome o contrato `/api/v1/conversa`, suportando busca vetorial com indicação de fontes e ativando o serviço de *fallback* com minuta de e-mail personalizada para dúvidas fora do escopo normativo.
+> **Estado atual:** protótipo Streamlit, orquestrador NestJS e serviço FastAPI/ChromaDB. A rota pública é `POST /api/v1/conversa`. A geração real por LLM ainda não está implementada: o modo `mock` retorna somente um aviso explícito. A UI atualmente prioriza o contexto recuperado e, por isso, não comprova a exibição de uma resposta gerada. Validação da ingestão e pendências atuais: [PPCs e integração](docs/testes/validacao-ppcs/README.md).
 
 ### Execução corrigida do serviço de IA
 
@@ -10,7 +10,7 @@ O catálogo canônico é `data/raw/metadata.json`; `ai-service/data/` é legado.
 
 Assistente conversacional baseado em **RAG (Retrieval-Augmented Generation)**, desenvolvido para responder a dúvidas frequentes sobre procedimentos acadêmicos, normas e requerimentos da Secretaria de Graduação (SecGrad) do Centro de Informática da Universidade Federal de Pernambuco (**CIn-UFPE**).
 
-O projeto adota uma arquitetura de microsserviços conteinerizada, integrando recuperação vetorial especializada, citação obrigatória de fontes normativas e autenticação institucional.
+O protótipo separa interface, orquestração e recuperação vetorial. React, autenticação Keycloak/LDAP e orquestração Docker Compose/Swarm são requisitos gerais ainda pendentes de comprovação nesta versão.
 
 ---
 
@@ -36,10 +36,10 @@ A solução é organizada em serviços desacoplados, com responsabilidades espec
 
 | Serviço | Tecnologias | Responsabilidades |
 |---------|-------------|-------------------|
-| `frontend/` | React 18, Vite, TypeScript, Cinnamon | Interface conversacional e interação com o usuário |
-| `backend/` | NestJS 11, Prisma, PostgreSQL | API Gateway, orquestração de rotas, sessões e segurança |
+| `app.py`, `src/ui/` | Streamlit, requests | Interface atual; consome o NestJS |
+| `backend/` | NestJS 12, Node.js 24 | Contrato HTTP, busca/geração, fallback e rascunho de e-mail |
 | `ai-service/` | Python, FastAPI, LangChain, ChromaDB | Ingestão documental, geração de embeddings e recuperação vetorial |
-| `keycloak` | Keycloak, LDAP | Gerenciamento de identidade e autenticação institucional |
+| Planejado | React, Keycloak/LDAP, Docker Compose/Swarm | Stack geral solicitada; não apresentar como pronta |
 
 ### 🔍 Funcionamento do RAG
 
@@ -72,14 +72,14 @@ A arquitetura do projeto utiliza as seguintes tecnologias:
 
 | Camada | Tecnologias |
 |--------|-------------|
-| **Front-end** | React 18, TypeScript, Vite, Cinnamon |
+| **Front-end obrigatório (pendente)** | React |
 | **Protótipo do MVP** | Streamlit |
-| **Back-end** | NestJS 11, Node.js 24, Prisma ORM, PostgreSQL |
-| **Autenticação** | Keycloak, LDAP |
+| **Back-end atual** | NestJS 12, Node.js 24 |
+| **Autenticação obrigatória (pendente)** | Keycloak, LDAP |
 | **Microsserviço de IA** | Python 3.11+, FastAPI, Uvicorn |
 | **Busca Vetorial & RAG** | ChromaDB, PyPDF, LangChain Text Splitters |
-| **LLM / Provedores** | Google Gemini API, OpenAI API |
-| **Infraestrutura** | Docker, Docker Compose |
+| **Geração atual** | Desabilitada por padrão; simulação explícita por configuração |
+| **Infraestrutura obrigatória (pendente)** | Docker Compose ou Swarm |
 
 ---
 
@@ -92,7 +92,7 @@ Siga as etapas abaixo para configurar o ambiente de desenvolvimento e executar o
 Antes de iniciar, certifique-se de possuir:
 
 - **Python 3.11 ou superior**
-- **Node.js 20+ / npm**
+- **Node.js 24 / npm** (conforme `backend/package.json`)
 - **Git** instalado
 - **pip** (gerenciador de pacotes do Python)
 
@@ -101,5 +101,11 @@ Antes de iniciar, certifique-se de possuir:
 Clone o repositório e acesse o diretório do projeto:
 
 ```bash
-git clone [https://github.com/Rafael040305/cin-ds-chatbot.git](https://github.com/Rafael040305/cin-ds-chatbot.git)
+git clone https://github.com/rafael-ramos-c/cin-ds-chatbot.git
 cd cin-ds-chatbot
+```
+
+As instruções completas dos três terminais e a auditoria dos PPCs estão em
+[Manual do serviço de IA](docs/manual_desenvolvedor_ia.md).
+Os requisitos acadêmicos, relatórios históricos V1/V2 e refatorações estão em
+[Consolidação da Sprint 3](docs/testes/CONSOLIDACAO-SPRINT3.md).

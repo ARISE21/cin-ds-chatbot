@@ -1,0 +1,5 @@
+test_contexto_vazio_retora_null (test_generation.GenerationTest.test_contexto_vazio_retora_null) ... ok
+test_desabilitado_por_padrao (test_generation.GenerationTest.test_desabilitado_por_padrao) ... ok
+test_mock_explicitamente_identificado (test_generation.GenerationTest.test_mock_explicitamente_identificado) ... ok
+test_modo_desconhecido_nao_gera_resposta (test_generation.GenerationTest.test_modo_desconhecido_nao_gera_resposta) ... ok
+test_pergunta_vazia_rejeitada (test_generation.GenerationTest.test_pergunta_vazia_rejeitada) ... ok

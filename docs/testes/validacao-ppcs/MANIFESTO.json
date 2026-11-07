@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-07T18:42:02.207016+00:00",
+  "git_base": "484cd24a471efa7b5f2ec7983ad45cf57c5a0bf7",
+  "branch": "test/ia-ppcs-validacao",
+  "arquivos_atuais_sha256": {
+    "ai-service/src/ingest.py": "28fd4aa22aa35191620ea834cc5f88b8218073a1c599a76a9ae206b3bc7292b8",
+    "ai-service/scripts/validar_base_documental.py": "52c6654121bcfb67c64a52c8ecac360d3856ee2a333954bfcc101fc02f324f78",
+    "ai-service/tests/test_ingest_pages.py": "5bb68b50b678c16cfb12b24bc3d8a584bbd01db70b14c4179b7833280a42c58a",
+    "ai-service/requirements.txt": "b8fdcc861fee16da6e1ef2b616ec2288161e66561a13166d487ada9757ee2cea",
+    "ai-service/src/retriever.py": "c72deb7f33c2b0433d9d8d501249771b7d3e3bbbb154bd8541981d01d6240754",
+    "ai-service/src/metadata_utils.py": "ec02e6733b979e2fd310caf4982ab79af2704d71c92f51baff403d91566e4d81",
+    "ai-service/main.py": "def7dd115680a9f6a18e0ecc365583cd718791e73fd4a80b8da89634b90f7907"
+  },
+  "evidencias_sha256": {
+    "auditoria-final-execucao.txt": "acb49e15e96b9c6a39a5d65620593cc1fef67c61602b0a7407907ab76a2744e6",
+    "auditoria-final.json": "e1b51a6019a4cddf993b84950ca3d9530bb136e2bcbbeb3f499fa146e0bc45ae",
+    "backend-verificacao-sem-restricao.json": "0a1c7484c5f7540d8bfc731db29f53836c7de2b24be48fd0bcb0b26b92e1024d",
+    "backend-verificacao.json": "2d708bcf62b03fc3233a215e6f9ed81776cd6068a120db7362ce6f9ec3c1e018",
+    "fastapi-disabled.txt": "6c32c734609292de4a1c40f7e8699aff29044454ebe1c39a14fca9730812e36b",
+    "fastapi-http.txt": "ecf09199331c8828fbfb7e50fd74b7cb4e8d83611aa62537f099604be2e52e73",
+    "ingestao-com-fonttools.txt": "d69e26dcb24cbde473a59f213f2fc615ead59fceb318267fa489d6bd6919ca7f",
+    "ingestao.txt": "6178ed34e483d100e1cbd1fe9a2f728c74962e8c9e0e7c7585b589a1ae829abf",
+    "integracao-http.json": "a15215e911c87e18877a4d9150625c6e7f2efa3e34a7e425d6b21ebc55eb57c5",
+    "nestjs-http.txt": "eb7497cca837a5bdf54a586828c9807dede78c7483554211a0fff456b77ec25a",
+    "README.md": "15503c753435b6cc1326b2a8d5aed775b2356298a6e36fa27fce4037ce16b83a",
+    "regressoes-ia-completa.txt": "08f30f1f05ce6cff397b080a30a31e9a9decd7e5d43960af006c4f4e764005be",
+    "regressoes-ia.txt": "f96bf49430dbbab47abf27d24f72fff5ecb5ea3e262b1ba6008cff094a7071af",
+    "v2-regressao-atual.txt": "ee5d95a87f22ade72a94b20a6167057e38e3e4e985acee142673f91abc21f578"
+  },
+  "fontes_colegas_alteradas": [],
+  "processos_temporarios_encerrados": true,
+  "tests_ia": 20,
+  "tests_v2": 21,
+  "backend_recorte": {
+    "total": 100,
+    "aprovados": 94,
+    "falhos": 6
+  },
+  "observacao": "Código e documentos novos locais, sem commit/push nesta etapa; dados ChromaDB ficam locais."
+}

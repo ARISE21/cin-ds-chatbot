@@ -90,3 +90,15 @@ Copiar a estrutura abaixo a cada rodada:
 - Resultado dos testes:
 - Decisão da equipe:
 ```
+
+## Adendo de manutenção e validação real - 07/11/2026
+
+Após solicitação de Rafael para conferir os merges de Eric/Ricardo e continuar sua
+parte, o assistente revisou a base `484cd24`, executou ingestão, auditoria e regressões
+e criou `test_ingest_pages.py` para cobrir páginas sem texto e preservação da numeração.
+São regressões novas de manutenção, não uma regeneração da V1 nem substituição da V2.
+Os roteiros, prompts e resultados históricos anteriores não foram reescritos.
+As alterações de produção ficaram em `src/ingest.py` (avisos e retorno das páginas
+omitidas) e dependência de leitura de fontes; backend/interface/catálogo não foram
+editados. Os seis testes falhos atuais de URL foram registrados, não removidos.
+Evidências e limites: [validação dos PPCs](validacao-ppcs/README.md).
