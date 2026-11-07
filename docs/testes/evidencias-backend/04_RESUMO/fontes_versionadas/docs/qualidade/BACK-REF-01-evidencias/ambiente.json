@@ -1,0 +1,9 @@
+{
+  "baseline": "9d328dc463f3e47588811a37eafece6f13f3f891",
+  "branch": "refactor/backend-back-ref-01-20261102t003619z",
+  "worktree": "/home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z",
+  "node_modules": "cópia física da instalação V2 com symlinks internos preservados, sem npm install",
+  "suite_v2": "4 arquivos byte a byte, config exclusiva altera apenas root e destinos de evidência",
+  "node": "v24.21.0",
+  "npm": "11.19.0"
+}

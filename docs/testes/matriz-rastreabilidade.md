@@ -2,7 +2,7 @@
 
 > **Status:** aprovada em conjunto pela equipe, conforme confirmação de Rafael nesta conversa. A professora autorizou elaboração com apoio de LLM, conforme relato de Rafael. O histórico de assistência permanece registrado.
 >
-> Esta versão foi preparada a partir do comportamento já implementado no projeto. Antes da geração da suíte V1, os quatro integrantes devem conferir as histórias, os critérios, as partições, os limites e os resultados esperados. A assistência utilizada está registrada em `docs/testes/llm-log.md`.
+> Esta versão foi preparada a partir do comportamento já implementado no projeto. A aprovação coletiva foi confirmada por Rafael e registrada no commit 97aa72f antes das gerações V1. Os registros históricos originais permanecem preservados. A assistência utilizada está registrada em `docs/testes/llm-log.md`.
 
 ## 1. Objetivo e escopo
 
@@ -121,43 +121,45 @@ As colunas V1 e V2 devem ser preenchidas somente depois de cada suíte ser gerad
 
 | Requisito / critério | Variável | Partição ou limite | Caso esperado | Coberto V1? | Coberto V2? |
 |---|---|---|---|---|---|
-| US-01 / CA-01.1 | curso + perfil | específicos válidos | CT-01.01 | A medir | A medir |
-| US-01 / CA-01.5 | curso + perfil | gerais | CT-01.02 | A medir | A medir |
-| US-01 / CA-01.1 | aliases de curso/perfil | nome completo da interface | CT-01.03 | A medir | A medir |
-| US-01 / CA-01.3 | quantidade de resultados | limite 0 | CT-01.04 | A medir | A medir |
-| US-01 / CA-01.4 | pergunta | comprimento útil 0 | CT-01.05 | A medir | A medir |
-| US-01 / CA-01.4 | pergunta | apenas espaços | CT-01.06 | A medir | A medir |
-| US-01 / CA-01.4 | curso | partição desconhecida | CT-01.07 | A medir | A medir |
-| US-01 / CA-01.4 | perfil | partição desconhecida | CT-01.08 | A medir | A medir |
-| US-01 / CA-01.4 | `top_k` | limite 0 inválido | CT-01.09 | A medir | A medir |
-| US-01 / CA-01.1 | `top_k` | limite 1 válido | CT-01.10 | A medir | A medir |
-| US-01 / CA-01.4 | `top_k` | decimal inválido | CT-01.11 | A medir | A medir |
-| US-02 / CA-02.1 | distância | imediatamente abaixo de 0.8 | CT-02.01 | A medir | A medir |
-| US-02 / CA-02.2 | distância | exatamente 0.8 | CT-02.02 | A medir | A medir |
-| US-02 / CA-02.2 | distância | imediatamente acima de 0.8 | CT-02.03 | A medir | A medir |
-| US-02 / CA-02.3 | contexto | comprimento útil 0 | CT-02.04 | A medir | A medir |
-| US-02 / CA-02.4 | transporte | serviço indisponível | CT-02.05 | A medir | A medir |
-| US-02 / CA-02.4 | transporte | timeout | CT-02.06 | A medir | A medir |
-| US-02 / CA-02.4 | contrato da resposta | JSON/tipos inválidos; página 0 | CT-02.07 | A medir | A medir |
-| US-03 / CA-03.1 | assunto | palavra-chave estágio | CT-03.01 | A medir | A medir |
-| US-03 / CA-03.1 | assunto | palavra-chave dispensa | CT-03.02 | A medir | A medir |
-| US-03 / CA-03.2 | assunto | palavra-chave pedagógico | CT-03.03 | A medir | A medir |
-| US-03 / CA-03.3 | assunto | palavra-chave pós-graduação | CT-03.04 | A medir | A medir |
-| US-03 / CA-03.4 | assunto | partição padrão | CT-03.05 | A medir | A medir |
-| US-03 / CA-03.5 | dados opcionais | ausentes | CT-03.06 | A medir | A medir |
-| US-03 / CA-03.6 | dados opcionais | textos válidos | CT-03.07 | A medir | A medir |
-| US-03 / CA-03.6 | dados opcionais | tipo incompatível | CT-03.08 | A medir | A medir |
+| US-01 / CA-01.1 | curso + perfil | específicos válidos | CT-01.01 | Sim: cursos_perfis_reconhecidos | Sim: herdado |
+| US-01 / CA-01.5 | curso + perfil | gerais | CT-01.02 | Sim: sem_restricoes | Sim: herdado |
+| US-01 / CA-01.1 | aliases de curso/perfil | nome completo da interface | CT-01.03 | Parcial: rótulo exato ausente | Sim: rotulo_exato_interface |
+| US-01 / CA-01.3 | quantidade de resultados | limite 0 | CT-01.04 | Sim: sem_resultados | Sim: herdado |
+| US-01 / CA-01.4 | pergunta | comprimento útil 0 | CT-01.05 | Sim: pergunta_invalida | Sim: herdado |
+| US-01 / CA-01.4 | pergunta | apenas espaços | CT-01.06 | Sim: pergunta_invalida | Sim: herdado |
+| US-01 / CA-01.4 | curso | partição desconhecida | CT-01.07 | Sim: filtros_desconhecidos | Sim: herdado |
+| US-01 / CA-01.4 | perfil | partição desconhecida | CT-01.08 | Sim: filtros_desconhecidos | Sim: herdado |
+| US-01 / CA-01.4 | `top_k` | limite 0 inválido | CT-01.09 | Sim: top_k_invalido | Sim: herdado |
+| US-01 / CA-01.1 | `top_k` | limite 1 válido | CT-01.10 | Sim: top_k_valores_validos | Sim: herdado |
+| US-01 / CA-01.4 | `top_k` | decimal inválido | CT-01.11 | Sim: top_k_invalido | Sim: herdado |
+| US-02 / CA-02.1 | distância | imediatamente abaixo de 0.8 | CT-02.01 | Parcial: equivalente por partição; literal ausente | Sim: CT-02.01 em conversa-http.spec.ts; ver CSV |
+| US-02 / CA-02.2 | distância | exatamente 0.8 | CT-02.02 | Sim | Sim: CT-02.02 em conversa-http.spec.ts; ver CSV |
+| US-02 / CA-02.2 | distância | imediatamente acima de 0.8 | CT-02.03 | Parcial: equivalente por partição; literal ausente | Sim: CT-02.03 em conversa-http.spec.ts; ver CSV |
+| US-02 / CA-02.3 | contexto | comprimento útil 0 | CT-02.04 | Parcial: equivalente por partição; literal ausente | Sim: CT-02.04 em conversa-http.spec.ts; ver CSV |
+| US-02 / CA-02.4 | transporte | serviço indisponível | CT-02.05 | Parcial | Sim: CT-02.05 em conversa-http.spec.ts; ver CSV |
+| US-02 / CA-02.4 | transporte | timeout | CT-02.06 | Não | Sim: CT-02.06 em conversa-http.spec.ts; ver CSV |
+| US-02 / CA-02.4 | contrato da resposta | JSON/tipos inválidos; página 0 | CT-02.07 | Não | Sim: CT-02.07 em conversa-http.spec.ts; ver CSV |
+| US-03 / CA-03.1 | assunto | palavra-chave estágio | CT-03.01 | Sim | Sim: CT-03.01 em conversa-http.spec.ts; ver CSV |
+| US-03 / CA-03.1 | assunto | palavra-chave dispensa | CT-03.02 | Sim | Sim: CT-03.02 em conversa-http.spec.ts; ver CSV |
+| US-03 / CA-03.2 | assunto | palavra-chave pedagógico | CT-03.03 | Sim | Sim: CT-03.03 em conversa-http.spec.ts; ver CSV |
+| US-03 / CA-03.3 | assunto | palavra-chave pós-graduação | CT-03.04 | Sim | Sim: CT-03.04 em conversa-http.spec.ts; ver CSV |
+| US-03 / CA-03.4 | assunto | partição padrão | CT-03.05 | Sim | Sim: CT-03.05 em conversa-http.spec.ts; ver CSV |
+| US-03 / CA-03.5 | dados opcionais | ausentes | CT-03.06 | Parcial | Sim: CT-03.06 em conversa-http.spec.ts; ver CSV |
+| US-03 / CA-03.6 | dados opcionais | textos válidos | CT-03.07 | Sim | Sim: CT-03.07 em conversa-http.spec.ts; ver CSV |
+| US-03 / CA-03.6 | dados opcionais | tipo incompatível | CT-03.08 | Parcial | Sim: CT-03.08 em conversa-http.spec.ts; ver CSV |
 
-## 7. Validação humana obrigatória antes da suíte V1
+## 7. Aprovação e consolidação
 
-- [ ] Rafael confirma os rótulos, filtros e resultados esperados do `ai-service`.
-- [ ] Victor confirma o contrato do NestJS, os códigos HTTP e a regra provisória de `0.8`.
-- [ ] Ricardo confirma os nomes canônicos de cursos, perfis e documentos.
-- [ ] Eric confirma os rótulos enviados pela interface e os dados exibidos ao usuário.
-- [ ] A equipe aprova esta matriz em um commit anterior à geração da suíte V1.
-- [ ] A conversa usada para gerar a V1 não recebe esta matriz.
+- [x] Aprovação conjunta confirmada por Rafael; elaboração assistida autorizada pela professora, segundo seu relato.
+- [x] Aprovação registrada no commit 97aa72f antes da geração V1.
+- [x] Históricos de geração declaram não consultar a matriz; prompts e saídas preservados.
+- [x] US-01 e US-02/03 avaliadas com referências aos testes e relatórios.
+- Não foram inventadas atas ou assinaturas individuais. A antiga lista individual não preenchida foi substituída por este registro coletivo.
+- Índice de evidências: CONSOLIDACAO-SPRINT3.md. Inventário e regras de contagem: inventario-consolidado.md.
 
 ## 8. Observações e decisões
+
+Atualização da US-01: ver us01-fechamento.md para inventário de 22 partições e 8 valores-limite e comparação controlada. As colunas preenchidas contam teste existente/exercitado, não aprovação universal do critério. Nomes abreviam métodos test_ das classes BuscaV1/BuscaV2. US-02/03 consolidadas do pacote histórico de Victor; CSV original em evidencias-backend/02_V2/rastreabilidade-v1-v2.csv. A V1 tem 7 casos completos, 6 parciais e 2 ausentes no recorte literal; V2 tem 15/15. Não executar as suítes históricas diretamente na produção já integrada com /gerar.
 
 - O limiar `0.8` é provisório e deve ser calibrado com o benchmark do corpus real.
 - Distância vetorial não é probabilidade; valores menores representam maior proximidade no contrato atual.

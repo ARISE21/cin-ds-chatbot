@@ -12,12 +12,17 @@ describe('AiService (HTTP integration)', () => {
   let distancia: number;
   let contexto: string;
   let status: number;
+  let fontes: { arquivo: string; pagina: number; curso: string }[];
+  let chamadas: (typeof received)[];
 
   beforeEach(async () => {
     vi.stubEnv('FALLBACK_DISTANCE_THRESHOLD', '0.8');
+    vi.stubEnv('AI_SERVICE_TIMEOUT_MS', undefined);
     distancia = 1;
     contexto = '';
     status = 200;
+    fontes = [];
+    chamadas = [];
     upstream = createServer((req, res) => {
       let body = '';
       req.setEncoding('utf8');
@@ -30,13 +35,18 @@ describe('AiService (HTTP integration)', () => {
           url: req.url,
           body: JSON.parse(body) as unknown,
         };
+        chamadas.push(received);
+        if (req.url !== '/api/v1/buscar' && req.url !== '/api/v1/gerar') {
+          res.writeHead(404).end();
+          return;
+        }
         res.writeHead(status, { 'Content-Type': 'application/json' });
         res.end(
-          JSON.stringify({
-            contexto,
-            fontes: [],
-            distancia_minima: distancia,
-          }),
+          JSON.stringify(
+            req.url === '/api/v1/gerar'
+              ? { resposta: 'Resposta gerada.' }
+              : { contexto, fontes, distancia_minima: distancia },
+          ),
         );
       });
     });
@@ -88,6 +98,7 @@ describe('AiService (HTTP integration)', () => {
     async (valor, trecho, esperado) => {
       distancia = valor;
       contexto = trecho;
+      fontes = [{ arquivo: 'norma.pdf', pagina: 1, curso: 'CC' }];
       const consulta = { pergunta: 'Apoio pedagógico?', curso: 'CC' };
       const result = await module.get(OrchestrationService).processar({
         consulta,
@@ -95,19 +106,49 @@ describe('AiService (HTTP integration)', () => {
       });
       expect(result).toMatchObject({
         contexto: trecho,
-        fontes: [],
+        fontes,
         distancia_minima: valor,
         fallback_acionado: esperado,
       });
-      expect(received.body).toEqual({ ...consulta, perfil: 'Todos', top_k: 3 });
+      expect(chamadas[0].body).toEqual({
+        ...consulta,
+        perfil: 'Todos',
+        top_k: 3,
+      });
       if (result.fallback_acionado) {
+        expect(chamadas).toHaveLength(1);
         expect(result.setor_sugerido).toBe('NEAP');
         expect(result.template_email).toContain('Ana');
       } else {
         expect(result).not.toHaveProperty('template_email');
+        expect(result.resposta).toBe('Resposta gerada.');
+        expect(chamadas[1]).toEqual({
+          method: 'POST',
+          url: '/api/v1/gerar',
+          body: { pergunta: consulta.pergunta, contexto: trecho },
+        });
       }
     },
   );
+
+  it('contexto sem fontes aciona fallback e não chama geração', async () => {
+    distancia = 0.4;
+    contexto = 'Trecho sem referência';
+    const result = await module
+      .get(OrchestrationService)
+      .processar({ consulta: { pergunta: 'Dispensa?' } });
+    expect(result).toMatchObject({
+      contexto,
+      fontes: [],
+      distancia_minima: distancia,
+      fallback_acionado: true,
+      setor_sugerido: 'SecGrad',
+    });
+    expect(result.template_email).toContain('Dispensa?');
+    expect(result).not.toHaveProperty('resposta');
+    expect(chamadas).toHaveLength(1);
+    expect(chamadas[0].url).toBe('/api/v1/buscar');
+  });
 
   it('propaga falha HTTP como erro seguro em vez de fallback', async () => {
     status = 503;

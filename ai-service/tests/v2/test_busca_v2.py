@@ -57,5 +57,29 @@ class BuscaV2(baseline.BuscaV1):
                 self.assertIsNone(construir_filtro(curso, perfil))
 
 
+    def test_integridade_das_listas(self):
+        # CA-01.2: rejeitar fontes sem correspondência.
+        self.colecao.resposta = {'documents': [['x']], 'metadatas': [[]], 'distances': [[0.1]]}
+        self.assertEqual(self.post().status_code, 502)
+
+    def test_distancia_tipo_invalido(self):
+        # CA-01.2: tipos inválidos na origem.
+        for valor in (True, '0.2', None):
+            with self.subTest(valor=valor), self.assertRaises(InvalidSearchResult):
+                buscar_contexto('x', collection=baseline.ColecaoFake(baseline.resultado(distancia=valor)))
+
+    def test_limites_exatos_api(self):
+        # CA-01.4: fortalecer oráculos 4xx da V1.
+        for dados in ({'pergunta': ''}, {'pergunta': ' '}, {'top_k': 0}, {'top_k': 1.5}, {'curso': 'xyz'}, {'perfil': 'xyz'}):
+            with self.subTest(dados=dados):
+                self.assertEqual(self.post(**dados).status_code, 422)
+
+    def test_documento_geral_na_lista(self):
+        # CA-01.1/5: curso geral dentro da lista documental.
+        meta = enriquecer_metadados({'curso_alvo': ['Geral'], 'perfil_curricular': 'ambos'})
+        self.assertEqual(meta['curso_alvo'], 'Geral')
+        self.assertTrue(all(meta['curso_' + codigo] for codigo in ('cc', 'ec', 'si', 'ia')))
+
+
 if __name__ == "__main__":
     unittest.main()

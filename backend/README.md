@@ -105,7 +105,8 @@ existentes; não representa certificação de integração ponta a ponta.
 | Variável | Padrão | Uso |
 | --- | --- | --- |
 | `PORT` | `3000` | Porta do NestJS; ajuste também a URL do cliente e o mapeamento Docker. |
-| `AI_SERVICE_URL` | Sem padrão | Origem HTTP/HTTPS do FastAPI; necessária para consultas válidas. |
+| `AI_SERVICE_URL` | Sem padrão | Obrigatória: origem HTTP/HTTPS do FastAPI, sem credenciais, query, fragmento ou caminho adicional. |
+| `AI_SERVICE_TIMEOUT_MS` | `5000` | Opcional: inteiro decimal de `1` a `2147483647` ms; configuração inválida retorna HTTP 503 antes da busca. |
 | `FALLBACK_DISTANCE_THRESHOLD` | `0.8` | Limiar provisório de fallback, decimal finito não negativo. |
 
 Arquivos `.env` não são carregados automaticamente. Defina as variáveis no
@@ -158,7 +159,13 @@ Retorna `contexto`, `fontes` (`arquivo`, `pagina` numérica e `curso`) e
 `distancia_minima`, após validar o contrato em runtime. Uma busca vazia válida
 é preservada; não é confundida com erro de comunicação.
 
-O timeout é de 5 segundos, incluindo leitura do corpo; não há retries automáticos.
+O timeout padrão é de 5000 ms, incluindo leitura do corpo; não há retries automáticos.
+`AI_SERVICE_TIMEOUT_MS` aceita somente dígitos decimais (espaços externos são
+removidos), no intervalo inclusivo de 1 a 2147483647 ms, limite seguro dos
+temporizadores do Node. Ausência usa o padrão; vazio, zero, negativos, frações,
+notação exponencial e valores acima do limite retornam HTTP 503 com mensagem
+segura, sem chamar o FastAPI. As configurações são lidas a cada consulta.
+Por exemplo: `AI_SERVICE_URL=http://localhost:8000 AI_SERVICE_TIMEOUT_MS=10000 npm run start:dev`.
 Consulta inválida gera `BadRequestException` (400); configuração inválida ou erro
 de conexão, `ServiceUnavailableException` (503); timeout,
 `GatewayTimeoutException` (504); HTTP não bem-sucedido, JSON inválido ou contrato
@@ -425,7 +432,8 @@ $ npm run build
 | HTTP 503: `Serviço de busca indisponível.` | Falha de conexão/DNS ou redirecionamento recusado. | Confira origem, porta e acesso a `/health` a partir do ambiente do backend. Em Docker, não use `localhost` para alcançar outro container/host. |
 | HTTP 502: `Falha na resposta do serviço de busca.` | FastAPI respondeu com status não bem-sucedido. | Inspecione o status/logs do ai-service e a chamada direta de diagnóstico abaixo; alinhe correção da busca/filtros com IA. |
 | HTTP 502: `Resposta inválida do serviço de busca.` | JSON inválido ou contrato incompatível. | Confira `contexto` string, `distancia_minima` número finito e `fontes` como lista de objetos com `arquivo`/`curso` strings e `pagina` inteira ≥ 1. Não altere o contrato unilateralmente. |
-| HTTP 504: `Tempo limite do serviço de busca excedido.` | Busca ou leitura do corpo excedeu 5 segundos. | Verifique latência, inicialização do modelo e logs do ai-service com a equipe de IA. O timeout é fixo no código; não existe variável para ajustá-lo. |
+| HTTP 503: `Tempo limite do serviço de busca não configurado corretamente.` | `AI_SERVICE_TIMEOUT_MS` inválida. | Omita para usar 5000 ms ou informe inteiro decimal entre 1 e 2147483647. |
+| HTTP 504: `Tempo limite do serviço de busca excedido.` | Busca ou leitura do corpo excedeu o timeout configurado (padrão 5000 ms). | Verifique latência, inicialização do modelo e logs do ai-service com a equipe de IA. Ajuste `AI_SERVICE_TIMEOUT_MS` e alinhe o prazo com clientes/proxies. |
 | Backend não inicia com erro de `FALLBACK_DISTANCE_THRESHOLD` | Valor vazio, negativo ou não numérico. | Remova a variável para usar o padrão ou informe decimal finito não negativo, como `0.8`; reinicie. |
 | HTTP 201 sempre com fallback ou busca sem trechos | Corpus ausente, filtros incompatíveis, contexto vazio ou distância acima do limiar. | Confira relatório de ingestão e valores de curso/perfil; alinhe metadados e calibração com a equipe. Não trate o limiar como confiança probabilística. |
 | E2e falha com `listen EPERM` | Ambiente bloqueia abertura de portas locais. | Execute a suíte em ambiente que permita sockets locais, com a autorização necessária; não é evidência de falha no FastAPI. |
@@ -510,3 +518,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## Contrato de geração da Sprint 3
+
+A conversa agora chama busca e geração. Consulte [INTEGRACAO_GERAR.md](INTEGRACAO_GERAR.md) para o contrato e [REGRESSAO_GERAR.md](REGRESSAO_GERAR.md) para a migração dos testes e comandos. `npm test` executa a regressão corrente; `npm run test:v2:historica` reproduz a V2 acadêmica original em cópia temporária da baseline, sem alterar seus arquivos.

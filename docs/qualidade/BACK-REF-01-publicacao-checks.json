@@ -1,0 +1,49 @@
+{
+  "refatoracao_commit": "f7a067fb7886d1b68621ca57af42cf051dfe02a1",
+  "baseline_main_consultada": "9d328dc463f3e47588811a37eafece6f13f3f891",
+  "suite_v2_testes": 105,
+  "npm_test": 204,
+  "e2e": 33,
+  "lint_exit": 0,
+  "build_exit": 0,
+  "avisos": [
+    "typescript/no-base-to-string em String(url) do teste V2 intacto",
+    "vite-tsconfig-paths nas regressões",
+    "tsconfck descontinuado na instalação offline"
+  ],
+  "coverage": {
+    "lines": {
+      "total": 88,
+      "covered": 83,
+      "skipped": 0,
+      "pct": 94.31
+    },
+    "statements": {
+      "total": 92,
+      "covered": 85,
+      "skipped": 0,
+      "pct": 92.39
+    },
+    "functions": {
+      "total": 18,
+      "covered": 16,
+      "skipped": 0,
+      "pct": 88.88
+    },
+    "branches": {
+      "total": 111,
+      "covered": 106,
+      "skipped": 0,
+      "pct": 95.49
+    },
+    "branchesTrue": {
+      "total": 0,
+      "covered": 0,
+      "skipped": 0,
+      "pct": 100
+    }
+  },
+  "metodo_reproducao": "git archive do tree proposto + npm ci --offline + configuração relativa ao import.meta.url",
+  "suite_original_inalterada": true,
+  "alteracao_adicional_producao": false
+}

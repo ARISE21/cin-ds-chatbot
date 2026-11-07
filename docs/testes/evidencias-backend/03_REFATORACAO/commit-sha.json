@@ -1,0 +1,11 @@
+{
+  "command": [
+    "git",
+    "rev-parse",
+    "HEAD"
+  ],
+  "cwd": "/home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z",
+  "exit_code": 0,
+  "stdout": "f7a067fb7886d1b68621ca57af42cf051dfe02a1\n",
+  "stderr": ""
+}

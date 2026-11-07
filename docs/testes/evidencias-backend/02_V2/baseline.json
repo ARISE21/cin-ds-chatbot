@@ -1,0 +1,11 @@
+{
+  "sha": "9d328dc463f3e47588811a37eafece6f13f3f891",
+  "worktree": "/home/victor/worktrees/cin-ds-chatbot-backend-v1-formal-20261101",
+  "suite_v2": "/home/victor/worktrees/cin-ds-chatbot-backend-v1-formal-20261101/backend/test/sprint3-v2",
+  "v1_original": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69",
+  "execucao_v1": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z",
+  "analise": "/home/victor/codex-chatbot-handoff/analise-formal-sprint3-v1-20261102T002330Z",
+  "matriz": "/home/victor/worktrees/cin-ds-chatbot-backend-v1-formal-20261101/docs/testes/matriz-rastreabilidade.md",
+  "package_lock_sha256": "af6abbf7c98208650e9814695fa3c054fb6e367dbeb37c7f5e51bd07b909eece",
+  "node_modules_lock_sha256": "b54990d0b6f99f20a75e5b34ba9fe2fe3b0642d359afb2a352149be1247402f6"
+}

@@ -18,6 +18,7 @@ describe('AiService', () => {
 
   beforeEach(() => {
     vi.stubEnv('AI_SERVICE_URL', 'http://busca.test:8000');
+    vi.stubEnv('AI_SERVICE_TIMEOUT_MS', undefined);
     fetchMock.mockReset();
     vi.stubGlobal('fetch', fetchMock);
   });
@@ -72,6 +73,11 @@ describe('AiService', () => {
     'http://user:secret@busca.test',
     'http://busca.test/path',
     'http://busca.test?q=1',
+    'http://busca.test?',
+    'http://busca.test#',
+    'http://busca.test#fragmento',
+    'http://busca.test/path/..',
+    'http://busca.test\\path',
   ])('rejeita configuração inválida: %s', async (url) => {
     vi.stubEnv('AI_SERVICE_URL', url);
     await expect(service.buscarContexto({ pergunta: 'Teste' })).rejects.toThrow(
@@ -87,6 +93,45 @@ describe('AiService', () => {
     );
     expect(fetchMock).not.toHaveBeenCalled();
   });
+
+  it.each(['http://busca.test:8000', 'https://busca.test/'])(
+    'aceita origem válida %s',
+    async (origin) => {
+      vi.stubEnv('AI_SERVICE_URL', origin);
+      fetchMock.mockResolvedValue(Response.json(resultado));
+      await expect(
+        service.buscarContexto({ pergunta: 'Teste' }),
+      ).resolves.toEqual(resultado);
+      expect((fetchMock.mock.calls[0]![0] as URL).href).toBe(
+        new URL('/api/v1/buscar', origin).href,
+      );
+    },
+  );
+
+  it.each(['1', '30000', '2147483647', ' 5000 '])(
+    'usa timeout configurado válido %j',
+    async (raw) => {
+      vi.stubEnv('AI_SERVICE_TIMEOUT_MS', raw);
+      const timeout = vi.spyOn(AbortSignal, 'timeout');
+      fetchMock.mockResolvedValue(Response.json(resultado));
+      await service.buscarContexto({ pergunta: 'Teste' });
+      expect(timeout).toHaveBeenCalledExactlyOnceWith(Number(raw));
+    },
+  );
+
+  it.each([
+    '', ' ', '0', '-1', '1.5', 'NaN', 'Infinity',
+    '1e3', '0x10', 'abc', '2147483648', '9007199254740992',
+  ])(
+    'rejeita timeout inválido %j antes da busca',
+    async (raw) => {
+      vi.stubEnv('AI_SERVICE_TIMEOUT_MS', raw);
+      await expect(service.buscarContexto({ pergunta: 'Teste' })).rejects.toThrow(
+        'Tempo limite do serviço de busca não configurado corretamente.',
+      );
+      expect(fetchMock).not.toHaveBeenCalled();
+    },
+  );
 
   it.each([
     { pergunta: '' },

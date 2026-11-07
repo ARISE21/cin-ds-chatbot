@@ -1,0 +1,20 @@
+{
+  "command": [
+    "./node_modules/.bin/vitest",
+    "run",
+    "--config",
+    "vitest.config.ts",
+    "src/ai-service/ai-service.service.spec.ts",
+    "src/app.controller.spec.ts",
+    "src/orchestration/fallback.config.spec.ts",
+    "src/orchestration/fallback.service.spec.ts",
+    "src/orchestration/orchestration.service.spec.ts"
+  ],
+  "cwd": "/home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z/backend",
+  "environment_overrides": {},
+  "start_utc": "2026-11-02T00:36:38.584237+00:00",
+  "end_utc": "2026-11-02T00:36:41.255085+00:00",
+  "exit_code": 0,
+  "stdout": "\n RUN  v4.1.11 /home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z/backend\n\n\n Test Files  5 passed (5)\n      Tests  99 passed (99)\n   Start at  21:36:39\n   Duration  1.53s (transform 389ms, setup 0ms, import 2.19s, tests 520ms, environment 1ms)\n\n",
+  "stderr": "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.\n"
+}

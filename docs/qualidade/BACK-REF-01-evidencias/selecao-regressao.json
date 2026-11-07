@@ -1,0 +1,13 @@
+{
+  "unitarios": [
+    "src/ai-service/ai-service.service.spec.ts",
+    "src/app.controller.spec.ts",
+    "src/orchestration/fallback.config.spec.ts",
+    "src/orchestration/fallback.service.spec.ts",
+    "src/orchestration/orchestration.service.spec.ts"
+  ],
+  "e2e": [
+    "test/ai-service.e2e-spec.ts",
+    "test/app.e2e-spec.ts"
+  ]
+}

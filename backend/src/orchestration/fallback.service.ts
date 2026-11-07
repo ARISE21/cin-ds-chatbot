@@ -27,9 +27,9 @@ export class FallbackService {
   identificarSetor(assunto: string): SetorSugerido {
     const texto = assunto.toLowerCase();
     // Sugestões herdadas da prova de conceito, na mesma ordem de prioridade.
-    if (texto.includes('estágio') || texto.includes('estagio'))
-      return 'SecGrad';
     if (
+      texto.includes('estágio') ||
+      texto.includes('estagio') ||
       texto.includes('requerimento') ||
       texto.includes('dispensa') ||
       texto.includes('segunda chamada')

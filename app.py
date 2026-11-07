@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import time
-import requests
+from src.ui.sidebar import renderizar_sidebar
+from src.ui.api_client import enviar_pergunta
 
 # -----------------------------------------------------------------------------
 # Configuração da Página
@@ -13,18 +13,15 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Configuração da URL da API Backend (Altere se o porto/rota for diferente)
-API_URL = "http://localhost:8000/search"
-
 # -----------------------------------------------------------------------------
-# Função para Carregar a Planilha de Testes QA (Cache para performance)
+# Função para Carregar a Planilha de Testes QA (Apenas para atalho de digitação)
 # -----------------------------------------------------------------------------
 @st.cache_data
 def carregar_planilha_qa():
     try:
         df = pd.read_excel('Planilha_QA_Benchmark_Sprint1.xlsx', sheet_name='Benchmark QA - Sprint 1', skiprows=3)
         return df
-    except Exception as e:
+    except Exception:
         return None
 
 df_qa = carregar_planilha_qa()
@@ -58,48 +55,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
-# Callback para acionar a pergunta do selectbox sem entrar em loop
+# Modularização: Renderiza Sidebar e obtém opções do aluno
 # -----------------------------------------------------------------------------
-def acionar_pergunta_planilha():
-    if "qa_select" in st.session_state and st.session_state.qa_select != "-- Selecionar pergunta de teste --":
-        st.session_state.pergunta_pendente = st.session_state.qa_select
-        st.session_state.qa_select = "-- Selecionar pergunta de teste --"
-
-# -----------------------------------------------------------------------------
-# Barra Lateral (Sidebar) - Filtros e Perguntas de Teste
-# -----------------------------------------------------------------------------
-with st.sidebar:
-    st.image("https://www.cin.ufpe.br/~imprensa/marcacinpng/HMP", width=180)
-    st.title("Configurações")
-    
-    st.markdown("### Contexto do Aluno")
-    curso = st.selectbox(
-        "Selecione o seu curso:",
-        ["Ciência da Computação", "Engenharia da Computação", "Inteligência Artificial", "Sistemas de Informação"],
-        index=0
-    )
-    
-    opcoes_perfil = ["Único Perfil"] if curso == "Inteligência Artificial" else ["Perfil Novo / Vigente", "Perfil Antigo"]
-    perfil = st.selectbox("Perfil Curricular:", opcoes_perfil, index=0)
-    
-    st.markdown("---")
-    
-    # Atalho para selecionar perguntas da Planilha
-    if df_qa is not None:
-        st.markdown("### Suíte de Testes (Planilha QA)")
-        lista_perguntas = ["-- Selecionar pergunta de teste --"] + df_qa["Pergunta do Aluno (Input)"].dropna().tolist()
-        st.selectbox(
-            "Perguntas da Planilha:", 
-            lista_perguntas, 
-            key="qa_select", 
-            on_change=acionar_pergunta_planilha
-        )
-
-    st.markdown("---")
-    if st.button("Limpar Histórico do Chat", use_container_width=True):
-        st.session_state.messages = []
-        st.session_state.pergunta_pendente = None
-        st.rerun()
+curso, perfil = renderizar_sidebar(df_qa)
 
 # -----------------------------------------------------------------------------
 # Cabeçalho Principal
@@ -134,10 +92,9 @@ for msg in st.session_state.messages:
         if "sources" in msg and msg["sources"]:
             with st.expander("📄 Fontes e Trechos Utilizados"):
                 for src in msg["sources"]:
-                    doc_nome = src.get('documento', 'Documento Não Identificado')
-                    pag_num = src.get('pagina', 'N/A')
+                    doc_nome = str(src.get('documento', 'Documento Não Identificado')).split(' (pág')[0]
                     trecho_txt = src.get('trecho', '')
-                    st.markdown(f"- **{doc_nome}** (Pág. {pag_num})")
+                    st.markdown(f"- **{doc_nome}**")
                     if trecho_txt:
                         st.caption(f'"{trecho_txt}"')
 
@@ -145,12 +102,9 @@ for msg in st.session_state.messages:
 # Processamento de Entrada (Caixa de Texto ou Seleção via Callback)
 # -----------------------------------------------------------------------------
 prompt_input = st.chat_input("Digite a sua dúvida (ex: Como solicito dispensa de disciplina?)")
-
-# Verifica se há uma pergunta vinda da caixa de texto ou da seleção da planilha
 prompt = prompt_input or st.session_state.get("pergunta_pendente")
 
 if prompt:
-    # Reseta a pergunta pendente para não re-executar
     st.session_state.pergunta_pendente = None
 
     # 1. Adiciona a mensagem do usuário no histórico
@@ -158,59 +112,33 @@ if prompt:
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # 2. Chamada Real ao Backend RAG via HTTP
-    resposta_texto = ""
-    fontes = []
-
+    # 2. Chamada Modularizada ao Backend Real (Sem demo silenciosa)
     with st.chat_message("assistant", avatar="cin_logo.png"):
         message_placeholder = st.empty()
         with st.spinner("A consultar resoluções e documentos da SecGrad..."):
-            payload = {
-                "question": prompt,
-                "curso": curso,
-                "perfil": perfil
-            }
             
-            try:
-                # Tenta chamar o backend real se ele estiver a rodar
-                response = requests.post(API_URL, json=payload, timeout=2)
-                if response.status_code == 200:
-                    data = response.json()
-                    resposta_texto = data.get("answer") or data.get("response")
-                    fontes = data.get("sources", [])
-                else:
-                    raise Exception("Backend indisponível")
-            except Exception:
-                # FALLBACK DEMO: Busca na planilha QA se o backend estiver desligado
-                if df_qa is not None and prompt in df_qa["Pergunta do Aluno (Input)"].values:
-                    linha = df_qa[df_qa["Pergunta do Aluno (Input)"] == prompt].iloc[0]
-                    resposta_texto = f"**[RAG SecGrad - Resposta Baseada em Documento]:**\n\n{linha['Resposta Esperada / Comportamento']}"
-                    fontes = [{
-                        "documento": str(linha['Fonte Esperada (Documento / Seção)']),
-                        "pagina": 1,
-                        "trecho": f"Trecho referente às normas de {linha['Categoria / Assunto']}."
-                    }]
-                else:
-                    resposta_texto = f"Para informações sobre **{prompt}**, consulte os requerimentos formais no portal da SecGrad."
-                    fontes = [{"documento": "normas_gerais_graduacao.pdf", "pagina": 1, "trecho": "Consulte a secretaria para procedimentos oficiais."}]
+            # Chama a função do src/ui/api_client.py
+            resultado = enviar_pergunta(prompt, curso, perfil)
             
-            except requests.exceptions.RequestException as e:
-                # Fallback caso a API esteja fora do ar durante os testes locais
+            if resultado.get("sucesso"):
+                resposta_texto = resultado.get("resposta")
+                fontes = resultado.get("fontes", [])
+            else:
+                # Exibe mensagem de erro técnico visível (sem mascarar com a planilha local)
                 resposta_texto = (
-                    f"⚠️ **Não foi possível conectar ao backend RAG.**\n\n"
-                    f"Certifique-se de que o servidor FastAPI/NestJS está a rodar em `{API_URL}`.\n\n"
-                    f"*Erro técnico: {e}*"
+                    f"⚠️ **Não foi possível obter a resposta do servidor.**\n\n"
+                    f"*Erro retornado:* `{resultado.get('erro')}`"
                 )
+                fontes = []
 
-            # Exibição do resultado na interface
+            # Renderiza resposta na tela
             message_placeholder.markdown(resposta_texto)
             if fontes:
                 with st.expander("📄 Fontes e Trechos Utilizados"):
                     for src in fontes:
-                        doc_nome = src.get('documento', 'Documento Oficial')
-                        pag_num = src.get('pagina', 'N/A')
-                        trecho_txt = src.get('trecho', '')
-                        st.markdown(f"- **{doc_nome}** (Pág. {pag_num})")
+                        doc_nome = str(src.get('documento', 'Documento Oficial')).split(' (pág')[0]
+                        trecho_txt = src.get('trecho') or src.get('excerpt', '')
+                        st.markdown(f"- **{doc_nome}**")
                         if trecho_txt:
                             st.caption(f'"{trecho_txt}"')
 

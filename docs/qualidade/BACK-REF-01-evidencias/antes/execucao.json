@@ -1,0 +1,18 @@
+{
+  "command": [
+    "./node_modules/.bin/vitest",
+    "run",
+    "--config",
+    "/home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z/backend/vitest.back-ref-01.config.mts",
+    "--coverage"
+  ],
+  "cwd": "/home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z/backend",
+  "environment_overrides": {
+    "BACK_REF_EVIDENCE_DIR": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes"
+  },
+  "start_utc": "2026-11-02T00:36:25.252844+00:00",
+  "end_utc": "2026-11-02T00:36:30.502856+00:00",
+  "exit_code": 0,
+  "stdout": "\n RUN  v4.1.11 /home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z/backend\n      Coverage enabled with v8\n\n ✓ test/sprint3-v2/fallback-config.spec.ts (19 tests) 90ms\n ✓ test/sprint3-v2/fallback-email.spec.ts (30 tests) 42ms\n ✓ test/sprint3-v2/orchestration.spec.ts (16 tests) 50ms\n ✓ test/sprint3-v2/conversa-http.spec.ts (40 tests) 498ms\n\n Test Files  4 passed (4)\n      Tests  105 passed (105)\n   Start at  21:36:26\n   Duration  3.65s (transform 1.57s, setup 0ms, import 5.27s, tests 680ms, environment 3ms)\n\nJSON report written to /home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/vitest-results.json\n % Coverage report from v8\n-------------------|---------|----------|---------|---------|-------------------\nFile               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s \n-------------------|---------|----------|---------|---------|-------------------\nAll files          |   92.55 |    95.57 |   88.88 |   94.44 |                   \n src               |      80 |      100 |   66.66 |      80 |                   \n  ...controller.ts |      80 |      100 |   66.66 |      80 | 19                \n src/ai-service    |   85.71 |    91.66 |    87.5 |      90 |                   \n  ...ce.service.ts |   85.71 |    91.66 |    87.5 |      90 | 50,124,144,148    \n-------------------|---------|----------|---------|---------|-------------------\n\n=============================== Coverage summary ===============================\nStatements   : 92.55% ( 87/94 )\nBranches     : 95.57% ( 108/113 )\nFunctions    : 88.88% ( 16/18 )\nLines        : 94.44% ( 85/90 )\n================================================================================\n",
+  "stderr": ""
+}

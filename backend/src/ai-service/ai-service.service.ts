@@ -51,7 +51,7 @@ export class AiService {
     }
 
     const endpoint = this.getEndpoint();
-    const signal = AbortSignal.timeout(5000);
+    const signal = AbortSignal.timeout(this.getTimeoutMs());
     let response: Response;
     try {
       response = await fetch(endpoint, {
@@ -108,9 +108,102 @@ export class AiService {
     };
   }
 
+  async gerarResposta(
+    pergunta: string,
+    contexto: string,
+  ): Promise<string | null> {
+    if (
+      typeof pergunta !== 'string' ||
+      !pergunta.trim() ||
+      typeof contexto !== 'string'
+    ) {
+      throw new BadRequestException('Dados para geração inválidos.');
+    }
+
+    const endpoint = new URL('/api/v1/gerar', this.getEndpoint());
+    const signal = AbortSignal.timeout(this.getTimeoutMs());
+    let response: Response;
+    try {
+      response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({ pergunta, contexto }),
+        signal,
+        redirect: 'error',
+      });
+    } catch {
+      if (signal.aborted) {
+        throw new GatewayTimeoutException(
+          'Tempo limite do serviço de geração excedido.',
+        );
+      }
+      throw new ServiceUnavailableException('Serviço de geração indisponível.');
+    }
+
+    if (!response.ok) {
+      await response.body?.cancel().catch(() => undefined);
+      if (response.status === 503) {
+        throw new ServiceUnavailableException(
+          'Serviço de geração indisponível.',
+        );
+      }
+      if (response.status === 504) {
+        throw new GatewayTimeoutException(
+          'Tempo limite do serviço de geração excedido.',
+        );
+      }
+      throw new BadGatewayException('Falha na resposta do serviço de geração.');
+    }
+
+    let result: unknown;
+    try {
+      result = await response.json();
+    } catch {
+      if (signal.aborted) {
+        throw new GatewayTimeoutException(
+          'Tempo limite do serviço de geração excedido.',
+        );
+      }
+      throw new BadGatewayException('Resposta inválida do serviço de geração.');
+    }
+    if (
+      !isRecord(result) ||
+      (result.resposta !== null && typeof result.resposta !== 'string')
+    ) {
+      throw new BadGatewayException('Resposta inválida do serviço de geração.');
+    }
+    return typeof result.resposta === 'string' && result.resposta.trim()
+      ? result.resposta
+      : null;
+  }
+
+  private getTimeoutMs(): number {
+    const raw = process.env.AI_SERVICE_TIMEOUT_MS;
+    if (raw === undefined) return 5000;
+
+    const value = raw.trim();
+    const timeout = Number(value);
+    // Node timers overflow above the signed 32-bit integer limit.
+    if (
+      !/^\d+$/.test(value) ||
+      !Number.isSafeInteger(timeout) ||
+      timeout < 1 ||
+      timeout > 2_147_483_647
+    ) {
+      throw new ServiceUnavailableException(
+        'Tempo limite do serviço de busca não configurado corretamente.',
+      );
+    }
+    return timeout;
+  }
+
   private getEndpoint(): URL {
     try {
-      const base = new URL(process.env.AI_SERVICE_URL ?? '');
+      const origin = process.env.AI_SERVICE_URL?.trim() || 'http://localhost:8000';
+      const base = new URL(origin);
       if (
         !['http:', 'https:'].includes(base.protocol) ||
         base.username ||

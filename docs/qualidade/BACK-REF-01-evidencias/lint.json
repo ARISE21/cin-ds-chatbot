@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "lint"
+  ],
+  "cwd": "/home/victor/worktrees/cin-ds-chatbot-back-ref-01-20261102T003619Z/backend",
+  "environment_overrides": {},
+  "start_utc": "2026-11-02T00:36:44.766657+00:00",
+  "end_utc": "2026-11-02T00:36:45.441860+00:00",
+  "exit_code": 0,
+  "stdout": "\n> backend@0.0.1 lint\n> oxlint --type-aware src/ test/\n\ntest/sprint3-v2/conversa-http.spec.ts:186:19: warning typescript(no-base-to-string): 'url' may use Object's default stringification format ('[object Object]') when stringified. help: Consider picking a property (e.g. `user.name`), using a formatter (or `JSON.stringify`), or implementing a custom `toString()`/`toLocaleString()` on the type.\n",
+  "stderr": ""
+}

@@ -1,0 +1,667 @@
+[
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69/METADADOS.json",
+    "destino": "01_V1/geracao/METADADOS.json",
+    "sha256": "92274df77de91c61a314eed9478acceca464b02c60efca5881972776df428ca6"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69/SAIDA_ORIGINAL_20261102T000635Z-ddf53b69.md",
+    "destino": "01_V1/geracao/SAIDA_ORIGINAL_20261102T000635Z-ddf53b69.md",
+    "sha256": "b965f92b639e9c1bf672574b242d5b0f37e839583c21414c2b24ecfd2a71fdf0"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69/PROMPT_INTEGRAL_20261102T000635Z-ddf53b69.txt",
+    "destino": "01_V1/geracao/PROMPT_INTEGRAL_20261102T000635Z-ddf53b69.txt",
+    "sha256": "6930ecaff1fcc1c427fe811c8dacdadcbfa71daa72f8c8abab11adb001ec8ea7"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69/RESUMO_GERACAO_V1.md",
+    "destino": "01_V1/geracao/RESUMO_GERACAO_V1.md",
+    "sha256": "c0ad1851a8f868479adc35bc1d6bbefe3bcbf70c0446e09e011dd0a39b6ba650"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69/backend/test/sprint3-v1/fallback-config.spec.ts",
+    "destino": "01_V1/testes/fallback-config.spec.ts",
+    "sha256": "c4ce00823594c53e4ebff4f125e8810ea354122dbe4eb8301e03fc0d86b55338"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69/backend/test/sprint3-v1/fallback-email.spec.ts",
+    "destino": "01_V1/testes/fallback-email.spec.ts",
+    "sha256": "a865c5afcee1079900368d5c33a8d46b7438870a1a7ae98f1cf48f55bf7c09a6"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/geracao-formal-sprint3-v1-20261102T000635Z-ddf53b69/backend/test/sprint3-v1/orchestration.spec.ts",
+    "destino": "01_V1/testes/orchestration.spec.ts",
+    "sha256": "e08a8cea39a64b9b61dd3ab5c5ab6aa612fff4bb6aa0c0114e65c717dddf8299"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/vitest-results.json",
+    "destino": "01_V1/execucao/vitest-results.json",
+    "sha256": "d20eaa3cc502b980024559f60fe34c51121c3ccbd3ee6ab76ac6c399a3fce532"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/vitest-v1.log",
+    "destino": "01_V1/execucao/vitest-v1.log",
+    "sha256": "cfa503fdf6b160bb5eea0d9edcde78bab1021da274170d8ef1da619a3dadc265"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/RESULTADO.json",
+    "destino": "01_V1/execucao/RESULTADO.json",
+    "sha256": "291c8a2cc93995fd5a130460f8ae0894c0c1abd2d13ca47f3e8c6e858d52cd90"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/vitest.exec.config.mts",
+    "destino": "01_V1/execucao/vitest.exec.config.mts",
+    "sha256": "db6f1c3031830a021153ddb3e265b5a4a05bce0379edbc8dd6211395d759841f"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/base.css",
+    "destino": "01_V1/execucao/coverage/base.css",
+    "sha256": "3f876e51f0a46864ffa7665b4b7a1f5fb5f6f37fb6a28f014e2b12d82962c852"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/block-navigation.js",
+    "destino": "01_V1/execucao/coverage/block-navigation.js",
+    "sha256": "cd8db34b1fbeb973354a93f8b4133c7c7eab34cdda9429a0434be91384783b7e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/coverage-final.json",
+    "destino": "01_V1/execucao/coverage/coverage-final.json",
+    "sha256": "824afb2fe23be7e8f6945a8aad29b4e26ab3a5a917c5f6692bcbb4a6d6e54fed"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/coverage-summary.json",
+    "destino": "01_V1/execucao/coverage/coverage-summary.json",
+    "sha256": "d56ef7aa8bd0d9c75a6569a417932db657e484820daeed4768d277ecf2306fcc"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/fallback.config.ts.html",
+    "destino": "01_V1/execucao/coverage/fallback.config.ts.html",
+    "sha256": "9b5e00c44512b16fb762adba4c0393cf0c9fa06bcfab14886bd3eb793c1bfab9"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/fallback.service.ts.html",
+    "destino": "01_V1/execucao/coverage/fallback.service.ts.html",
+    "sha256": "cbdd7b86dc5050d5c77cf3d8d8fe628936cd4b868ff076545888098af5739744"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/favicon.png",
+    "destino": "01_V1/execucao/coverage/favicon.png",
+    "sha256": "5b0cfd52dc0bfbe544f4e1a9c77aa46b8629b0e0aad6c54f95eef457b86c2a89"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/index.html",
+    "destino": "01_V1/execucao/coverage/index.html",
+    "sha256": "150963f53454b309d84cc6cdd45161de4da2c6e116f6163b1856482eaea06bfb"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/orchestration.service.ts.html",
+    "destino": "01_V1/execucao/coverage/orchestration.service.ts.html",
+    "sha256": "4c8f962b459a2a94a4ae6e83be31aef98c5c4e3a029506d73ffc68afcbba7d04"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/prettify.css",
+    "destino": "01_V1/execucao/coverage/prettify.css",
+    "sha256": "ea3fe433f9450698ca8a230271688e7aeec12f99c8a7ef6c94379abb38f27823"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/prettify.js",
+    "destino": "01_V1/execucao/coverage/prettify.js",
+    "sha256": "fa1b1e1b906ddcfa08b46f161c0f924f506e1a31b4f3e09b8caaa2463ef52c18"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/sort-arrow-sprite.png",
+    "destino": "01_V1/execucao/coverage/sort-arrow-sprite.png",
+    "sha256": "42c895355f9838ede83fdfdca90127d8471aefed5ecf5342374f65ec7c3f10ab"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-execucao-v1-20261102T001129Z/coverage/sorter.js",
+    "destino": "01_V1/execucao/coverage/sorter.js",
+    "sha256": "f8cc5d157379d844fd695ad567b6c29b3c1f0812964ddf6f95c26327e434bab5"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/analise-formal-sprint3-v1-20261102T002330Z/ANALISE_FORMAL_V1.md",
+    "destino": "01_V1/analise/ANALISE_FORMAL_V1.md",
+    "sha256": "d0e2ede4617a2ef8128945217308cac32b140c4105a9cd5559c73d22fd451905"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/analise-formal-sprint3-v1-20261102T002330Z/inventario-testes-v1.csv",
+    "destino": "01_V1/analise/inventario-testes-v1.csv",
+    "sha256": "b33a7f2c4b45b8accb1620c2327426e9ca533596b3cf4357c677f7e7fe2bd69e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/suite-v2-gerada-antes-execucao/conversa-http.spec.ts",
+    "destino": "02_V2/testes/conversa-http.spec.ts",
+    "sha256": "70055b70f8aa819384d1c3e1ab9551b28cd92e30bfb1666a6a15faab49f30088"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/suite-v2-gerada-antes-execucao/fallback-config.spec.ts",
+    "destino": "02_V2/testes/fallback-config.spec.ts",
+    "sha256": "c4ce00823594c53e4ebff4f125e8810ea354122dbe4eb8301e03fc0d86b55338"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/suite-v2-gerada-antes-execucao/fallback-email.spec.ts",
+    "destino": "02_V2/testes/fallback-email.spec.ts",
+    "sha256": "b16274aa8c4b8697a909e25ffbb4a7f355373bec03b7c9449d017c661d7b544b"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/suite-v2-gerada-antes-execucao/orchestration.spec.ts",
+    "destino": "02_V2/testes/orchestration.spec.ts",
+    "sha256": "43677bdcbe7bf22cc2570ea5e7c521ed50245795b00640d6ce86fc904b04a8db"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/RELATORIO_V2_FORMAL.md",
+    "destino": "02_V2/RELATORIO_V2_FORMAL.md",
+    "sha256": "f07c7640b31f4fe61c6c3a040ac94b129c142c4a8612d40cfad5f11d1fef358e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/comparacao-v1-v2.json",
+    "destino": "02_V2/comparacao-v1-v2.json",
+    "sha256": "79cea0894a4d0ceff43f5d8bf6b85135ee14f24f93076cf14ebda3d69d6f97bc"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/rastreabilidade-v1-v2.csv",
+    "destino": "02_V2/rastreabilidade-v1-v2.csv",
+    "sha256": "6f3f71c7416a7d2819199d0e19aa673e176c2f53c06190e7e5f1565af980cb9b"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/inventario-v2.csv",
+    "destino": "02_V2/inventario-v2.csv",
+    "sha256": "98db8151afefec059be46b1cb72d5d6efcfa6de57c43ff23af30f51560957e66"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/V1-para-V2.diff",
+    "destino": "02_V2/V1-para-V2.diff",
+    "sha256": "f708ace94bdcc76290f1ad140eda6b16da650d1f4d4d76506391a69d26a1e932"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/baseline.json",
+    "destino": "02_V2/baseline.json",
+    "sha256": "2ebc590128d2d1ad5966a34d6a317e73319c1b4bc73fe78b63795e5a377c8b75"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/execucao.json",
+    "destino": "02_V2/execucao/execucao.json",
+    "sha256": "7e45e79f1b1e29650b68f38ea1be3fd534a6db981e845116ed42faf1094fb72b"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/vitest-results.json",
+    "destino": "02_V2/execucao/vitest-results.json",
+    "sha256": "b9281bbf2d0e31d22004847b145b011dacf6e08b266b8cdf049ad7fc01883b1d"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/vitest.exec.config.mts",
+    "destino": "02_V2/execucao/vitest.exec.config.mts",
+    "sha256": "e5d5ac776403ee8b0f947b2f64204ef9fd24cc63908ff86a77c19d6ceb8711b3"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/base.css",
+    "destino": "02_V2/execucao/coverage/base.css",
+    "sha256": "3f876e51f0a46864ffa7665b4b7a1f5fb5f6f37fb6a28f014e2b12d82962c852"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/block-navigation.js",
+    "destino": "02_V2/execucao/coverage/block-navigation.js",
+    "sha256": "cd8db34b1fbeb973354a93f8b4133c7c7eab34cdda9429a0434be91384783b7e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/coverage-final.json",
+    "destino": "02_V2/execucao/coverage/coverage-final.json",
+    "sha256": "b8dd55f0322bd12ead20c45f76b0b1416f6ad3250ec00ef015c8d9a9e837202c"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/coverage-summary.json",
+    "destino": "02_V2/execucao/coverage/coverage-summary.json",
+    "sha256": "e3bdfb0300bc9cf7c64b66dd11a72c8e754f5f86907384ce2689aca0ff06911f"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/favicon.png",
+    "destino": "02_V2/execucao/coverage/favicon.png",
+    "sha256": "5b0cfd52dc0bfbe544f4e1a9c77aa46b8629b0e0aad6c54f95eef457b86c2a89"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/index.html",
+    "destino": "02_V2/execucao/coverage/index.html",
+    "sha256": "7cc3e64ab5793c4c20e9352dabe804863559cd6e251bbcbce8137cb29f4bbcf2"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/prettify.css",
+    "destino": "02_V2/execucao/coverage/prettify.css",
+    "sha256": "ea3fe433f9450698ca8a230271688e7aeec12f99c8a7ef6c94379abb38f27823"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/prettify.js",
+    "destino": "02_V2/execucao/coverage/prettify.js",
+    "sha256": "fa1b1e1b906ddcfa08b46f161c0f924f506e1a31b4f3e09b8caaa2463ef52c18"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/sort-arrow-sprite.png",
+    "destino": "02_V2/execucao/coverage/sort-arrow-sprite.png",
+    "sha256": "42c895355f9838ede83fdfdca90127d8471aefed5ecf5342374f65ec7c3f10ab"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/sorter.js",
+    "destino": "02_V2/execucao/coverage/sorter.js",
+    "sha256": "f8cc5d157379d844fd695ad567b6c29b3c1f0812964ddf6f95c26327e434bab5"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/src/ai-service/ai-service.service.ts.html",
+    "destino": "02_V2/execucao/coverage/src/ai-service/ai-service.service.ts.html",
+    "sha256": "fc52ca1c3ade482f9d9900b95446ade0d54fd0d35a3af07f29eabd94ee485edb"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/src/ai-service/index.html",
+    "destino": "02_V2/execucao/coverage/src/ai-service/index.html",
+    "sha256": "6d7e23a4946a8147c39713725ba0aec3d26b108a3b0e31b5ad694d15c73c7d0e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/src/app.controller.ts.html",
+    "destino": "02_V2/execucao/coverage/src/app.controller.ts.html",
+    "sha256": "f1e0c4319ba72008503f47e9ee5511863af6e12aa7c72cd5555c37a7e4af809c"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/src/index.html",
+    "destino": "02_V2/execucao/coverage/src/index.html",
+    "sha256": "8c786fd67ac33ebb6ad34b3d2ebbfc6e6c8d336db27beb94e398f3b98f4aa5a7"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/src/orchestration/fallback.config.ts.html",
+    "destino": "02_V2/execucao/coverage/src/orchestration/fallback.config.ts.html",
+    "sha256": "4c1cf9182da8bc61cbf46832772a13d9bf65f3398e1dabd5254b46e27058fe4b"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/src/orchestration/fallback.service.ts.html",
+    "destino": "02_V2/execucao/coverage/src/orchestration/fallback.service.ts.html",
+    "sha256": "efc11fbbe88d508889ec1e13e144135bc9e888a371fe4faeef4fcba6f4f015b0"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/src/orchestration/index.html",
+    "destino": "02_V2/execucao/coverage/src/orchestration/index.html",
+    "sha256": "502834e971978a432d8c30aedf98825dcd64ceec74c2702b435692c2dedf088c"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/evidencias-v2-formal-20261102T002856Z/tentativa-01/coverage/src/orchestration/orchestration.service.ts.html",
+    "destino": "02_V2/execucao/coverage/src/orchestration/orchestration.service.ts.html",
+    "sha256": "98b003bd87124f9b93e1df9c6f9031ed5cf22d7d92c952a66d19ecb90dbd1639"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/DIVIDA_BACK-REF-01.md",
+    "destino": "03_REFATORACAO/DIVIDA_BACK-REF-01.md",
+    "sha256": "dfc354cee94c5820ec050b307c10f00ce7863453463be2cdfafcc9bfdb40cb49"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/BACK-REF-01.diff",
+    "destino": "03_REFATORACAO/BACK-REF-01.diff",
+    "sha256": "ff82a4017d6c72be244b74cee7fb9cae3938c17d5a583f386c036043a88ab032"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/comparacao-cobertura.json",
+    "destino": "03_REFATORACAO/comparacao-cobertura.json",
+    "sha256": "5c4034429ce06c7a359cadfe5c2f38331af6bd42db532e81329286c505fd7140"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/commit-sha.json",
+    "destino": "03_REFATORACAO/commit-sha.json",
+    "sha256": "0fde9cba566ec888a0ddc83c98ccd1e4c8937890f11660d0652578c4b769ee70"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/vitest.back-ref-01.config.mts",
+    "destino": "03_REFATORACAO/vitest.back-ref-01.config.mts",
+    "sha256": "f2a89dbbbb5319a3c9fa808ee6fc54bb49ec11c837cdd8843e1c25f38256f174"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/ambiente.json",
+    "destino": "03_REFATORACAO/ambiente.json",
+    "sha256": "a702dc17c5ae0c4f389eb9ddc661087e1fd253cc0d0e19f23288a8f94e4b0964"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/execucao.json",
+    "destino": "03_REFATORACAO/antes/execucao.json",
+    "sha256": "fcff6fb542183790cdfbb653408074493cd13657fff63ddbb4b3d9ca7cf40ea3"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/vitest-results.json",
+    "destino": "03_REFATORACAO/antes/vitest-results.json",
+    "sha256": "9dfddd2fef21fc9d35f0afa5b57d01b2c8c2dfe9faccca03149785ec21d1b73b"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/estado-versao.json",
+    "destino": "03_REFATORACAO/antes/estado-versao.json",
+    "sha256": "7ab04f0e28fe1b9f8bb009258c8478a4451ac55279a061e8ecc335f6fb6f8528"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/fallback.service.ts",
+    "destino": "03_REFATORACAO/antes/fallback.service.ts",
+    "sha256": "550ff2e4f5b41aeebce1c85b5b78e6d572bdef0cf07d78b4a7cc422c6c8848f1"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/base.css",
+    "destino": "03_REFATORACAO/antes/coverage/base.css",
+    "sha256": "3f876e51f0a46864ffa7665b4b7a1f5fb5f6f37fb6a28f014e2b12d82962c852"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/block-navigation.js",
+    "destino": "03_REFATORACAO/antes/coverage/block-navigation.js",
+    "sha256": "cd8db34b1fbeb973354a93f8b4133c7c7eab34cdda9429a0434be91384783b7e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/coverage-final.json",
+    "destino": "03_REFATORACAO/antes/coverage/coverage-final.json",
+    "sha256": "c99bca08c3d3dac57578887e60cc52141f4983e2b8b834b8ca5e8a48ba020393"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/coverage-summary.json",
+    "destino": "03_REFATORACAO/antes/coverage/coverage-summary.json",
+    "sha256": "42ec5774e10fb2470992c1cbcd6918cbb307aaf4f009a7f6ffd6a0943aa3e26b"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/favicon.png",
+    "destino": "03_REFATORACAO/antes/coverage/favicon.png",
+    "sha256": "5b0cfd52dc0bfbe544f4e1a9c77aa46b8629b0e0aad6c54f95eef457b86c2a89"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/index.html",
+    "destino": "03_REFATORACAO/antes/coverage/index.html",
+    "sha256": "6875d8824aba27395bebc97463415aae5ceee1cb494febaa31f8e1310fcc4a9d"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/prettify.css",
+    "destino": "03_REFATORACAO/antes/coverage/prettify.css",
+    "sha256": "ea3fe433f9450698ca8a230271688e7aeec12f99c8a7ef6c94379abb38f27823"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/prettify.js",
+    "destino": "03_REFATORACAO/antes/coverage/prettify.js",
+    "sha256": "fa1b1e1b906ddcfa08b46f161c0f924f506e1a31b4f3e09b8caaa2463ef52c18"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/sort-arrow-sprite.png",
+    "destino": "03_REFATORACAO/antes/coverage/sort-arrow-sprite.png",
+    "sha256": "42c895355f9838ede83fdfdca90127d8471aefed5ecf5342374f65ec7c3f10ab"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/sorter.js",
+    "destino": "03_REFATORACAO/antes/coverage/sorter.js",
+    "sha256": "f8cc5d157379d844fd695ad567b6c29b3c1f0812964ddf6f95c26327e434bab5"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/src/ai-service/ai-service.service.ts.html",
+    "destino": "03_REFATORACAO/antes/coverage/src/ai-service/ai-service.service.ts.html",
+    "sha256": "b0d08a04435f682ca038ccf57329a455ff67a9b4222c9a1c434e1ac53465353a"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/src/ai-service/index.html",
+    "destino": "03_REFATORACAO/antes/coverage/src/ai-service/index.html",
+    "sha256": "7d4a367909f47f3328b4bac2937c3a679c5f21afd281b353ca5056c7788fa594"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/src/app.controller.ts.html",
+    "destino": "03_REFATORACAO/antes/coverage/src/app.controller.ts.html",
+    "sha256": "bd20d411a5453071b64b67fef7e73b871d5907338418a08a8fa553345f4ae66d"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/src/index.html",
+    "destino": "03_REFATORACAO/antes/coverage/src/index.html",
+    "sha256": "383a3a859a24aedeea089f681921fb6138013e9bc5612c93ab5b1875bacc011b"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/src/orchestration/fallback.config.ts.html",
+    "destino": "03_REFATORACAO/antes/coverage/src/orchestration/fallback.config.ts.html",
+    "sha256": "facf967de56173d469c92141d3f95d56849efd03d3d288fb83c91087b7dc6488"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/src/orchestration/fallback.service.ts.html",
+    "destino": "03_REFATORACAO/antes/coverage/src/orchestration/fallback.service.ts.html",
+    "sha256": "bbbce5ec0f9638d3c5a14feef3fe24dde4ccab4acc7c2d9c17ad167ffe2c37a4"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/src/orchestration/index.html",
+    "destino": "03_REFATORACAO/antes/coverage/src/orchestration/index.html",
+    "sha256": "9a705cb36f7a8613644b25e9704dd705bd22ded7a62eefa2a28d0bfec7830880"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/antes/coverage/src/orchestration/orchestration.service.ts.html",
+    "destino": "03_REFATORACAO/antes/coverage/src/orchestration/orchestration.service.ts.html",
+    "sha256": "7ddcc68bc4afcc1410f871381e65b1582c847a2aa1fb3fa09d25d372fce7946a"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/execucao.json",
+    "destino": "03_REFATORACAO/depois/execucao.json",
+    "sha256": "e3f8897c2f25b09bf6e232a25cc7c13058aca0438068e4edb528f7f8873ccd3c"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/vitest-results.json",
+    "destino": "03_REFATORACAO/depois/vitest-results.json",
+    "sha256": "f2aadd3333cbd3674cdb49961debc0fda2f1fb6f9e5d75af09bb6c9b6c56979f"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/estado-versao.json",
+    "destino": "03_REFATORACAO/depois/estado-versao.json",
+    "sha256": "fcbb97e7bf144f478abfc3458c41d3721ca7b30d384e2944c39e45d03236fdad"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/fallback.service.ts",
+    "destino": "03_REFATORACAO/depois/fallback.service.ts",
+    "sha256": "f05347eeb2f7b0a0ed215592958d7862acd308e327cb093ef5f5e527beab8444"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/base.css",
+    "destino": "03_REFATORACAO/depois/coverage/base.css",
+    "sha256": "3f876e51f0a46864ffa7665b4b7a1f5fb5f6f37fb6a28f014e2b12d82962c852"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/block-navigation.js",
+    "destino": "03_REFATORACAO/depois/coverage/block-navigation.js",
+    "sha256": "cd8db34b1fbeb973354a93f8b4133c7c7eab34cdda9429a0434be91384783b7e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/coverage-final.json",
+    "destino": "03_REFATORACAO/depois/coverage/coverage-final.json",
+    "sha256": "25d8885137adbf5fbd9a1b43ed63079cf45ed2848f1a6b7c32d9e21d007bf3fb"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/coverage-summary.json",
+    "destino": "03_REFATORACAO/depois/coverage/coverage-summary.json",
+    "sha256": "cf22edf017a3c11ffd835eb289460397f18e36b7996efdce6357541244ca3b4e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/favicon.png",
+    "destino": "03_REFATORACAO/depois/coverage/favicon.png",
+    "sha256": "5b0cfd52dc0bfbe544f4e1a9c77aa46b8629b0e0aad6c54f95eef457b86c2a89"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/index.html",
+    "destino": "03_REFATORACAO/depois/coverage/index.html",
+    "sha256": "3d96902d155409080ed0208f8d5f3f2aaf22798f5ec4c9fcecc1441c64840ae9"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/prettify.css",
+    "destino": "03_REFATORACAO/depois/coverage/prettify.css",
+    "sha256": "ea3fe433f9450698ca8a230271688e7aeec12f99c8a7ef6c94379abb38f27823"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/prettify.js",
+    "destino": "03_REFATORACAO/depois/coverage/prettify.js",
+    "sha256": "fa1b1e1b906ddcfa08b46f161c0f924f506e1a31b4f3e09b8caaa2463ef52c18"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/sort-arrow-sprite.png",
+    "destino": "03_REFATORACAO/depois/coverage/sort-arrow-sprite.png",
+    "sha256": "42c895355f9838ede83fdfdca90127d8471aefed5ecf5342374f65ec7c3f10ab"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/sorter.js",
+    "destino": "03_REFATORACAO/depois/coverage/sorter.js",
+    "sha256": "f8cc5d157379d844fd695ad567b6c29b3c1f0812964ddf6f95c26327e434bab5"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/src/ai-service/ai-service.service.ts.html",
+    "destino": "03_REFATORACAO/depois/coverage/src/ai-service/ai-service.service.ts.html",
+    "sha256": "b9d53d7466c4aa47182e13ef88221bca2435486cbc00e14a69f1643f2f86c23a"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/src/ai-service/index.html",
+    "destino": "03_REFATORACAO/depois/coverage/src/ai-service/index.html",
+    "sha256": "514142fbb5afdcb23426acf89e83b6b9a633cd2c35b155148c2a965442289f74"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/src/app.controller.ts.html",
+    "destino": "03_REFATORACAO/depois/coverage/src/app.controller.ts.html",
+    "sha256": "ce81438cc4ef548f030415cc4c66673b9fa0e6d2457966b56aa43e29b781e322"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/src/index.html",
+    "destino": "03_REFATORACAO/depois/coverage/src/index.html",
+    "sha256": "1843a9b4dfb8de50743cceff8a74018d93acb72ba7926926796f345de0e85392"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/src/orchestration/fallback.config.ts.html",
+    "destino": "03_REFATORACAO/depois/coverage/src/orchestration/fallback.config.ts.html",
+    "sha256": "e9c3ad8eb55b0fa2ab12d95a2a31d3a859d382722965f73ef8abd85a7b5421c1"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/src/orchestration/fallback.service.ts.html",
+    "destino": "03_REFATORACAO/depois/coverage/src/orchestration/fallback.service.ts.html",
+    "sha256": "00a5ac90d0717a3e326babac440e3a2da09802eaec199d16094eed420f4b40f6"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/src/orchestration/index.html",
+    "destino": "03_REFATORACAO/depois/coverage/src/orchestration/index.html",
+    "sha256": "da86ea71aff9b554aad27c38839a2df43cef7f31d5881bc9a13e54dc4a4afd3e"
+  },
+  {
+    "origem": "/home/victor/codex-chatbot-handoff/refatoracao-BACK-REF-01-20261102T003619Z/depois/coverage/src/orchestration/orchestration.service.ts.html",
+    "destino": "03_REFATORACAO/depois/coverage/src/orchestration/orchestration.service.ts.html",
+    "sha256": "b1cd321e4d9827b6071bef95b4bde3d414864687454c0fc06140f264ec752e03"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-divida.md",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-divida.md",
+    "sha256": "dfc354cee94c5820ec050b307c10f00ce7863453463be2cdfafcc9bfdb40cb49"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-relatorio.md",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-relatorio.md",
+    "sha256": "18c6e7ebd3e3c7592d614d84bc247580c138cb5b576696b588c21d67486412b2"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/testes/matriz-rastreabilidade.md",
+    "destino": "04_RESUMO/fontes_versionadas/docs/testes/matriz-rastreabilidade.md",
+    "sha256": "8db1845e723ab69e696e668369ad659f3e072c90de734934cf71a13164e751e8"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:backend/REGRESSAO_GERAR.md",
+    "destino": "04_RESUMO/fontes_versionadas/backend/REGRESSAO_GERAR.md",
+    "sha256": "e36368aec00824e2a3d653073b5d90896bc73d8a71440f19fecf2f6815cdaa81"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:backend/scripts/test-v2-historica.sh",
+    "destino": "04_RESUMO/fontes_versionadas/backend/scripts/test-v2-historica.sh",
+    "sha256": "bc25e9bb57259f7b129b4556a59db306d4296878a1de6928381d073b290d2910"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-V2.sha256",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-V2.sha256",
+    "sha256": "2f004709293a0fcab2643cd0b7a5cd8ac2aa28cd13268fb2ddde28d8148d81e4"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/BACK-REF-01.diff",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/BACK-REF-01.diff",
+    "sha256": "ff82a4017d6c72be244b74cee7fb9cae3938c17d5a583f386c036043a88ab032"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/ambiente.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/ambiente.json",
+    "sha256": "a702dc17c5ae0c4f389eb9ddc661087e1fd253cc0d0e19f23288a8f94e4b0964"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/antes/coverage-summary.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/antes/coverage-summary.json",
+    "sha256": "42ec5774e10fb2470992c1cbcd6918cbb307aaf4f009a7f6ffd6a0943aa3e26b"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/antes/estado-versao.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/antes/estado-versao.json",
+    "sha256": "7ab04f0e28fe1b9f8bb009258c8478a4451ac55279a061e8ecc335f6fb6f8528"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/antes/execucao.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/antes/execucao.json",
+    "sha256": "fcff6fb542183790cdfbb653408074493cd13657fff63ddbb4b3d9ca7cf40ea3"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/antes/vitest-results.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/antes/vitest-results.json",
+    "sha256": "9dfddd2fef21fc9d35f0afa5b57d01b2c8c2dfe9faccca03149785ec21d1b73b"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/build.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/build.json",
+    "sha256": "ee31e96d7ee3b7dc022188b656ab8d3b1cdec04ca573ccbb272310e9a16de33b"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/comparacao-cobertura.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/comparacao-cobertura.json",
+    "sha256": "5c4034429ce06c7a359cadfe5c2f38331af6bd42db532e81329286c505fd7140"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/depois/coverage-summary.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/depois/coverage-summary.json",
+    "sha256": "cf22edf017a3c11ffd835eb289460397f18e36b7996efdce6357541244ca3b4e"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/depois/estado-versao.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/depois/estado-versao.json",
+    "sha256": "fcbb97e7bf144f478abfc3458c41d3721ca7b30d384e2944c39e45d03236fdad"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/depois/execucao.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/depois/execucao.json",
+    "sha256": "e3f8897c2f25b09bf6e232a25cc7c13058aca0438068e4edb528f7f8873ccd3c"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/depois/vitest-results.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/depois/vitest-results.json",
+    "sha256": "f2aadd3333cbd3674cdb49961debc0fda2f1fb6f9e5d75af09bb6c9b6c56979f"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/diff-check.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/diff-check.json",
+    "sha256": "f37b969612c4d0cc5ba37e8cfd431c0d5e34b2f8322c497417a0965dfafcd310"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/lint.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/lint.json",
+    "sha256": "836a8d0ad27431fea9a8dc22c2756969c9e37317e5a434a3905ed07a9619cc99"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/regressao-e2e.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/regressao-e2e.json",
+    "sha256": "58286396659af13294d4393c43ee60391e70bc4e741ab3e9ea8f4934fc219392"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/regressao-unitarios.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/regressao-unitarios.json",
+    "sha256": "d0e7109cb5c30ab5ac5f468238abb9e7ae48ab526a34dc0f1a09ca438b35de7d"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/selecao-regressao.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/selecao-regressao.json",
+    "sha256": "c360f19c5b8bcd3b35ca4a05feb0072ef87893c2df16badd915fcd096eb0862b"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-evidencias/vitest.back-ref-01.config.mts",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-evidencias/vitest.back-ref-01.config.mts",
+    "sha256": "f2a89dbbbb5319a3c9fa808ee6fc54bb49ec11c837cdd8843e1c25f38256f174"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-publicacao-checks.json",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-publicacao-checks.json",
+    "sha256": "d35cf2712a9995be00038b2fefc15e95dca6da40498fc0048f8c4f327e1aa1b4"
+  },
+  {
+    "origem": "git:17423f86b53826eb99535f5960b37bf175e39a2b:docs/qualidade/BACK-REF-01-publicacao.md",
+    "destino": "04_RESUMO/fontes_versionadas/docs/qualidade/BACK-REF-01-publicacao.md",
+    "sha256": "37f111dced0e0ddca885fcb781a64cf062a10c0d97084b7214839838c288945a"
+  }
+]

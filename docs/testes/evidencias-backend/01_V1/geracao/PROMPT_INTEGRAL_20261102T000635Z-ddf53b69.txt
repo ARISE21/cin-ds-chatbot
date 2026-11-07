@@ -1,0 +1,43 @@
+Vamos gerar a V1 formal dos testes da Sprint 3 do Chatbot SecGrad.
+
+Esta é uma geração independente. Você não deve consultar histórico de conversas, matriz de testes, testes existentes, relatórios anteriores ou resultados de cobertura.
+
+**Objetivo**
+
+Gerar uma primeira versão de testes automatizados em TypeScript com Vitest, para duas funcionalidades do backend NestJS:
+
+- US-02: decisão de fallback quando a busca não oferece evidências suficientes.
+- US-03: geração de rascunho de e-mail para encaminhamento à secretaria.
+
+**Arquivos permitidos**
+
+Leia exclusivamente os arquivos de produção disponíveis em:
+
+`/home/victor/codex-chatbot-handoff/evidencias-preparacao-formal-20261101T235827Z/entrada-producao`
+
+Não abra outros diretórios do projeto nem procure testes existentes, matriz, README, relatórios ou registros anteriores. Caso falte alguma dependência necessária para entender o código, informe a limitação sem buscar informações proibidas.
+
+**Geração**
+
+1. Analise apenas o código de produção permitido.
+2. Gere os testes que considerar adequados às duas funcionalidades, utilizando Vitest e simulações de dependências quando necessário.
+3. Faça uma única geração inicial. Não melhore os testes usando resultados anteriores, pois esta é a V1.
+4. Não execute, corrija, formate ou refatore os testes gerados.
+5. Não altere nenhum arquivo de produção.
+6. Não faça commit, push, merge ou PR.
+
+**Preservação obrigatória**
+
+Salve o prompt integral e a primeira saída original da geração em arquivos separados, com identificador único, dentro de uma nova pasta em:
+
+`/home/victor/codex-chatbot-handoff/`
+
+Preserve todo o código e as explicações produzidas, exatamente como gerados, sem correções posteriores. Registre data, modelo e versão efetivamente informados, arquivos de entrada, SHA da base e hashes SHA-256 das evidências. Não invente metadados que não estiverem disponíveis.
+
+A pasta deve permanecer fora do Git.
+
+Ao final, crie um novo arquivo `RESUMO_GERACAO_V1.md` na mesma pasta, contendo o que foi gerado, arquivos criados, limitações e caminhos das evidências.
+
+Não consulte nem sobrescreva o histórico existente em `RESUMO_PARA_CHATGPT.md`.
+
+**Importante:** esta etapa termina com a V1 original gerada e preservada. A instalação, execução, medição e análise serão realizadas posteriormente, em outra etapa.
