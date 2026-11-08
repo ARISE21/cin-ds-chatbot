@@ -1,7 +1,9 @@
 # Consolidação da análise crítica da Sprint 3
 
-PDF mais recente: [análise crítica revisada em 07/11](analise-critica-sprint3-revisao-20261107.pdf),
-com cinco páginas. A versão de 06/11 abaixo é histórica e permanece preservada.
+PDF mais recente: [análise crítica revisada em 08/11](analise-critica-sprint3-revisao-20261108.pdf),
+com cinco páginas. As versões de 06/11 e 07/11 são históricas e permanecem preservadas.
+O [fechamento do backend](fechamento-backend-20261108/README.md) registra a correção
+das seis regressões atuais de URL e as verificações com serviços reais.
 Rafael também assume o PDF de refatorações; consulte o
 [guia dos dois relatórios](../qualidade/ENTREGA-RELATORIOS.md). O PDF de refatorações
 é parcial até receber a terceira refatoração com evidências.

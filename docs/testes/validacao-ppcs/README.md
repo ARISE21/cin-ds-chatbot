@@ -1,5 +1,11 @@
 # PPCs: ingestão, recuperação e revisão de integração (07/11/2026)
 
+Atualização de 08/11: as seis regressões de URL abaixo foram corrigidas e a suíte
+corrente do backend passou 256/256, com e2e e serviços reais verificados. Este texto
+e seus resultados de 07/11 são históricos; consulte o
+[fechamento atual](../fechamento-backend-20261108/README.md). UI, benchmark e curadoria
+continuam com as ressalvas descritas aqui.
+
 ## Escopo e estado
 
 Base integrada: `484cd24a471efa7b5f2ec7983ad45cf57c5a0bf7` (merge do PR #29),

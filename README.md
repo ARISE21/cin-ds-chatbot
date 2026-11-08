@@ -4,6 +4,11 @@
 
 ### Execução corrigida do serviço de IA
 
+Fechamento do backend em 08/11: `AI_SERVICE_URL` explícita é obrigatória e as seis
+regressões de URL foram corrigidas. Comandos PowerShell, resultados correntes e
+limites em [fechamento do backend](docs/testes/fechamento-backend-20261108/README.md).
+Relatórios mais recentes e pendências acadêmicas: [guia dos PDFs](docs/qualidade/ENTREGA-RELATORIOS.md).
+
 Na raiz, instale `python -m pip install -r ai-service/requirements-dev.txt`; entre em `ai-service`, execute `python -m src.validate_catalog`, `python -m src.ingest_batch` e `python -m uvicorn main:app --reload --port 8000`. Swagger: http://localhost:8000/docs. Para testes: `python -m unittest discover -s tests -v`. A dependência `httpx` é usada nos testes HTTP.
 
 O catálogo canônico é `data/raw/metadata.json`; `ai-service/data/` é legado. Contagens antigas precisam ser medidas novamente após atualizar os documentos. A geração simulada requer `SECGRAD_GENERATION_MODE=mock` e retorna aviso explícito. Sem configuração retorna 503 para contexto não vazio; contexto vazio retorna `resposta: null`.

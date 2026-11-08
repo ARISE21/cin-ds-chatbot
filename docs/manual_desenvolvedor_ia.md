@@ -101,8 +101,9 @@ npm run start:dev
 
 O timeout ampliado é de desenvolvimento, por chamada. O padrão é 5000 ms; inicialização
 do modelo de embeddings pode demorar mais na primeira busca. Não enfraquecer validações
-de URL para contornar configuração ausente. O ajuste recente do backend aceita localhost
-por padrão, mas ainda conflita com testes; Victor/Eric devem alinhar esse contrato.
+de URL para contornar configuração ausente. Em 08/11 foi restaurado o contrato:
+`AI_SERVICE_URL` explícita é obrigatória; não há localhost padrão. Ver
+[fechamento do backend](testes/fechamento-backend-20261108/README.md).
 
 Terminal 3, na raiz, com o ambiente Python ativado:
 

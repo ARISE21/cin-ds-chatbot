@@ -202,7 +202,7 @@ export class AiService {
 
   private getEndpoint(): URL {
     try {
-      const origin = process.env.AI_SERVICE_URL?.trim() || 'http://localhost:8000';
+      const origin = process.env.AI_SERVICE_URL?.trim() ?? '';
       const base = new URL(origin);
       if (
         !['http:', 'https:'].includes(base.protocol) ||
@@ -210,7 +210,8 @@ export class AiService {
         base.password ||
         base.search ||
         base.hash ||
-        base.pathname !== '/'
+        base.pathname !== '/' ||
+        !/^https?:\/\/[^/?#\\]+\/?$/i.test(origin)
       ) {
         throw new Error('Invalid origin');
       }

@@ -1,0 +1,8 @@
+[Nest] 44292  - 08/11/2026, 14:45:46     LOG [NestFactory] Starting Nest application...
+[Nest] 44292  - 08/11/2026, 14:45:46     LOG [InstanceLoader] AiServiceModule dependencies initialized +4ms
+[Nest] 44292  - 08/11/2026, 14:45:46     LOG [InstanceLoader] OrchestrationModule dependencies initialized +1ms
+[Nest] 44292  - 08/11/2026, 14:45:46     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 44292  - 08/11/2026, 14:45:46     LOG [RoutesResolver] AppController {/}: +4ms
+[Nest] 44292  - 08/11/2026, 14:45:46     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 44292  - 08/11/2026, 14:45:46     LOG [RouterExplorer] Mapped {/api/v1/conversa, POST} route +3ms
+[Nest] 44292  - 08/11/2026, 14:45:46     LOG [NestApplication] Nest application successfully started +0ms

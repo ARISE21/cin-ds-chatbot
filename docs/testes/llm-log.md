@@ -1,5 +1,17 @@
 # Sprint 3 — Registro de uso de LLM
 
+## Fechamento do backend assumido por Rafael - 08/11/2026
+
+Rafael informou autorização de Victor para assumir suas pendências finais. O pedido
+integral e o diagnóstico assistido estão em
+[log de manutenção](../qualidade/log-analise-backend-20261108.md).
+Não houve nova V1/V2: restaurou-se o contrato de URL que já tinha testes, mantendo
+suítes e resultados históricos. O recorte de 100 casos antes falhou em seis; a suíte
+corrente de 256 passou após a restauração. Resultados e limites:
+[fechamento de 08/11](fechamento-backend-20261108/README.md).
+As revisões dos PDFs de 08/11 mantêm os resultados antigos e distinguem essas
+regressões posteriores. A correção funcional não é contada como terceira refatoração.
+
 ## Consolidação das três histórias em 06/11/2026
 
 Pedido integral de Rafael: "Ok, chat. Baseando-se em tudo isso e considerando ainda aquelas orientações técnicas que te mandei (prints dos professores, etc), você consegue avançar a minha parte para o Sprint 3 com o que temos até agora? Leve o tempo que achar necessário para fazer essa minha parte. Se ainda faltar coisas que dependem de outros integrantes me avise."
