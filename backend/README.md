@@ -27,6 +27,13 @@
 
 ## Project setup
 
+Fechamento de 08/11/2026: a validação estrita de `AI_SERVICE_URL` foi restaurada;
+não há endereço padrão. Resultados correntes, reprodução no PowerShell e pendências:
+[fechamento do backend](../docs/testes/fechamento-backend-20261108/README.md).
+O ensaio real opt-in pode ser executado com o Python do projeto a partir da raiz:
+`python backend/scripts/verificar-integracao-real.py --saida docs/testes/ensaio-novo`.
+Ele usa base real e geração explicitamente simulada, sem alterar a UI ou o corpus.
+
 Use Node.js 24.x (also declared in `.nvmrc` and `package.json`), npm e,
 para os exemplos HTTP, curl. Os comandos abaixo usam Bash (Linux/macOS).
 `nvm use` pressupõe nvm instalado e Node 24 disponível; se necessário,

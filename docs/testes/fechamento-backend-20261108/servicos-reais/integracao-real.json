@@ -1,0 +1,274 @@
+{
+  "utc": "2026-11-08T17:45:30.576635+00:00",
+  "git_base": "7c85cf08a303d6c3298bc5fd4b54b92095918861",
+  "tipo": "Serviços e corpus reais; geração simulada, sem navegador ou LLM real.",
+  "casos": [
+    {
+      "nome": "busca_real_mock",
+      "status_http": 200,
+      "segundos": 5.764,
+      "retorno": {
+        "contexto": "[Documento: ppc_cc_novo_2024.pdf | Pág. 43 | Curso: Ciência da Computação]\n8 Perfil Profissional do Egresso\nDe\nacordo\ncom\nas\nDiretrizes\nCurriculares\nNacionais\npara\nos\ncursos\nde\ngraduação\nna\nárea\nde\nComputação,\nResolução\nnº\n05/2016,\ndo\nConselho\nNacional\nde\nEducação\ne\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura,\nde\nabril\nde\n2010,\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\ndeve\npossuir\numa\nsólida\nformação\nem\nCiência\nda\nComputação\ne\nMatemática,\nconhecer\nas\nestruturas\ne\nprocessos\ndos\nsistemas\nde\ncomputação\ncom\numa\nvisão\ninterdisciplinar\ne\nglobal\ndos\nsistemas,\ndominar\nos\nconceitos\nteóricos\nda\nCiência\nda\nComputação\ne\nseus\nimpactos\nnas\naplicações\npráticas,\ne\nter\ncapacidade\npara\ncriar\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 70 | Curso: Ciência da Computação]\n12.4 Avaliação e acompanhamento da concretização do projeto pedagógico\nA\navaliação\ndo\ndesenvolvimento\ndo\nProjeto\nPedagógico\ndar-se-á\nem\nrelação\nao\ncumprimento\nde\nseus\nobjetivos,\nperfil\ndo\negresso\ne\nhabilidades\ne\ncompetências.\nA\navaliação\nserá\nrealizada\ntambém\ncom\nrelação\nà\nnecessidade\nde\nflexibilização\ncurricular\nou\nde\nmodificação\nda\nestrutura\ncurricular,\ndas\natividades\ncomplementares\ne\ndo\ncorpo\ndocente\ne\ndiscente.\nO\ncurso\nde\nCiência\nda\nComputação\npossui\num\nNúcleo\nDocente\nEstruturante\n(NDE)\nconstituído\npor\ndocentes\nde\nreconhecida\nexperiência\ne\ndestaque\nacadêmico,\nresponsáveis\npelo\nacompanhamento\ndo\nProjeto\nPedagógico\ndo\nCurso\n(PPC),\nem\nconsonância\ncom\na\nResolução\nnº\n01,\nde\n17\nde\njunho\nde\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 44 | Curso: Ciência da Computação]\n9 Campo de Atuação Profissional\nDe\nacordo\ncom\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura\nde\nabril\nde\n2010\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\n\"atua\nem\nindústrias\nde\ncomputadores;\nempresas\nde\nprogramas\nde\ncomputadores;\nsetores\nde\nTecnologia\nda\nInformação\nde\ninstituições\npúblicas\ne\nprivadas;\nem\nempresas\ne\nlaboratórios\nde\npesquisa\ncientífica\ne\ntecnológica.\nTambém\npode\natuar\nde\nforma\nautônoma,\nem\nempresa\nprópria\nou\nprestando\nconsultoria\".\nNesses\ndiferentes\ncampos\nde\natuação,\no\nbacharel\nem\nCiência\nda\nComputação\npode\ntrabalhar\nnos\nseguintes\npapéis:\nprogramador,\ngerente\nde\ndesenvolvimento,\ngerente\nde",
+        "fontes": [
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 43,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 70,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 44,
+            "curso": "Ciência da Computação"
+          }
+        ],
+        "distancia_minima": 0.18833637237548828
+      }
+    },
+    {
+      "nome": "busca_real_disabled",
+      "status_http": 200,
+      "segundos": 1.058,
+      "retorno": {
+        "contexto": "[Documento: ppc_cc_novo_2024.pdf | Pág. 43 | Curso: Ciência da Computação]\n8 Perfil Profissional do Egresso\nDe\nacordo\ncom\nas\nDiretrizes\nCurriculares\nNacionais\npara\nos\ncursos\nde\ngraduação\nna\nárea\nde\nComputação,\nResolução\nnº\n05/2016,\ndo\nConselho\nNacional\nde\nEducação\ne\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura,\nde\nabril\nde\n2010,\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\ndeve\npossuir\numa\nsólida\nformação\nem\nCiência\nda\nComputação\ne\nMatemática,\nconhecer\nas\nestruturas\ne\nprocessos\ndos\nsistemas\nde\ncomputação\ncom\numa\nvisão\ninterdisciplinar\ne\nglobal\ndos\nsistemas,\ndominar\nos\nconceitos\nteóricos\nda\nCiência\nda\nComputação\ne\nseus\nimpactos\nnas\naplicações\npráticas,\ne\nter\ncapacidade\npara\ncriar\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 70 | Curso: Ciência da Computação]\n12.4 Avaliação e acompanhamento da concretização do projeto pedagógico\nA\navaliação\ndo\ndesenvolvimento\ndo\nProjeto\nPedagógico\ndar-se-á\nem\nrelação\nao\ncumprimento\nde\nseus\nobjetivos,\nperfil\ndo\negresso\ne\nhabilidades\ne\ncompetências.\nA\navaliação\nserá\nrealizada\ntambém\ncom\nrelação\nà\nnecessidade\nde\nflexibilização\ncurricular\nou\nde\nmodificação\nda\nestrutura\ncurricular,\ndas\natividades\ncomplementares\ne\ndo\ncorpo\ndocente\ne\ndiscente.\nO\ncurso\nde\nCiência\nda\nComputação\npossui\num\nNúcleo\nDocente\nEstruturante\n(NDE)\nconstituído\npor\ndocentes\nde\nreconhecida\nexperiência\ne\ndestaque\nacadêmico,\nresponsáveis\npelo\nacompanhamento\ndo\nProjeto\nPedagógico\ndo\nCurso\n(PPC),\nem\nconsonância\ncom\na\nResolução\nnº\n01,\nde\n17\nde\njunho\nde\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 44 | Curso: Ciência da Computação]\n9 Campo de Atuação Profissional\nDe\nacordo\ncom\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura\nde\nabril\nde\n2010\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\n\"atua\nem\nindústrias\nde\ncomputadores;\nempresas\nde\nprogramas\nde\ncomputadores;\nsetores\nde\nTecnologia\nda\nInformação\nde\ninstituições\npúblicas\ne\nprivadas;\nem\nempresas\ne\nlaboratórios\nde\npesquisa\ncientífica\ne\ntecnológica.\nTambém\npode\natuar\nde\nforma\nautônoma,\nem\nempresa\nprópria\nou\nprestando\nconsultoria\".\nNesses\ndiferentes\ncampos\nde\natuação,\no\nbacharel\nem\nCiência\nda\nComputação\npode\ntrabalhar\nnos\nseguintes\npapéis:\nprogramador,\ngerente\nde\ndesenvolvimento,\ngerente\nde",
+        "fontes": [
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 43,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 70,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 44,
+            "curso": "Ciência da Computação"
+          }
+        ],
+        "distancia_minima": 0.18833637237548828
+      }
+    },
+    {
+      "nome": "conversa_com_corpus_real",
+      "status_http": 201,
+      "segundos": 0.249,
+      "retorno": {
+        "contexto": "[Documento: ppc_cc_novo_2024.pdf | Pág. 43 | Curso: Ciência da Computação]\n8 Perfil Profissional do Egresso\nDe\nacordo\ncom\nas\nDiretrizes\nCurriculares\nNacionais\npara\nos\ncursos\nde\ngraduação\nna\nárea\nde\nComputação,\nResolução\nnº\n05/2016,\ndo\nConselho\nNacional\nde\nEducação\ne\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura,\nde\nabril\nde\n2010,\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\ndeve\npossuir\numa\nsólida\nformação\nem\nCiência\nda\nComputação\ne\nMatemática,\nconhecer\nas\nestruturas\ne\nprocessos\ndos\nsistemas\nde\ncomputação\ncom\numa\nvisão\ninterdisciplinar\ne\nglobal\ndos\nsistemas,\ndominar\nos\nconceitos\nteóricos\nda\nCiência\nda\nComputação\ne\nseus\nimpactos\nnas\naplicações\npráticas,\ne\nter\ncapacidade\npara\ncriar\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 70 | Curso: Ciência da Computação]\n12.4 Avaliação e acompanhamento da concretização do projeto pedagógico\nA\navaliação\ndo\ndesenvolvimento\ndo\nProjeto\nPedagógico\ndar-se-á\nem\nrelação\nao\ncumprimento\nde\nseus\nobjetivos,\nperfil\ndo\negresso\ne\nhabilidades\ne\ncompetências.\nA\navaliação\nserá\nrealizada\ntambém\ncom\nrelação\nà\nnecessidade\nde\nflexibilização\ncurricular\nou\nde\nmodificação\nda\nestrutura\ncurricular,\ndas\natividades\ncomplementares\ne\ndo\ncorpo\ndocente\ne\ndiscente.\nO\ncurso\nde\nCiência\nda\nComputação\npossui\num\nNúcleo\nDocente\nEstruturante\n(NDE)\nconstituído\npor\ndocentes\nde\nreconhecida\nexperiência\ne\ndestaque\nacadêmico,\nresponsáveis\npelo\nacompanhamento\ndo\nProjeto\nPedagógico\ndo\nCurso\n(PPC),\nem\nconsonância\ncom\na\nResolução\nnº\n01,\nde\n17\nde\njunho\nde\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 44 | Curso: Ciência da Computação]\n9 Campo de Atuação Profissional\nDe\nacordo\ncom\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura\nde\nabril\nde\n2010\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\n\"atua\nem\nindústrias\nde\ncomputadores;\nempresas\nde\nprogramas\nde\ncomputadores;\nsetores\nde\nTecnologia\nda\nInformação\nde\ninstituições\npúblicas\ne\nprivadas;\nem\nempresas\ne\nlaboratórios\nde\npesquisa\ncientífica\ne\ntecnológica.\nTambém\npode\natuar\nde\nforma\nautônoma,\nem\nempresa\nprópria\nou\nprestando\nconsultoria\".\nNesses\ndiferentes\ncampos\nde\natuação,\no\nbacharel\nem\nCiência\nda\nComputação\npode\ntrabalhar\nnos\nseguintes\npapéis:\nprogramador,\ngerente\nde\ndesenvolvimento,\ngerente\nde",
+        "distancia_minima": 0.18833637237548828,
+        "fontes": [
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 43,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 70,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 44,
+            "curso": "Ciência da Computação"
+          }
+        ],
+        "fallback_acionado": false,
+        "resposta": "[SIMULAÇÃO DE INTEGRAÇÃO — NÃO É RESPOSTA ACADÊMICA]"
+      }
+    },
+    {
+      "nome": "consulta_invalida",
+      "status_http": 400,
+      "segundos": 0.013,
+      "retorno": {
+        "message": "Consulta de busca inválida.",
+        "error": "Bad Request",
+        "statusCode": 400
+      }
+    },
+    {
+      "nome": "geracao_sem_contexto",
+      "status_http": 200,
+      "segundos": 0.002,
+      "retorno": {
+        "resposta": null
+      }
+    },
+    {
+      "nome": "fallback_limiar_controlado_zero",
+      "status_http": 201,
+      "segundos": 0.229,
+      "retorno": {
+        "contexto": "[Documento: ppc_cc_novo_2024.pdf | Pág. 43 | Curso: Ciência da Computação]\n8 Perfil Profissional do Egresso\nDe\nacordo\ncom\nas\nDiretrizes\nCurriculares\nNacionais\npara\nos\ncursos\nde\ngraduação\nna\nárea\nde\nComputação,\nResolução\nnº\n05/2016,\ndo\nConselho\nNacional\nde\nEducação\ne\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura,\nde\nabril\nde\n2010,\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\ndeve\npossuir\numa\nsólida\nformação\nem\nCiência\nda\nComputação\ne\nMatemática,\nconhecer\nas\nestruturas\ne\nprocessos\ndos\nsistemas\nde\ncomputação\ncom\numa\nvisão\ninterdisciplinar\ne\nglobal\ndos\nsistemas,\ndominar\nos\nconceitos\nteóricos\nda\nCiência\nda\nComputação\ne\nseus\nimpactos\nnas\naplicações\npráticas,\ne\nter\ncapacidade\npara\ncriar\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 70 | Curso: Ciência da Computação]\n12.4 Avaliação e acompanhamento da concretização do projeto pedagógico\nA\navaliação\ndo\ndesenvolvimento\ndo\nProjeto\nPedagógico\ndar-se-á\nem\nrelação\nao\ncumprimento\nde\nseus\nobjetivos,\nperfil\ndo\negresso\ne\nhabilidades\ne\ncompetências.\nA\navaliação\nserá\nrealizada\ntambém\ncom\nrelação\nà\nnecessidade\nde\nflexibilização\ncurricular\nou\nde\nmodificação\nda\nestrutura\ncurricular,\ndas\natividades\ncomplementares\ne\ndo\ncorpo\ndocente\ne\ndiscente.\nO\ncurso\nde\nCiência\nda\nComputação\npossui\num\nNúcleo\nDocente\nEstruturante\n(NDE)\nconstituído\npor\ndocentes\nde\nreconhecida\nexperiência\ne\ndestaque\nacadêmico,\nresponsáveis\npelo\nacompanhamento\ndo\nProjeto\nPedagógico\ndo\nCurso\n(PPC),\nem\nconsonância\ncom\na\nResolução\nnº\n01,\nde\n17\nde\njunho\nde\n\n---\n\n[Documento: ppc_cc_novo_2024.pdf | Pág. 44 | Curso: Ciência da Computação]\n9 Campo de Atuação Profissional\nDe\nacordo\ncom\nos\nReferenciais\nCurriculares\nNacionais\ndos\ncursos\nde\nBacharelado\ne\nLicenciatura\nde\nabril\nde\n2010\nda\nSecretaria\nde\nEducação\nSuperior\ndo\nMinistério\nda\nEducação,\no\nBacharel\nem\nCiência\nda\nComputação\n\"atua\nem\nindústrias\nde\ncomputadores;\nempresas\nde\nprogramas\nde\ncomputadores;\nsetores\nde\nTecnologia\nda\nInformação\nde\ninstituições\npúblicas\ne\nprivadas;\nem\nempresas\ne\nlaboratórios\nde\npesquisa\ncientífica\ne\ntecnológica.\nTambém\npode\natuar\nde\nforma\nautônoma,\nem\nempresa\nprópria\nou\nprestando\nconsultoria\".\nNesses\ndiferentes\ncampos\nde\natuação,\no\nbacharel\nem\nCiência\nda\nComputação\npode\ntrabalhar\nnos\nseguintes\npapéis:\nprogramador,\ngerente\nde\ndesenvolvimento,\ngerente\nde",
+        "distancia_minima": 0.18833637237548828,
+        "fontes": [
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 43,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 70,
+            "curso": "Ciência da Computação"
+          },
+          {
+            "arquivo": "ppc_cc_novo_2024.pdf",
+            "pagina": 44,
+            "curso": "Ciência da Computação"
+          }
+        ],
+        "fallback_acionado": true,
+        "setor_sugerido": "NEAP",
+        "template_email": "Assunto: Qual o perfil profissional do egresso de Ciência da Computação segundo o projeto pedagógico?\n\nOlá,\n\nMeu nome é [Nome], matrícula [Matrícula], aluno(a) do curso de CC, perfil curricular novo.\n\nEstou entrando em contato sobre: Qual o perfil profissional do egresso de Ciência da Computação segundo o projeto pedagógico?.\n\nResumo da situação:\n[Resumo da situação]\n\nMinha dúvida é:\nQual o perfil profissional do egresso de Ciência da Computação segundo o projeto pedagógico?\n\nSetor sugerido:\nNEAP\n\nAtenciosamente,\n[Nome]"
+      }
+    },
+    {
+      "nome": "geracao_desabilitada_via_nest",
+      "status_http": 503,
+      "segundos": 0.233,
+      "retorno": {
+        "message": "Serviço de geração indisponível.",
+        "error": "Service Unavailable",
+        "statusCode": 503
+      }
+    },
+    {
+      "nome": "configuracao_ausente",
+      "status_http": 503,
+      "segundos": 0.02,
+      "retorno": {
+        "message": "Serviço de busca não configurado.",
+        "error": "Service Unavailable",
+        "statusCode": 503
+      }
+    },
+    {
+      "nome": "configuracao_invalida",
+      "status_http": 503,
+      "segundos": 0.033,
+      "retorno": {
+        "message": "Serviço de busca não configurado.",
+        "error": "Service Unavailable",
+        "statusCode": 503
+      }
+    },
+    {
+      "nome": "busca_indisponivel",
+      "status_http": 503,
+      "segundos": 0.014,
+      "retorno": {
+        "message": "Serviço de busca indisponível.",
+        "error": "Service Unavailable",
+        "statusCode": 503
+      }
+    }
+  ],
+  "comandos": [
+    {
+      "nome": "fastapi-mock",
+      "argv": [
+        "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\venv\\Scripts\\python.exe",
+        "-m",
+        "uvicorn",
+        "main:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "54333"
+      ],
+      "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\ai-service"
+    },
+    {
+      "nome": "fastapi-disabled",
+      "argv": [
+        "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\venv\\Scripts\\python.exe",
+        "-m",
+        "uvicorn",
+        "main:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "54342"
+      ],
+      "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\ai-service"
+    },
+    {
+      "nome": "nest-mock",
+      "argv": [
+        "C:\\Users\\Rafael\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+        "dist/main.js"
+      ],
+      "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\backend"
+    },
+    {
+      "nome": "nest-fallback-controlado",
+      "argv": [
+        "C:\\Users\\Rafael\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+        "dist/main.js"
+      ],
+      "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\backend"
+    },
+    {
+      "nome": "nest-disabled",
+      "argv": [
+        "C:\\Users\\Rafael\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+        "dist/main.js"
+      ],
+      "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\backend"
+    },
+    {
+      "nome": "nest-configuracao_ausente",
+      "argv": [
+        "C:\\Users\\Rafael\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+        "dist/main.js"
+      ],
+      "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\backend"
+    },
+    {
+      "nome": "nest-configuracao_invalida",
+      "argv": [
+        "C:\\Users\\Rafael\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+        "dist/main.js"
+      ],
+      "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\backend"
+    },
+    {
+      "nome": "nest-indisponivel",
+      "argv": [
+        "C:\\Users\\Rafael\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+        "dist/main.js"
+      ],
+      "cwd": "C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\backend"
+    },
+    {
+      "nome": "testes_opt_in",
+      "argv": [
+        "C:\\Users\\Rafael\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.EXE",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "--config",
+        "vitest.config.e2e.ts",
+        "test/generation-live.e2e-spec.ts",
+        "--reporter=json",
+        "--outputFile=C:\\Users\\Rafael\\OneDrive\\RafaelASUS\\ProjetoDS\\codigo\\cin-ds-chatbot\\docs\\testes\\fechamento-backend-20261108\\servicos-reais\\live-opt-in.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "sucesso": true,
+  "processos_temporarios_encerrados": true,
+  "producao_sha256": {
+    "backend/src/ai-service/ai-service.service.ts": "826cd14af79f70eb2f85eb588b134bd196eabf3e7226bb04492f6a8f4d00b708",
+    "backend/src/orchestration/orchestration.service.ts": "d73b1c2e91a614d2fc671105ce15349984098bfc7721f0a8cb2fa88a2659a0d9",
+    "ai-service/src/retriever.py": "c72deb7f33c2b0433d9d8d501249771b7d3e3bbbb154bd8541981d01d6240754",
+    "ai-service/src/generation.py": "48e39a8d9a1e1d13daf1de93635cb8bd372296a62ae363246113adecd7b67982"
+  }
+}

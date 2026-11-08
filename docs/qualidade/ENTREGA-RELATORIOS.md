@@ -1,5 +1,16 @@
 # Relatórios da Sprint 3 - consolidação de Rafael
 
+## Revisão vigente de 08/11
+
+Usar [análise crítica de 08/11](../testes/analise-critica-sprint3-revisao-20261108.pdf)
+e [refatorações parciais de 08/11](relatorio-refatoracoes-sprint3-parcial-20261108.pdf).
+Os PDFs de 06/11 e 07/11 abaixo permanecem como histórico. A revisão registra o
+[fechamento do backend](../testes/fechamento-backend-20261108/README.md), com as seis
+regressões corrigidas, sem converter a correção funcional em terceira refatoração.
+Rafael assumiu também o fechamento do backend por acordo informado com Victor.
+Para finalizar os PDFs, continuam necessárias a terceira refatoração de Eric e a
+consolidação documental da equipe. Os avisos de 07/11 sobre backend não são seu estado atual.
+
 Responsabilidade atualizada em 07/11/2026 por acordo informado por Rafael: ele assume
 os dois PDFs. Referências antigas a Ricardo como autor do PDF de refatoração são
 históricas. Ricardo continua com curadoria, fontes e consolidação das dívidas.

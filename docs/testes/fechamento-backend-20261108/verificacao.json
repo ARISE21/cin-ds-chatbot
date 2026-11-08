@@ -1,0 +1,72 @@
+{
+  "utc": "2026-11-08T17:50:49.887866+00:00",
+  "base_git": "7c85cf08a303d6c3298bc5fd4b54b92095918861",
+  "branch": "fix/backend-fechamento-sprint3",
+  "antes": {
+    "total": 100,
+    "aprovados": 94,
+    "falhos": 6
+  },
+  "falhas_anteriores_agora_aprovadas": [
+    "AiService rejeita configuração inválida: ",
+    "AiService rejeita configuração inválida: http://busca.test?",
+    "AiService rejeita configuração inválida: http://busca.test#",
+    "AiService rejeita configuração inválida: http://busca.test/path/..",
+    "AiService rejeita configuração ausente",
+    "AiService.gerarResposta rejeita origem inválida \"\" sem chamar fetch"
+  ],
+  "depois": {
+    "suite_corrente": 256,
+    "e2e_padrao_aprovados": 34,
+    "opt_in_aprovados": 2,
+    "chamadas_http_reais": 10,
+    "falhos": 0
+  },
+  "lint": {
+    "exit_code": 0,
+    "avisos_herdados": 2,
+    "comando": "npm run lint",
+    "origem": "Saída observada na execução desta conversa; não representa log integral."
+  },
+  "build": {
+    "exit_code": 0,
+    "comando": "npm run build"
+  },
+  "paginas_pdf": {
+    "docs/testes/analise-critica-sprint3-revisao-20261108.pdf": 5,
+    "docs/qualidade/relatorio-refatoracoes-sprint3-parcial-20261108.pdf": 3
+  },
+  "pdfs_revisados_visualmente": true,
+  "pdfs_anteriores_preservados": true,
+  "arquivos_de_testes_historicos_preservados": 7,
+  "ui_corpus_ai_producao_intactos": true,
+  "sha256": {
+    "docs/testes/analise-critica-sprint3-revisao-20261108.pdf": "01b193ba27214dc938d5227f358c5f7ca18c947c5fae9329189019f1910360a4",
+    "docs/qualidade/relatorio-refatoracoes-sprint3-parcial-20261108.pdf": "b5051203672a159fe3e8e9c5bc50ac460bfd8d39d8b5b3cad1f9bdfabebd1cc9",
+    "backend/src/ai-service/ai-service.service.ts": "826cd14af79f70eb2f85eb588b134bd196eabf3e7226bb04492f6a8f4d00b708",
+    "backend/scripts/verificar-integracao-real.py": "afa964758bd10a876ae96d592af27c885dd8d4c17e3469f60754bd8eb00c8bc8",
+    "docs/qualidade/BACK-COR-URL-01.md": "9c708d08de63066cfc00aa12634ee5bca7cb3071d1478d8c31e041f354d41f6c",
+    "docs/qualidade/log-analise-backend-20261108.md": "cf068a68be2c6ecc27b2e96959a034c34f523b723d8d799676f63ce1082e4891",
+    "docs/testes/fechamento-backend-20261108/antes.json": "d0a40b2b875754b312ea58ef38f3409b30c019d71c70ab682b5ff1d0ac97c096",
+    "docs/testes/fechamento-backend-20261108/e2e.json": "28384040d50cdeaceed1e3db05081603293f84145d474932574d7f6e24057c29",
+    "docs/testes/fechamento-backend-20261108/README.md": "69f8a482477870a75154bdf9ac171c599274d881d7514edad069da40af636e09",
+    "docs/testes/fechamento-backend-20261108/unitarios.json": "75079e8f75709cb97e5b357db7cffd5265356b1c041d22b86375a940376dc464",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/fastapi-disabled.txt": "d52711942313c6f30d1e54484c3bdfd7377a7a91d3cd2a6023d457ef1c85d885",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/fastapi-mock.txt": "1899477bb34409d3acf781ec360a5351882293b9750fdbeb9bb0fe20209e608b",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/integracao-real.json": "77197f523113d81ccf27aa96b8de73344931807e5f48d6c64489291fbde7474c",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/live-opt-in.json": "b91ab8881b710dc8b807b32d2ead1e2d05a2b084dd28610a3efee8a4499d89d5",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/live-opt-in.txt": "baa83e70071679ca9078452823bdb4710e49bc78820b16a6d5125cc352e0b251",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/nest-configuracao_ausente.txt": "fb7b0bb10b401800ca317fda64e956c8e3f9cc7aeb1b20f67fdedbdfc0a8bc15",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/nest-configuracao_invalida.txt": "61d8ae51031decfe877236ebc3fd6cb3f992fb8959b12e5a0888f30a645dfdb8",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/nest-disabled.txt": "f78346454a3d9bb72c149cdfd064a811cb6105156c52bcacbd8b9eb299cad6ce",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/nest-fallback-controlado.txt": "aac50520d19587e4eeffaf0e7d4577aa8505278d648f36e4160f23ad2e3760a0",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/nest-indisponivel.txt": "d525f219b30afbf74bf6c05e5be662bc38abce07555778537604a79b9a2d6823",
+    "docs/testes/fechamento-backend-20261108/servicos-reais/nest-mock.txt": "29317995d58d18d8c096b75d57f5c2bf2950697803e308e504436f6ab3c701b9"
+  },
+  "limitacoes": [
+    "Geração mock; sem LLM real.",
+    "Sem benchmark de UI ou calibração.",
+    "Terceira refatoração formal pendente.",
+    "Sem novo registro de prompts históricos ausentes."
+  ]
+}

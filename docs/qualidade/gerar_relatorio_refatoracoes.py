@@ -46,7 +46,7 @@ def construir(destino):
         story.append(t); story.append(Spacer(1, 8))
 
     p('Relatório de refatorações', 'Titulo')
-    p('Chatbot SecGrad | CInCoders | Sprint 3 | 07/11/2026', 'Pequeno')
+    p('Chatbot SecGrad | CInCoders | Sprint 3 | Revisão de 08/11/2026', 'Pequeno')
     p('VERSÃO PARCIAL PARA REVISÃO - 2 DE 3 ITENS COMPROVADOS', 'Sub')
     p('O roteiro exige pelo menos três itens refatorados, cada um com ID, commit e V2 antes/depois. Este documento antecipa duas frentes com evidência preservada. Não está pronto para entrega final e não certifica a terceira refatoração ou o sistema atual sem regressões.')
     h('1. BACK-REF-01 | Victor | Duplicação de decisão')
@@ -81,7 +81,7 @@ def construir(destino):
     link('Congelamento da V2: 55a852c', REPO + '/commit/55a852c')
     p('Antes: docs/testes/relatorios/us01-controlado/v2/execucao.json e html/index.html. Depois: docs/qualidade/IA-REF-02-evidencias/depois/execucao.json e html/index.html. Registro: IA-REF-02-divida.md e IA-REF-02-relatorio.md.', 'Pequeno')
     h('Histórico não equivale à certificação da main atual')
-    p('As duas frentes acima usam medições históricas controladas, anteriores a mudanças posteriores na integração. Em 07/11, a IA teve 20 regressões e 21 testes V2 aprovados. Um recorte atual de 100 testes backend teve 94 aprovados e seis falhas de configuração/URL após o ajuste do PR #29. Isso não altera os resultados históricos nem permite declarar a versão atual sem falhas.')
+    p('As duas frentes acima usam medições históricas controladas. Em 07/11, a IA teve 20 regressões e 21 testes V2 aprovados. As seis falhas correntes de URL do backend foram corrigidas em 08/11: suíte corrente 256/256, e2e 34 aprovados mais dois opt-in aprovados, lint/build aprovados. Dez chamadas HTTP com corpus real e geração mock foram verificadas separadamente. Isso não reescreve os números históricos nem certifica UI ou LLM real. Evidências: docs/testes/fechamento-backend-20261108/.')
     p('A ingestão agora avisa sobre páginas sem texto e possui dois testes novos. É correção de observabilidade/contrato de retorno, não terceira refatoração sem mudança de comportamento. Do mesmo modo, alterar URL padrão é mudança funcional e não substitui a terceira entrega.', 'Pequeno')
 
     story.append(PageBreak())
@@ -97,7 +97,7 @@ def construir(destino):
     p('Vitest/coverage-v8 e coverage.py medem execução e branches; não diagnosticam SRP nem aprovam utilidade de extrações. Seus denominadores expõem que remoção de condicionais ou inclusão de função pode mudar percentuais sem perder/ganhar capacidade de teste. Não houve execução documentada de Sonar, jscpd ou analisador de smells; não se atribuem resultados a essas ferramentas.')
     p('O uso de LLM serve à proposta e ao registro, com revisão crítica dos responsáveis. Sugestões não comprovadas devem permanecer abertas ou ser descartadas com motivo. A comparação manual versus LLM permanece limitada pela falta de registro separado de autoria dos achados; o log consolidado ainda precisa ser conferido pela equipe.')
     h('Condições para a versão final')
-    p('Completar terceiro item, conferir os links/hashes, integrar o registro de dívida técnica e log de identificação (docs/qualidade/divida-tecnica.md e log-analise.md) e revisar os dois itens existentes com seus responsáveis. Corrigir as regressões atuais sem reescrever evidências históricas. Este PDF parcial pode ser versionado agora, mas não cumpre sozinho o mínimo de três refatorações.')
+    p('Completar terceiro item, conferir links/hashes, integrar o registro de dívida técnica e log de identificação (docs/qualidade/divida-tecnica.md e log-analise.md) e revisar os itens com seus responsáveis. A correção de URL BACK-COR-URL-01 não é terceira refatoração. Este PDF parcial pode ser versionado agora, mas não cumpre sozinho o mínimo de três itens.')
     p('Fontes: relatórios de BACK-REF-01/IA-REF-02 e seus manifestos; validação atual em docs/testes/validacao-ppcs/README.md. As evidências completas acompanham no repositório; não foram reexecutadas as suítes históricas para montar este documento.', 'Pequeno')
 
     def rodape(canvas, doc):
@@ -115,7 +115,7 @@ def construir(destino):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--saida', type=Path, default=HERE / 'relatorio-refatoracoes-sprint3-parcial.pdf')
+    parser.add_argument('--saida', type=Path, default=HERE / 'relatorio-refatoracoes-sprint3-parcial-20261108.pdf')
     args = parser.parse_args()
     if args.saida.exists():
         parser.error('Use uma saída nova; não substituir evidência anterior automaticamente.')
